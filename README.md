@@ -1,4 +1,4 @@
-# 100-days-of-code
+# 100-days-of-review
  Repository contains work done from August 1, 2020 until November 9, 2020
 
 ## Day 1 - README.MD basics
