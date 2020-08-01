@@ -45,21 +45,21 @@ where _ is a blank space
 
 ### Quoting Code
 
-Most often, a coder needs to be able to display code on the documentation. Here's how to do it:
+Most often, a coder needs to be able to display code on the documentation. Here's how to do it:  
 1. 
-    `Inline Code`
+    `Inline Code`  
 2. 
     ``` 
     /* Block of Code */
-    console.log("Hello World"); ```
+    console.log("Hello World"); ```  
 3. 
     ```javascript 
     /*Syntax Highlight*/ console.log("Hello World");
-    ```
+    ```  
 
 ```
 1. `Inline Code`
 2. ```/* Block of Code */ console.log("Hello World");
 4. ```javascript /*Syntax Highlight*/ console.log("Hello World");
-```
+```  
 
