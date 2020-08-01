@@ -12,6 +12,14 @@ Headings are just like `h1`, `h2` .. `h6` in `html`. # means `h1` ###### means `
 ###### The smallest heading
 ```  
 
+## Links
+
+This [hyperlink] point to Github Docs [https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#links]
+```
+This [hyperlink] point to Github Docs [https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#links]
+```
+
+
 ### Styling 
 
 There are 3 styling that are popular: **Bold**, *Italic* and ~~Strikethrough~~
