@@ -20,18 +20,18 @@ Headings are just like `h1`, `h2` .. `h6` in `html`. # means `h1` ###### means `
 There are 3 styling I usually use: **Bold**, *Italic* and ~~Strikethrough~~
 
 ```
-** Bold **
-* Italic * 
+**Bold**
+*Italic* 
 ~~ Strikethrough ~~
 ```
 
 Also these 3 can be combined. For example: 
-** Bold _and nested_ Italic **
-** * Bold and Italic * **
-
+**Bold _and nested_ Italic**
+***Bold and Italic***
 ```
-** Bold _and nested_ Italic **
-
+**Bold _and nested_ Italic**
+***Bold and Italic***
+```
 
 
 
