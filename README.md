@@ -1,5 +1,5 @@
-# 100-days-of-review
- Repository contains work done from August 1, 2020 until November 9, 2020
+# 100 Days Of Review
+ Repository contains review of forgotten stuff
 
 ## Day 1 - README.MD basics
 
@@ -26,8 +26,8 @@ There are 3 styling I usually use: **Bold**, *Italic* and ~~Strikethrough~~
 ```
 
 Also these 3 can be combined. For example:  
-**Bold _and nested_ Italic**  
-***Bold and Italic***
+* **Bold _and nested_ Italic**  
+* ***Bold and Italic***
 ```
 **Bold _and nested_ Italic**
 ***Bold and Italic***
