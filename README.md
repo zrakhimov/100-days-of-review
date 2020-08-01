@@ -15,5 +15,15 @@ Headings are just like `h1`, `h2` .. `h6` in `html`. # means `h1` ###### means `
 ###### The smallest heading
 ```
 
+### Styling 
+
+There are 3 styling I usually use: **Bold**, *Italic* and ~~Strikethrough~~
+
+```
+** Bold **
+* Italic * 
+~~ Strikethrough ~~
+```
+
 
 
