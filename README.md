@@ -25,8 +25,8 @@ There are 3 styling I usually use: **Bold**, *Italic* and ~~Strikethrough~~
 ~~ Strikethrough ~~
 ```
 
-Also these 3 can be combined. For example: 
-**Bold _and nested_ Italic**
+Also these 3 can be combined. For example: __
+**Bold _and nested_ Italic**__
 ***Bold and Italic***
 ```
 **Bold _and nested_ Italic**
