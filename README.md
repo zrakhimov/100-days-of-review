@@ -25,5 +25,13 @@ There are 3 styling I usually use: **Bold**, *Italic* and ~~Strikethrough~~
 ~~ Strikethrough ~~
 ```
 
+Also these 3 can be combined. For example: 
+1. ** Bold _and nested_ Italic **
+2. ** * Bold and Italic * **
+
+```
+** Bold _and nested_ Italic **
+
+
 
 
