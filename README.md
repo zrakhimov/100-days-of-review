@@ -33,5 +33,15 @@ Also these 3 can be combined. For example:
 ***Bold and Italic***
 ```
 
+### New Line
+
+Sometimes you can see that your line didn't start with a new line, even though you wrote your sentence in a new line in the editor.  
+To fix this, ensure each line ends with 2 spaces
+```
+This is first line _ _
+This is second line _ _
+```
+where _ is a blank space
+
 
 
