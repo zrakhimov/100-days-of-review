@@ -1,7 +1,7 @@
 ## 100 Days Of Review
  Repository contains review of forgotten stuff
 
- [Day 1](README.MD#Day_1)
+ [Day 1](#Day-1---README.MD-basics)
 
 ## Day 1 - README.MD basics
 
