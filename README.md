@@ -3,7 +3,7 @@
 
 ## Table of Contents
 
-[Day 1 - Markup basics]()  
+[Day 1 - Markup basics](#day-1---markup-basics)  
 
 <hr>
 
