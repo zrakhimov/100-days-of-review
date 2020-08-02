@@ -1,7 +1,11 @@
 # 100 Days Of Review
- Repository contains review of forgotten stuff
+ Repository contains review of forgotten stuff  
 
- [Day 1 - Markup basics](#day-1---markup-basics)
+## Table of Contents
+
+[Day 1 - Markup basics](#day-1---markup-basics)  
+
+<hr>
 
 ## Day 1 - Markup basics
 
