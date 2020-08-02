@@ -3,7 +3,7 @@
 
 ## Table of Contents
 
-[Day 1 - Markup basics](#day-1---markup-basics)  
+[Day 1 - Markup basics]()  
 
 <hr>
 
@@ -63,7 +63,7 @@ Most often, a coder needs to be able to display code on the documentation. Here'
 ```  
 ### Section Links
 
-I didn't find [GitHub Doc]'s (https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#section-links) explanation that much useful. So basically 
+I didn't find [GitHub Doc](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#section-links)'s explanation that much useful. So basically 
 section link acts the same as `<a href="#some-id">Take me somewhere</a>` where you need to link to a particular place in your document. First you have to find out the `id` of your content. Usually when you hover over a "heading" it will show you the `id` of the content. Simply copy it and paste it in the paranthesis
 
 
