@@ -1,9 +1,9 @@
-## 100 Days Of Review
+#s 100 Days Of Review
  Repository contains review of forgotten stuff
 
- [Day 1](#Day-1---README.MD-basics)
+ [Day 1 - Markup basics](#day-1---readmemd-basics)
 
-## Day 1 - README.MD basics
+## Day 1 - Markup basics
 
 Great documentation of formatting syntax at [Github Docs](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)  
 
