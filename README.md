@@ -10,7 +10,8 @@
 - [New Line](#new-line)
 - [Quoting Code](#quoting-code)
 - [Section Links](#section-links)
-- [Attach GIF] (#attach-gif)
+- [Attach GIF](#attach-gif)
+- [Inserting Emoji](#insert-emoji)
 
 
 
@@ -84,6 +85,6 @@ OK, how did I do that? Simple: just use `![Alt Text](link_to_gif)`. Easy!
 
 ### Insert Emoji
 
-To type emoji into your markup, type: `:EMOJICODE:`. List of emoji codes [here](https://gist.github.com/rxaviers/7360908):white_check_mark:  
+To type emoji into your markup, type: `:EMOJICODE:`. List of emoji codes [here](https://gist.github.com/rxaviers/7360908) :white_check_mark:  
 
 
