@@ -1,11 +1,19 @@
-# 100 Days Of Review
+# :100: Days Of Review
  Repository contains review of forgotten stuff  
 
 ## Table of Contents
 
 [Day 1 - Markup basics](#day-1---markup-basics)  
+- [Headings](#headings)
+- [Links](#links)
+- [Styling](#styling)
+- [New Line](#new-line)
+- [Quoting Code](#quoting-code)
+- [Section Links](#section-links)
+- [Attach GIF] (#attach-gif)
 
-<hr>
+
+
 
 ## Day 1 - Markup basics
 
@@ -71,6 +79,11 @@ section link acts the same as `<a href="#some-id">Take me somewhere</a>` where y
 
 ### Attach GIF
 
-OK, how did I do that? Simple: just use `![Alt Text](link_to_gif)`. Easy!
+OK, how did I do that? Simple: just use `![Alt Text](link_to_gif)`. Easy!  
+
+
+### Insert Emoji
+
+To type emoji into your markup, type: `:EMOJICODE:`. List of emoji codes [here](https://gist.github.com/rxaviers/7360908):white_check_mark:  
 
 
