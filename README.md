@@ -23,9 +23,7 @@ Headings are just like `h1`, `h2` .. `h6` in `html`. # means `h1` ###### means `
 
 ### Links
 
-This [hyperlink] point to Github Docs [https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#links]
-`
-
+`This [hyperlink] points to Github Docs [https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#links)`
 
 ### Styling 
 
@@ -63,4 +61,10 @@ Most often, a coder needs to be able to display code on the documentation. Here'
 2. ```/* Block of Code */ console.log("Hello World");```
 3. ```javascript /*Syntax Highlight*/ console.log("Hello World");```
 ```  
+### Section Links
+
+I didn't find [GitHub Doc]'s (https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#section-links) explanation that much useful. So basically 
+section link acts the same as `<a href="#some-id">Take me somewhere</a>` where you need to link to a particular place in your document. First you have to find out the `id` of your content. Usually when you hover over a "heading" it will show you the `id` of the content. Simply copy it and paste it in the paranthesis
+
+
 
