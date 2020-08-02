@@ -1,7 +1,7 @@
-#s 100 Days Of Review
+# 100 Days Of Review
  Repository contains review of forgotten stuff
 
- [Day 1 - Markup basics](#day-1---readmemd-basics)
+ [Day 1 - Markup basics] (#day-1---markup-basics)
 
 ## Day 1 - Markup basics
 
@@ -17,7 +17,7 @@ Headings are just like `h1`, `h2` .. `h6` in `html`. # means `h1` ###### means `
 ###### The smallest heading
 ```  
 
-## Links
+### Links
 
 This [hyperlink] point to Github Docs [https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#links]
 `
