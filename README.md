@@ -13,7 +13,7 @@
 - [Attach GIF](#attach-gif)
 - [Inserting Emoji](#insert-emoji)
 
-
+[Day 2 - HTML5](#day-2---html5) 
 
 
 ## Day 1 - Markup basics
@@ -86,5 +86,10 @@ OK, how did I do that? Simple: just use `![Alt Text](link_to_gif)`. Easy!
 ### Insert Emoji
 
 To type emoji into your markup, type: `:EMOJICODE:`. List of emoji codes [here](https://gist.github.com/rxaviers/7360908) :white_check_mark:  
+
+
+## Day 2 - HTML5
+
+Quick summarized HTML tags that are used [from freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/)
 
 
