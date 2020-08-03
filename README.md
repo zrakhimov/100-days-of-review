@@ -12,6 +12,7 @@
 - [Section Links](#section-links)
 - [Attach GIF](#attach-gif)
 - [Inserting Emoji](#insert-emoji)
+- [Fun Fact](#fun-fact)
 
 [Day 2 - HTML5](#day-2---html5) 
 
@@ -87,6 +88,9 @@ OK, how did I do that? Simple: just use `![Alt Text](link_to_gif)`. Easy!
 
 To type emoji into your markup, type: `:EMOJICODE:`. List of emoji codes [here](https://gist.github.com/rxaviers/7360908) :white_check_mark:  
 
+### Fun Fact
+
+Markup doesn't support text colour!
 
 ## Day 2 - HTML5
 
