@@ -14,10 +14,12 @@
 - [Inserting Emoji](#insert-emoji)
 - [Fun Fact](#fun-fact)
 
-[Day 2 - HTML5](#day-2---html5) 
+[Day 2 - HTML](#day-2---html5) 
 - [Headings](#headings)
 - [Paragraph](#paragraph)
 - [Comment](#comment)
+- [HTML5 Elements](#html5-elements)
+- [Images](#images)
 
 
 ## Day 1 - Markup basics
@@ -157,6 +159,27 @@ Comments don't appear on the page when viewed by the browser, and it's used to l
 <!-- This is a comment -->
 ```
 
+### HTML5 elements
+
+The following html5 tags, acts same as the `<div>` but helps to identify structure of the page. Also helps with SEO (Search Engine Optimization)
+
+
+* `<main>` - Main body of the content
+* `<header>` - Contains header elements such as navigation bar and it's elements
+* `<footer>` - Might contain summarized links and website map
+* `<nav>` - Used inside `<header>` to define the navigation
+* `<video>` - Used to embedd video on the page
+* `<article>` - Large block of text can be included within this tag
+* `<section>` - Logically divide your content using section tag
+
+For example, let's see how would you use `<main>` tag:
+```html
+<main>
+ <h1>Hello World</h1>
+ <p> Hello Paragraph</p>
+</main>
+```
+### Images
 
 
 
