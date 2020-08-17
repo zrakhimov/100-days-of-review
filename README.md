@@ -189,3 +189,16 @@ You can add images to your web page using `img` element and point to specific im
 Becomes
 > ![picture of a city](https://i.picsum.photos/id/321/200/200.jpg?hmac=V8qQPhFl_8KjI8JgGI74LQepgBOnxdXOuZmBclxHU90)
 
+⚠️ Note that `img` elements are self-closing  
+
+All `img` elements must have an `alt` _attribute_. It's used in text-readers for accessibility purposes
+
+```html
+
+<img src="https://bit.ly/fcc-relaxing-cat" alt="photo of a cat">
+
+```
+
+Becomes
+
+> ![photo of a cat](https://bit.ly/fcc-relaxing-cat)
