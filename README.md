@@ -17,6 +17,7 @@
 [Day 2 - HTML5](#day-2---html5) 
 - [Headings](#headings)
 - [Paragraph](#paragraph)
+- [Comment](#comment)
 
 
 ## Day 1 - Markup basics
@@ -137,7 +138,7 @@ Becomes:
 > ##### This is h5
 > ###### This is h6
 
-###Paragraph
+### Paragraph
 
 `<p>` is short for 'paragraph' and preferred text format on websites
 
@@ -147,4 +148,15 @@ Becomes:
 Becomes
 
 > I'm a p tag
+
+### Comment
+
+Comments don't appear on the page when viewed by the browser, and it's used to leave notes on the development process
+
+```html
+<!-- This is a comment -->
+```
+
+
+
 
