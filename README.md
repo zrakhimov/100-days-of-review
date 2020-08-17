@@ -20,6 +20,7 @@
 - [Comment](#comment)
 - [HTML5 Elements](#html5-elements)
 - [Images](#images)
+- [Links](#links)
 
 
 ## Day 1 - Markup basics
@@ -202,3 +203,18 @@ All `img` elements must have an `alt` _attribute_. It's used in text-readers for
 Becomes
 
 > ![photo of a cat](https://bit.ly/fcc-relaxing-cat)
+
+
+### Links
+
+To link to another page from the current page we use an _anchor_ tag `<a></a>`. It has an _attribute_ `href` where we need to put the link to the page
+
+```html
+
+<a href="https://google.com">Take me to Google</a>
+
+```
+
+Becomes
+
+> [Take me to Google](https://google.com)
