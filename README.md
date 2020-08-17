@@ -218,3 +218,11 @@ To link to another page from the current page we use an _anchor_ tag `<a></a>`. 
 Becomes
 
 > [Take me to Google](https://google.com)
+
+⚠️ Note: when you click on the hyperlink, it doesn't open it on a new tab. In order to open it on a new tab, use `_target` attribute by setting it to `blank`
+
+```html
+<a href="https://google.com" _target="blank">Take me to Google</a>
+```
+
+
