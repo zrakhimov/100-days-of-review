@@ -181,5 +181,11 @@ For example, let's see how would you use `<main>` tag:
 ```
 ### Images
 
+You can add images to your web page using `img` element and point to specific image using `src` _attribute_
 
+```html
+<img src="https://i.picsum.photos/id/321/200/200.jpg?hmac=V8qQPhFl_8KjI8JgGI74LQepgBOnxdXOuZmBclxHU90">
+```
+Becomes
+> ![picture of a city](https://i.picsum.photos/id/321/200/200.jpg?hmac=V8qQPhFl_8KjI8JgGI74LQepgBOnxdXOuZmBclxHU90)
 
