@@ -15,6 +15,8 @@
 - [Fun Fact](#fun-fact)
 
 [Day 2 - HTML5](#day-2---html5) 
+- [Headings](#headings)
+- [Paragraph](#paragraph)
 
 
 ## Day 1 - Markup basics
@@ -134,3 +136,15 @@ Becomes:
 > #### This is h4
 > ##### This is h5
 > ###### This is h6
+
+###Paragraph
+
+`<p>` is short for 'paragraph' and preferred text format on websites
+
+```html
+<p> I'm a p tag </p>
+```
+Becomes
+
+> I'm a p tag
+
