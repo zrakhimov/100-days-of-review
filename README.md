@@ -96,4 +96,20 @@ Markup doesn't support text colour!
 
 Notes [from freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/)
 
+HTML is a markup language which describes the structure of a web page. It uses special syntax which uses `<>` opening and closing tags.
+
+```html
+<h1>This is h1 heading</h1>
+<p> This is a paragraph</p>
+<ol>
+ <li>First item in the numbered list</li>
+ <li>Second item </li>
+</ol>
+```
+Becomes:
+
+> ##This is h1 heading
+> This is a paraph
+> 1. First item in the numbered list
+> 2. Second item
 
