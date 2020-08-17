@@ -108,8 +108,29 @@ HTML is a markup language which describes the structure of a web page. It uses s
 ```
 Becomes:
 
-> ##This is h1 heading
+> ## This is h1 heading
 > This is a paraph
 > 1. First item in the numbered list
 > 2. Second item
 
+### Headings
+
+There are 6 levels of heading in html: `h1`, `h2`, `h3`, `h4`, `h5`, `h6`
+
+```html
+<h1>This is h1 </h1>
+<h2>This is h2 </h2>
+<h3>This is h3 </h3>
+<h4>This is h4 </h4>
+<h5>This is h5 </h5>
+<h6>This is h6 </h6>
+```
+
+Becomes:
+
+> # This is h1
+> ## This is h2
+> ### This is h3
+> #### This is h4
+> ##### This is h5
+> ###### This is h6
