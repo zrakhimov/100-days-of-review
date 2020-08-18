@@ -20,7 +20,7 @@
 - [Comment](#comment)
 - [HTML5 Elements](#html5-elements)
 - [Images](#images)
-- [Links](#links)
+- [Links](#links-1)
 
 
 ## Day 1 - Markup basics
