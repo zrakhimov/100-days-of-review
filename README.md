@@ -27,8 +27,10 @@
 - [Form Element](#form-element)
 - [Submit Button](#submit-button)
 - [Input Field - Radio](#input-field---radio)
-- [Input Field - Checkmark]
-- 
+- [Input Field - Checkmark](#input-field---radio)
+- [Container Element] (#container-element)
+- [!DOCTYPE](#doctype)
+- [Head and Body](#head-and-body)
 
 ## Day 1 - Markup basics
 
@@ -380,5 +382,46 @@ Just like radio buttons, we can wrap each element within it's own `label`.
 ⚠️ If you omit the `value` attribute, the submitted form data uses the default value, which is `on`
 ⚠️ Attributes that are added to radio buttons apply here too for checkboxes, such as `value` , `checked`, `name` , `id`, `for` etc
 
+### Container Element
+
+The `div` element, also known as a division element, is a general purpose container for other elements.
+
+The `div`element is probably the most commonly used HTML element of all.
+
+
+### DOCTYPE
+
+`<!DOCTYPE html>` is placed first thing in the html document. This will let the browser that is rendering this html know that HTML5 should be used . Most major browsers support the latest specification, which is HTML5. However, older web pages may use previous version of the language
+
+All the html code should be within `<html>` tags
+
+```html
+<!DOCYPE html>
+<html>
+ <!-- Your code here -->
+</html>
+```
+
+### Head and Body
+
+`<head>` and `<body>` must be also present within `<html>` tags.  
+`<head>` - contains all information about the page  
+`<body>` - contains all the content of the page which user will see  
+
+Overall, the boilerplate for html document take the form:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
 
 
