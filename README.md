@@ -30,7 +30,7 @@
 - [Input Field - Checkmark](#input-field---radio)
 - [Container Element](#container-element)
 - [!DOCTYPE](#doctype)
-- [Head and Body](#head-and-body)
+- [Head and Body](#head-and-body)  
 [Day 3 - CSS](#day-3---css)
 
 ## Day 1 - Markup basics
