@@ -22,6 +22,7 @@
 - [Images](#images)
 - [Links](#links-1)
 - [Unordered List](#unordered-list)
+- [Ordered LIst](#ordered-list)
 
 
 ## Day 1 - Markup basics
@@ -260,3 +261,18 @@ Ordered lists start with `<ol>` and within this tag, has all the line items insi
  <li>Third</li>
 </ol>
 ```
+
+### Input field - Text
+
+`input` elements are a convenient way to get input from the user.  
+To create an input text field, use `<input>` self closing tag with attribute `type="text"`
+
+```html
+
+<input type="text">
+```
+Becomes:
+<input type="text" />
+
+
+
