@@ -23,7 +23,10 @@
 - [Links](#links-1)
 - [Unordered List](#unordered-list)
 - [Ordered LIst](#ordered-list)
-- [Input field - Text](#input-field-text)
+- [Input field - Text](#input-field---text)
+- [Form Element](#form-element)
+- [Submit Button](#submit-button)
+- [Input field - Radio](#input-field---radio)
 
 ## Day 1 - Markup basics
 
@@ -278,5 +281,58 @@ To create an input text field, use `<input>` self closing tag with attribute `ty
 <input type="text" placeholder="Enter your name here">
 ```
 
+⚠️ You can also `require` the field to be mandatory. Simply add this attribute to your input field
 
+```html
+<input type="text" placeholder="Enter your name here" required>
+```
 
+### Form Element
+
+`<form></form>` element let's you submit data to a server. You just have to specify `action` attribute to the location you want to submit that data. 
+
+```html
+<form action="/url-where-you-want-to-submit-data">
+</form>
+```
+
+### Submit Button
+
+Usually you want to have a button at the end of your form to submit it to the server. You can do that by creating the `button` element with `type="submit"`
+
+```html
+<button type="submit">Submit</button>
+```
+
+### Input field - Radio
+
+You can use radio buttons where you want the user to select only one option from pre-defined list. Radio buttons are a type of `input`.
+
+```html
+<input type="radio">
+
+```
+
+`label` is used to give a text to the button. 
+
+```html
+<input type="radio">
+<label>Option 1</label>
+```
+
+Best Practice: to use `for` attribute in <label> that matches `id` attribute of <input>
+ 
+```html
+<input id="option1" type="radio">
+<label for="option1">Option 1</label>
+
+`name` attribute on the <input> element must be the same if you have multiple radio buttons
+
+```html
+<input id="option1" type="radio" name="options">
+<label for="option1">Option 1</label>
+<input id="option2" type="radio" name="options">
+<label for="option2">Option 2</label>
+<input id="option3" type="radio" name="options">
+<label for="option3">Option 3</label>
+```
