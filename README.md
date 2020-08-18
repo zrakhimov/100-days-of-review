@@ -23,10 +23,12 @@
 - [Links](#links-1)
 - [Unordered List](#unordered-list)
 - [Ordered LIst](#ordered-list)
-- [Input field - Text](#input-field---text)
+- [Input Field - Text](#input-field---text)
 - [Form Element](#form-element)
 - [Submit Button](#submit-button)
-- [Input field - Radio](#input-field---radio)
+- [Input Field - Radio](#input-field---radio)
+- [Input Field - Checkmark]
+- 
 
 ## Day 1 - Markup basics
 
@@ -265,7 +267,7 @@ Ordered lists start with `<ol>` and within this tag, has all the line items insi
 </ol>
 ```
 
-### Input field - Text
+### Input Field - Text
 
 `input` elements are a convenient way to get input from the user.  
 To create an input text field, use `<input>` self closing tag with attribute `type="text"`
@@ -304,29 +306,30 @@ Usually you want to have a button at the end of your form to submit it to the se
 <button type="submit">Submit</button>
 ```
 
-### Input field - Radio
+### Input Field - Radio
 
-You can use radio buttons where you want the user to select only one option from pre-defined list. Radio buttons are a type of `input`.
+You can use radio buttons where you want the user to select __only one option__ from pre-defined list. Radio buttons are a type of `input`.
 
 ```html
 <input type="radio">
 
 ```
 
-`label` is used to give a text to the button. 
+* `label` is used to give a text to the button. 
 
 ```html
 <input type="radio">
 <label>Option 1</label>
 ```
 
-Best Practice: to use `for` attribute in <label> that matches `id` attribute of <input>
+*  `for` attribute in <label> is used as a best practice. It matches `id` attribute of <input>
  
 ```html
 <input id="option1" type="radio">
 <label for="option1">Option 1</label>
+```
 
-`name` attribute on the <input> element must be the same if you have multiple radio buttons
+* `name` attribute on the <input> element must be the same if you have multiple radio buttons
 
 ```html
 <input id="option1" type="radio" name="options">
@@ -336,3 +339,46 @@ Best Practice: to use `for` attribute in <label> that matches `id` attribute of 
 <input id="option3" type="radio" name="options">
 <label for="option3">Option 3</label>
 ```
+
+* `value` - When a form gets submitted, the data is sent to the server and includes entries for the options selected. Inputs of type `radio` and `checkbox` report their values from the `value` attribute.
+```html
+<input id="option1" type="radio" name="options" value="option1">
+<label for="option1">Option 1</label>
+<input id="option2" type="radio" name="options" value="option2">
+<label for="option2">Option 2</label>
+<input id="option3" type="radio" name="options" value="option3">
+<label for="option3">Option 3</label>
+```
+* `checked` - you can set a checkbox or radio button to be checked by default using   the checked attribute 
+
+```html
+<input type="radio" name="test-name" checked>
+```
+
+⚠️ If you omit the `value` attribute, the submitted form data uses the default value, which is `on`
+⚠️ Radio buttons are __inline__ elements, so they stack up horizontally. You may want to include <br> after each checkbox or radio button
+
+### Input Field - Checkbox
+
+Checkboxes are used when you want the user to choose __multiple__ options from pre-defined list.
+
+You can create checkboxes with `<input type="checkbox">` syntax.
+
+Just like radio buttons, we can wrap each element within it's own `label`.
+
+```html
+<label for="1">
+ <input id="1" type="checkbox" name="selections"> Checkbox 1
+</label>
+<label for="2">
+ <input id="2" type="checkbox" name="selections"> Checkbox 2
+</label>
+<label for="3">
+ <input id="3" type="checkbox" name="selections"> Checkbox 3
+</label>
+```
+⚠️ If you omit the `value` attribute, the submitted form data uses the default value, which is `on`
+⚠️ Attributes that are added to radio buttons apply here too for checkboxes, such as `value` , `checked`, `name` , `id`, `for` etc
+
+
+
