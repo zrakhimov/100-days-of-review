@@ -225,4 +225,13 @@ Becomes
 <a href="https://google.com" _target="blank">Take me to Google</a>
 ```
 
+To make the link not to point anywhere just include set `href` to `#`  
 
+To turn an Image into a Link, wrap an `a`nchor tag around `img` tag as shown below
+
+```html
+<a href="https://bit.ly/fcc-running-cats"><img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera."></a>
+```
+Becomes:
+
+> ![Three kittens running towards the camera](https://bit.ly/fcc-running-cats)
