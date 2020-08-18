@@ -46,6 +46,7 @@ Headings are just like `h1`, `h2` .. `h6` in `html`. # means `h1` ###### means `
 ## The second largest heading
 ###### The smallest heading
 ```  
+[🔝](#table-of-contents)
 
 ### Links
 
@@ -68,6 +69,7 @@ Also these 3 can be combined. For example:
 **Bold _and nested_ Italic**
 ***Bold and Italic***
 ```  
+[🔝](#table-of-contents)  
 
 ### New Line
 
@@ -79,6 +81,8 @@ This is second line __
 ```
 where _ is a blank space  
 
+[🔝](#table-of-contents)
+
 ### Quoting Code
 
 Most often, a coder needs to be able to display code on the documentation. Here's how to do it:  
@@ -87,6 +91,8 @@ Most often, a coder needs to be able to display code on the documentation. Here'
 2. ```/* Block of Code */ console.log("Hello World");```
 3. ```javascript /*Syntax Highlight*/ console.log("Hello World");```
 ```  
+[🔝](#table-of-contents)
+
 ### Section Links
 
 I didn't find [GitHub Doc](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#section-links)'s explanation that much useful. So basically 
@@ -94,20 +100,20 @@ section link acts the same as `<a href="#some-id">Take me somewhere</a>` where y
 
 ![Alt Text](assets/SectionLink.gif)
 
-
+[🔝](#table-of-contents)
 ### Attach GIF
 
 OK, how did I do that? Simple: just use `![Alt Text](link_to_gif)`. Easy!  
 
-
+[🔝](#table-of-contents)
 ### Insert Emoji
 
 To type emoji into your markup, type: `:EMOJICODE:`. List of emoji codes [here](https://gist.github.com/rxaviers/7360908) :white_check_mark:  
-
+[🔝](#table-of-contents)
 ### Fun Fact
 
 Markup doesn't support text colour!
-
+[🔝](#table-of-contents)
 ## Day 2 - HTML5
 
 Notes [from freeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/)
@@ -128,7 +134,7 @@ Becomes:
 > This is a paraph
 > 1. First item in the numbered list
 > 2. Second item
-
+[🔝](#table-of-contents)
 ### Headings
 
 There are 6 levels of heading in html: `h1`, `h2`, `h3`, `h4`, `h5`, `h6`
@@ -150,7 +156,7 @@ Becomes:
 > #### This is h4
 > ##### This is h5
 > ###### This is h6
-
+[🔝](#table-of-contents)
 ### Paragraph
 
 `<p>` is short for 'paragraph' and preferred text format on websites
@@ -161,7 +167,7 @@ Becomes:
 Becomes
 
 > I'm a p tag
-
+[🔝](#table-of-contents)
 ### Comment
 
 Comments don't appear on the page when viewed by the browser, and it's used to leave notes on the development process
@@ -169,7 +175,7 @@ Comments don't appear on the page when viewed by the browser, and it's used to l
 ```html
 <!-- This is a comment -->
 ```
-
+[🔝](#table-of-contents)
 ### HTML5 elements
 
 The following html5 tags, acts same as the `<div>` but helps to identify structure of the page. Also helps with SEO (Search Engine Optimization)
@@ -190,6 +196,7 @@ For example, let's see how would you use `<main>` tag:
  <p> Hello Paragraph</p>
 </main>
 ```
+[🔝](#table-of-contents)
 ### Images
 
 You can add images to your web page using `img` element and point to specific image using `src` _attribute_
@@ -214,7 +221,7 @@ Becomes
 
 > ![photo of a cat](https://bit.ly/fcc-relaxing-cat)
 
-
+[🔝](#table-of-contents)
 ### Links
 
 To link to another page from the current page we use an _anchor_ tag `<a></a>`. It has an _attribute_ `href` where we need to put the link to the page
@@ -245,7 +252,7 @@ To turn an Image into a Link, wrap an `a`nchor tag around `img` tag as shown bel
 Becomes:
 
 > ![Three kittens running towards the camera](https://bit.ly/fcc-running-cats)
-
+[🔝](#table-of-contents)
 ### Unordered List
 
 Unordered lists start with `<ul>` and within this tag, has all the line items inside `<li>` tag. Finally close the `</ul>` tag
@@ -257,7 +264,7 @@ Unordered lists start with `<ul>` and within this tag, has all the line items in
  <li>Third</li>
 </ul>
 ```
-
+[🔝](#table-of-contents)
 ### Ordered List
 
 Ordered lists start with `<ol>` and within this tag, has all the line items inside `<li>` tag. Finally close the `</ol>` tag
@@ -269,7 +276,7 @@ Ordered lists start with `<ol>` and within this tag, has all the line items insi
  <li>Third</li>
 </ol>
 ```
-
+[🔝](#table-of-contents)
 ### Input Field - Text
 
 `input` elements are a convenient way to get input from the user.  
@@ -291,7 +298,7 @@ To create an input text field, use `<input>` self closing tag with attribute `ty
 ```html
 <input type="text" placeholder="Enter your name here" required>
 ```
-
+[🔝](#table-of-contents)
 ### Form Element
 
 `<form></form>` element let's you submit data to a server. You just have to specify `action` attribute to the location you want to submit that data. 
@@ -300,7 +307,7 @@ To create an input text field, use `<input>` self closing tag with attribute `ty
 <form action="/url-where-you-want-to-submit-data">
 </form>
 ```
-
+[🔝](#table-of-contents)
 ### Submit Button
 
 Usually you want to have a button at the end of your form to submit it to the server. You can do that by creating the `button` element with `type="submit"`
@@ -308,7 +315,7 @@ Usually you want to have a button at the end of your form to submit it to the se
 ```html
 <button type="submit">Submit</button>
 ```
-
+[🔝](#table-of-contents)
 ### Input Field - Radio
 
 You can use radio buttons where you want the user to select __only one option__ from pre-defined list. Radio buttons are a type of `input`.
@@ -360,7 +367,7 @@ You can use radio buttons where you want the user to select __only one option__ 
 
 ⚠️ If you omit the `value` attribute, the submitted form data uses the default value, which is `on`
 ⚠️ Radio buttons are __inline__ elements, so they stack up horizontally. You may want to include <br> after each checkbox or radio button
-
+[🔝](#table-of-contents)
 ### Input Field - Checkbox
 
 Checkboxes are used when you want the user to choose __multiple__ options from pre-defined list.
@@ -382,14 +389,14 @@ Just like radio buttons, we can wrap each element within it's own `label`.
 ```
 ⚠️ If you omit the `value` attribute, the submitted form data uses the default value, which is `on`
 ⚠️ Attributes that are added to radio buttons apply here too for checkboxes, such as `value` , `checked`, `name` , `id`, `for` etc
-
+[🔝](#table-of-contents)
 ### Container Element
 
 The `div` element, also known as a division element, is a general purpose container for other elements.
 
 The `div`element is probably the most commonly used HTML element of all.
 
-
+[🔝](#table-of-contents)
 ### DOCTYPE
 
 `<!DOCTYPE html>` is placed first thing in the html document. This will let the browser that is rendering this html know that HTML5 should be used . Most major browsers support the latest specification, which is HTML5. However, older web pages may use previous version of the language
@@ -402,7 +409,7 @@ All the html code should be within `<html>` tags
  <!-- Your code here -->
 </html>
 ```
-
+[🔝](#table-of-contents)
 ### Head and Body
 
 `<head>` and `<body>` must be also present within `<html>` tags.  
