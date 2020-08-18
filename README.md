@@ -21,6 +21,7 @@
 - [HTML5 Elements](#html5-elements)
 - [Images](#images)
 - [Links](#links-1)
+- [Unordered List](#unordered-list)
 
 
 ## Day 1 - Markup basics
@@ -235,3 +236,27 @@ To turn an Image into a Link, wrap an `a`nchor tag around `img` tag as shown bel
 Becomes:
 
 > ![Three kittens running towards the camera](https://bit.ly/fcc-running-cats)
+
+### Unordered List
+
+Unordered lists start with `<ul>` and within this tag, has all the line items inside `<li>` tag. Finally close the `</ul>` tag
+
+```html
+<ul>
+ <li>First</li>
+ <li>Second</li>
+ <li>Third</li>
+</ul>
+```
+
+### Ordered List
+
+Ordered lists start with `<ol>` and within this tag, has all the line items inside `<li>` tag. Finally close the `</ol>` tag
+
+```html
+<ol>
+ <li>First</li>
+ <li>Second</li>
+ <li>Third</li>
+</ol>
+```
