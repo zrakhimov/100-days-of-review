@@ -31,6 +31,7 @@
 - [Container Element](#container-element)
 - [!DOCTYPE](#doctype)
 - [Head and Body](#head-and-body)
+[Day 3 - CSS](#day-3---css)
 
 ## Day 1 - Markup basics
 
@@ -423,5 +424,7 @@ Overall, the boilerplate for html document take the form:
 </body>
 </html>
 ```
+[🔝](#table-of-contents)
+## Day 3 - CSS
 
 
