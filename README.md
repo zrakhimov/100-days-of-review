@@ -28,7 +28,7 @@
 - [Submit Button](#submit-button)
 - [Input Field - Radio](#input-field---radio)
 - [Input Field - Checkmark](#input-field---radio)
-- [Container Element] (#container-element)
+- [Container Element](#container-element)
 - [!DOCTYPE](#doctype)
 - [Head and Body](#head-and-body)
 
