@@ -100,19 +100,18 @@ section link acts the same as `<a href="#some-id">Take me somewhere</a>` where y
 
 ![Alt Text](assets/SectionLink.gif)
 
-[🔝](#table-of-contents)
 ### Attach GIF
 
 OK, how did I do that? Simple: just use `![Alt Text](link_to_gif)`. Easy!  
 
-[🔝](#table-of-contents)
+
 ### Insert Emoji
 
 To type emoji into your markup, type: `:EMOJICODE:`. List of emoji codes [here](https://gist.github.com/rxaviers/7360908) :white_check_mark:  
 [🔝](#table-of-contents)
 ### Fun Fact
 
-Markup doesn't support text colour!
+Markup doesn't support text colour!  
 [🔝](#table-of-contents)
 ## Day 2 - HTML5
 
@@ -133,8 +132,9 @@ Becomes:
 > ## This is h1 heading
 > This is a paraph
 > 1. First item in the numbered list
-> 2. Second item
+> 2. Second item  
 [🔝](#table-of-contents)
+
 ### Headings
 
 There are 6 levels of heading in html: `h1`, `h2`, `h3`, `h4`, `h5`, `h6`
@@ -155,7 +155,7 @@ Becomes:
 > ### This is h3
 > #### This is h4
 > ##### This is h5
-> ###### This is h6
+> ###### This is h6  
 [🔝](#table-of-contents)
 ### Paragraph
 
@@ -166,8 +166,7 @@ Becomes:
 ```
 Becomes
 
-> I'm a p tag
-[🔝](#table-of-contents)
+> I'm a p tag  
 ### Comment
 
 Comments don't appear on the page when viewed by the browser, and it's used to leave notes on the development process
@@ -307,7 +306,6 @@ To create an input text field, use `<input>` self closing tag with attribute `ty
 <form action="/url-where-you-want-to-submit-data">
 </form>
 ```
-[🔝](#table-of-contents)
 ### Submit Button
 
 Usually you want to have a button at the end of your form to submit it to the server. You can do that by creating the `button` element with `type="submit"`
