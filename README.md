@@ -23,7 +23,7 @@
 - [Links](#links-1)
 - [Unordered List](#unordered-list)
 - [Ordered LIst](#ordered-list)
-
+- [Input field - Text](#input-field-text)
 
 ## Day 1 - Markup basics
 
@@ -267,12 +267,16 @@ Ordered lists start with `<ol>` and within this tag, has all the line items insi
 `input` elements are a convenient way to get input from the user.  
 To create an input text field, use `<input>` self closing tag with attribute `type="text"`
 
-```html
 
+```html
 <input type="text">
 ```
-Becomes:
-<input type="text" />
+
+⚠️ If you want to display a text in the input field before hand, use `placeholder` attribute and set your text
+
+```html
+<input type="text" placeholder="Enter your name here">
+```
 
 
 
