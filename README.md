@@ -29,7 +29,7 @@
 - [Input Field - Checkmark](#input-field---radio)
 - [Select Field - Single](#select-field---single)
 - [Select Field - Multiple](#select-field---multiple)
-- [Table](
+- [Table](#table)
 - [Submit Button](#submit-button)
 - [Container Element](#container-element)
 - [!DOCTYPE](#doctype)
@@ -390,7 +390,8 @@ Just like radio buttons, we can wrap each element within it's own `label`.
 </label>
 ```
 ⚠️ If you omit the `value` attribute, the submitted form data uses the default value, which is `on`
-⚠️ Attributes that are added to radio buttons apply here too for checkboxes, such as `value` , `checked`, `name` , `id`, `for` etc
+⚠️ Attributes that are added to radio buttons apply here too for checkboxes, such as `value` , `checked`, `name` , `id`, `for` etc  
+
 [🔝](#table-of-contents)  
 
 ### Select Field - Single
@@ -471,7 +472,8 @@ Simply add `multiple` attribute at the end of `select` tag to be able to select 
     </tr>
   </tbody>
 </table>
-```
+```  
+[🔝](#table-of-contents)  
 
 ### Submit Button
 
