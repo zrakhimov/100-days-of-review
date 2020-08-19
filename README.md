@@ -27,6 +27,9 @@
 - [Input Field - Text](#input-field---text)
 - [Input Field - Radio](#input-field---radio)
 - [Input Field - Checkmark](#input-field---radio)
+- [Select Field - Single](#select-field---single)
+- [Select Field - Multiple](#select-field---multiple)
+- [Table](
 - [Submit Button](#submit-button)
 - [Container Element](#container-element)
 - [!DOCTYPE](#doctype)
@@ -390,6 +393,85 @@ Just like radio buttons, we can wrap each element within it's own `label`.
 ⚠️ Attributes that are added to radio buttons apply here too for checkboxes, such as `value` , `checked`, `name` , `id`, `for` etc
 [🔝](#table-of-contents)  
 
+### Select Field - Single
+
+`<select>` tag is used to create a dropdown and multiple selection list in a form  
+`<option>` tag is used within `<select>` for individual list item
+
+```html
+<label for="dropwdown_id"> Options: </label>
+<select name="dropdown_name">
+ <option value="option1">Option 1</option>
+ <option value="option2">Option 2</option>
+ <option value="option3">Option 3</option>
+</select>
+```
+
+⚠️ The `name` attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the drop-down list will be submitted).
+⚠️ The `id` attribute is needed to associate the drop-down list with a label.  
+
+[🔝](#table-of-contents)   
+
+### Select Field - Multiple
+
+Simply add `multiple` attribute at the end of `select` tag to be able to select multiple options
+
+```html
+ <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
+```  
+
+[🔝](#table-of-contents)   
+
+### Table
+
+* The `<table>` tag defines an HTML table.
+
+* Includes `<thead>` which is the header part of the table and `<tbody>` where the rows of data will be displayed
+
+* Each table row is defined with a `<tr>` tag. Each table header is defined with a `<th>` tag. Each table data/cell is defined with a `<td>` tag.
+
+* By default, the text in `<th>` elements are bold and centered.
+
+* By default, the text in `<td>` elements are regular and left-aligned.
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+```
 
 ### Submit Button
 
