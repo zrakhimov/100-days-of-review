@@ -23,11 +23,11 @@
 - [Links](#links-1)
 - [Unordered List](#unordered-list)
 - [Ordered LIst](#ordered-list)
-- [Input Field - Text](#input-field---text)
 - [Form Element](#form-element)
-- [Submit Button](#submit-button)
+- [Input Field - Text](#input-field---text)
 - [Input Field - Radio](#input-field---radio)
 - [Input Field - Checkmark](#input-field---radio)
+- [Submit Button](#submit-button)
 - [Container Element](#container-element)
 - [!DOCTYPE](#doctype)
 - [Head and Body](#head-and-body)  
@@ -222,6 +222,7 @@ Becomes
 > ![photo of a cat](https://bit.ly/fcc-relaxing-cat)
 
 [🔝](#table-of-contents)
+
 ### Links
 
 To link to another page from the current page we use an _anchor_ tag `<a></a>`. It has an _attribute_ `href` where we need to put the link to the page
@@ -251,8 +252,10 @@ To turn an Image into a Link, wrap an `a`nchor tag around `img` tag as shown bel
 ```
 Becomes:
 
-> ![Three kittens running towards the camera](https://bit.ly/fcc-running-cats)
-[🔝](#table-of-contents)
+> ![Three kittens running towards the camera](https://bit.ly/fcc-running-cats)  
+
+[🔝](#table-of-contents)  
+
 ### Unordered List
 
 Unordered lists start with `<ul>` and within this tag, has all the line items inside `<li>` tag. Finally close the `</ul>` tag
@@ -277,6 +280,16 @@ Ordered lists start with `<ol>` and within this tag, has all the line items insi
 </ol>
 ```
 [🔝](#table-of-contents)
+
+### Form Element
+
+`<form></form>` element let's you submit data to a server. You just have to specify `action` attribute to the location you want to submit that data. 
+
+```html
+<form action="/url-where-you-want-to-submit-data">
+</form>
+```
+
 ### Input Field - Text
 
 `input` elements are a convenient way to get input from the user.  
@@ -298,23 +311,8 @@ To create an input text field, use `<input>` self closing tag with attribute `ty
 ```html
 <input type="text" placeholder="Enter your name here" required>
 ```
-[🔝](#table-of-contents)
-### Form Element
+[🔝](#table-of-contents)  
 
-`<form></form>` element let's you submit data to a server. You just have to specify `action` attribute to the location you want to submit that data. 
-
-```html
-<form action="/url-where-you-want-to-submit-data">
-</form>
-```
-### Submit Button
-
-Usually you want to have a button at the end of your form to submit it to the server. You can do that by creating the `button` element with `type="submit"`
-
-```html
-<button type="submit">Submit</button>
-```
-[🔝](#table-of-contents)
 ### Input Field - Radio
 
 You can use radio buttons where you want the user to select __only one option__ from pre-defined list. Radio buttons are a type of `input`.
@@ -365,8 +363,10 @@ You can use radio buttons where you want the user to select __only one option__ 
 ```
 
 ⚠️ If you omit the `value` attribute, the submitted form data uses the default value, which is `on`
-⚠️ Radio buttons are __inline__ elements, so they stack up horizontally. You may want to include <br> after each checkbox or radio button
+⚠️ Radio buttons are __inline__ elements, so they stack up horizontally. You may want to include <br> after each checkbox or radio button  
+
 [🔝](#table-of-contents)
+
 ### Input Field - Checkbox
 
 Checkboxes are used when you want the user to choose __multiple__ options from pre-defined list.
@@ -388,14 +388,27 @@ Just like radio buttons, we can wrap each element within it's own `label`.
 ```
 ⚠️ If you omit the `value` attribute, the submitted form data uses the default value, which is `on`
 ⚠️ Attributes that are added to radio buttons apply here too for checkboxes, such as `value` , `checked`, `name` , `id`, `for` etc
+[🔝](#table-of-contents)  
+
+
+### Submit Button
+
+Usually you want to have a button at the end of your form to submit it to the server. You can do that by creating the `button` element with `type="submit"`
+
+```html
+<button type="submit">Submit</button>
+```
 [🔝](#table-of-contents)
+
+
 ### Container Element
 
 The `div` element, also known as a division element, is a general purpose container for other elements.
 
-The `div`element is probably the most commonly used HTML element of all.
+The `div`element is probably the most commonly used HTML element of all.  
 
-[🔝](#table-of-contents)
+[🔝](#table-of-contents)  
+
 ### DOCTYPE
 
 `<!DOCTYPE html>` is placed first thing in the html document. This will let the browser that is rendering this html know that HTML5 should be used . Most major browsers support the latest specification, which is HTML5. However, older web pages may use previous version of the language
@@ -408,8 +421,9 @@ All the html code should be within `<html>` tags
  <!-- Your code here -->
 </html>
 ```
-[🔝](#table-of-contents)
-### Head and Body
+[🔝](#table-of-contents)  
+
+### Head and Body 
 
 `<head>` and `<body>` must be also present within `<html>` tags.  
 `<head>` - contains all information about the page  
