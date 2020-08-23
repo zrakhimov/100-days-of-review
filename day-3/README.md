@@ -4,14 +4,14 @@
 
 Topics:
 
-* []
+* [CSS Intro](#css-intro)
 
 
 ### CSS Intro
 
 * CSS - Cascading Style Sheets  
 
-* ⚠️ Case Sensitive
+* ⚠️ Case Sensitive  
 
 CSS allows to control major styling of your page:
 * color
@@ -56,8 +56,17 @@ There are 3 ways to include CSS code:
   <!-- ......... -->
 ```
 ```css
-// global.css
 h1 {
   color: red
 }
 ```
+
+### Change Color Of Text
+
+This can be done by changing `style` of the element and using property  `color` as shown below:
+
+```html
+<h1 style="color: red;">Hello World</h1>  
+```
+
+⚠️ Should end with `;`
