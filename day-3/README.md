@@ -131,6 +131,52 @@ Classes allows you to use the same style to all elements that are part of that c
     <!-- ...... -->
 ```  
 
-`h1` and `p` on the above example will have `red` text becuase they are part of the same class
+`h1` and `p` on the above example will have `red` text becuase they are part of the same class  
 
+[🔝](#day-3---css3)  
 
+### Font-Size
+
+Font size is controlled by `font-size` property and values can be given in `px` (pixels)
+
+```html
+<style>
+    h1 {
+        font-size: 30px;
+    }
+</style>
+```  
+[🔝](#day-3---css3)  
+
+### Font-Family
+
+To choose which font a text should use, we should specify `font-family` property.
+
+```html
+<style>
+    h1 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+```  
+⚠️ It is possible to give multiple fonts in case the first one is not present on user's machine. So always include "web safe" fonts as the last option since it will most likely be present on user's machien.  
+
+[🔝](#day-3---css3)  
+
+### Import Google Font
+
+Google Fonts has a free library of fonts we can use in our web page. Here's the code how to do this:
+* Include a reference to the web api on google's server
+```html
+<!-- We want to get a font named "Roboto" -->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+```
+
+* Place the above link within `<head>` tags. Now `Roboto` font is available for us to use in our CSS.
+
+```css
+font-family: FAMILY_NAME, GENERIC_NAME
+```
+* FAMILY_NAME will render our `Roboto` font. GENERIC_NAME is a fall back font in case `Roboto` doesn't render  
+
+[🔝](#day-3---css3)  
