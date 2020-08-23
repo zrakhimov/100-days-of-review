@@ -35,7 +35,7 @@
 - [!DOCTYPE](#doctype)
 - [Head and Body](#head-and-body)  
 
-[Day 3 - CSS](#day-3---css)
+[Day 3 - CSS](link here later)
 
 ## Day 1 - Markup basics
 
@@ -401,7 +401,7 @@ Just like radio buttons, we can wrap each element within it's own `label`.
 
 ```html
 <label for="dropwdown_id"> Options: </label>
-<select name="dropdown_name">
+<select id="dropdown_id" name="dropdown_name">
  <option value="option1">Option 1</option>
  <option value="option2">Option 2</option>
  <option value="option3">Option 3</option>
@@ -529,6 +529,6 @@ Overall, the boilerplate for html document take the form:
 </html>
 ```
 [🔝](#table-of-contents)
-## Day 3 - CSS
+
 
 
