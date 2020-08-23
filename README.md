@@ -35,7 +35,7 @@
 - [!DOCTYPE](#doctype)
 - [Head and Body](#head-and-body)  
 
-[Day 3 - CSS](link here later)
+[Day 3 - CSS](day-3/README.md)
 
 ## Day 1 - Markup basics
 
