@@ -179,4 +179,25 @@ font-family: FAMILY_NAME, GENERIC_NAME
 ```
 * FAMILY_NAME will render our `Roboto` font. GENERIC_NAME is a fall back font in case `Roboto` doesn't render  
 
+
+
+
+### Change Image Size
+
+CSS has a `width` property which controls element's width. We can specify it in `px` (pixels)
+
+```html
+<style>
+  .large-image {
+    width: 500px;
+  }
+</style>
+<!-- ......... -->
+
+<img class="large-image" src="image.jpg">
+
+<!-- .......... -->
+```
+
 [🔝](#day-3---css3)   
+
