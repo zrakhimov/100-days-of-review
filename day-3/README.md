@@ -201,3 +201,31 @@ CSS has a `width` property which controls element's width. We can specify it in 
 
 [🔝](#day-3---css3)   
 
+
+### Add Borders
+
+CSS borders have properties like
+* `border-style` -> values can be `dotted`, `solid`, `double`, `dashed`
+* `border-width` -> values can be specified in `px`
+* `border-color` -> values can be any colour, RGB or hex
+* `border-radius`-> values can be specified in `px` or `%`
+
+```html
+<style>
+  .thin-red-border {
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%; // makes it round
+  }
+</style>
+
+<!-- ......... -->
+
+<img class="thin-red-border" src="image.jpg">
+
+<!-- .......... -->
+```
+```
+
+
