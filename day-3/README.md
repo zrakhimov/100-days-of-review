@@ -114,4 +114,23 @@ Besides elements, you can pick and choose a class to style. Whichever element th
 
 [🔝](#day-3---css3)  
 
-###
+### Style Multiple Elements With CSS Class
+
+Classes allows you to use the same style to all elements that are part of that class
+
+```html
+```html
+<style>
+   .red-text {
+        color: red;
+    }
+</style>
+<body>
+    <h1 class="red-text">Hello World</h1>
+    <p class="red-text">Lorem Ipsum...</p>
+    <!-- ...... -->
+```  
+
+`h1` and `p` on the above example will have `red` text becuase they are part of the same class
+
+
