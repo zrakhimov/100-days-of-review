@@ -115,6 +115,8 @@ Since we want to style `<h1>` element, we would specify an element in this forma
 </style>
 ```
 
+![](selector.png)
+
 ⚠️  After choosing a selector to style, we should use `{` , `}` and include all the properties we would like to enter by ending each one with `;`  
 
 [🔝](#day-3---css3)  
@@ -172,6 +174,8 @@ Font size is controlled by `font-size` property and values can be given in `px` 
 [🔝](#day-3---css3)  
 
 ### Font-Family
+
+![](fonts.png)  
 
 To choose which font a text should use, we should specify `font-family` property.
 
@@ -310,6 +314,8 @@ You can also style it using id in CSS
 
 
  ### `padding`
+ 
+ ![](box_model.png)
  
  CSS allows you to control the padding of all four individual sides of an element:
  * padding-top
