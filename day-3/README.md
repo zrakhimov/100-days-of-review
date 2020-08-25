@@ -46,7 +46,7 @@ CSS allows to control major styling of your page:
 
 There are 3 ways to include CSS code:
 
-![types of css](types_of_css.png =250x)
+<img src="types_of_css.png" alt="types of css" width="250"/>
 
 1. *Inline* using `style` attribute in html file
 ```html
