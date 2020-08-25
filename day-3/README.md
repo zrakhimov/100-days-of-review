@@ -570,11 +570,57 @@ So when you absolutely need to be sure that an element has specific CSS, you can
 <h1 style="color: green" id="orange-text" class="pink-text blue-text">Hello World!</h1>
 ```
 
-Now `h1` will be orange because `!important` will override all.
+Now `h1` will be orange because `!important` will override all.  
 
-
+[🔝](#day-3---css3)   
 
  
+### HEX and RGB colours
+
+So far we've seen to set the colours using `color: black` or `color: white` and so on. We can also use a specific colors using `hex` and `rgb` notations
+
+* HEX:
+    * We usually use decimals, or base 10 numbers, which use the symbols 0 to 9 for each digit. Hexadecimals (or hex) are base 16 numbers. This means it uses sixteen distinct symbols. Like decimals, the symbols 0-9 represent the values zero to nine. Then A,B,C,D,E,F represent the values ten to fifteen. Altogether, 0 to F can represent a digit in hexadecimal, giving us 16 total possible values
+    * In CSS, we can use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B) components. For example, #000000 is black and is also the lowest possible value. 
+    ``` css
+        color: #000000
+    ```
+    * First 2 digits is for range of the `red`, second 2 digits is for `green`, last 2 digits is for `blue`: range is 0 to F
+* RGB:
+    * Just like hex, we can use `rgb` notation where we can give values from 0 to 255 for each red, green or blue
+    ```html
+    body {
+      background-color: rgb(255, 165, 0);
+    }
+    ```
+
+### CSS Variables
+
+Sometimes when you have a certain colour you use a lot and suddenly you decide to change it, you'd have to go through every element where you used that specific colour to edit it. You can use CSS variables to make your life easier by just changing the variables value.
+This is how you declare and use a variable.
+
+```html
+<style>
+    body {
+        --my-favourite-color: purple;
+    }
+    h1 {
+        color: var(--my-favourite-color);
+    }
+    .some-class {
+        background-color: var(--my-favourite-color);
+    }
+<style>
+```
+
+When declared, use `--` in front of the property and give it a `value` after `:`. 
+When it's time to use it, select a property and use `var(--variable-name-here, fallback)` notation.
+
+⚠️ You can also provide `fallback value` after `,` in case variable doesn't exist or something goes wrong in the browser.
+
+
+
+
 
 
 
