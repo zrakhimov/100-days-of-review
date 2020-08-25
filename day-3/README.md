@@ -225,11 +225,356 @@ CSS borders have properties like
 <img class="thin-red-border" src="image.jpg">
 
 <!-- .......... -->
-```
+```  
+
+[🔝](#day-3---css3)  
 
 ### Background Colour
 
-    
+You can set element's background colour by using `background-color` property.
+
+```html
+
+<style>
+    .colorful-background {
+        background-color: red;
+    }
+</style>
+
+<!-- ......... -->
+
+<div class="colorful-background">
+
+<!-- .......... -->
+```
+
+### Set an ID for an element
+
+In addition to classes, each HTML element can also have an id attribute.  
+
+There are several benefits to using id attributes: You can use an id to style a single element and later you'll learn that you can use them to select and modify specific elements with JavaScript.  
+
+id attributes should be **unique**. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same id attribute.  
+
+```html
+<h2 id="hello">Hello World!</h2>
+```
+  
+[🔝](#day-3---css3)   
+
+### Style using `id` attribute
+
+You can also style it using id in CSS 
+
+```html
+<style>
+   #hello {
+      background-color: green   
+   }
+   
+</style>
+
+<!-- ......... -->
+
+<h2 id="hello" class="header2">Hello World!</h2>
+
+<!-- ......... -->   
+```
+  
+⚠️ Note that inside your style element, you always reference classes by putting a . in front of their names. You always reference ids by putting a # in front of their names.
+
+[🔝](#day-3---css3)  
+
+
+ ### `padding`
+ 
+ CSS allows you to control the padding of all four individual sides of an element:
+ * padding-top
+ * padding-right
+ * padding-bottom
+ * padding-left
+ 
+ It's value is denoted by `px`  
+ 
+```html
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
+```  
+ [🔝](#day-3---css3)    
+ 
+ 
+ ### `margin`
+ 
+ An element's margin controls the amount of space between an element's border and surrounding elements.    
+ 
+ When you increase the blue box's margin, it will increase the distance between its border and surrounding elements.  
+ 
+```html
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box blue-box">padding</h5>
+</div>
+
+```
+
+### Clockwise notation
+
+Instead of giving values to properties like `padding-left` or `margin-top`, `padding` and `margin` supports clockwise notation for values. For example:
+
+```html
+
+`padding: 0px 10px 0px 10px`
+
+```
+
+The above code is same as saying: 
+
+```html
+padding-top: 0px;
+padding-right: 10px;
+padding-bottom: 0px;
+padding-left: 10px;
+```
+Same can be applied to `margin`  
+
+[🔝](#day-3---css3)    
+
+### Attribute Selectors To Style
+
+So far, we've seen how to style elements using it's `id` and `class` attributes. You also can use other element attributes to style their elements:
+For example, if we have an `input` element with `type="radio"`, we can use `type="radio"` attribute to style it
+
+```html
+
+[type='ratio'] {
+    margin: 20px 20px 20px 20px
+}
+
+```  
+[🔝](#day-3---css3)   
+
+### Absolute vs Relative
+
+So far we've seen giving values in `px` which is a pixel length. There are other measurement units such as `mm` for millimeter or `in` for inch.  
+
+There are 2 types of length units:
+
+    * Absolute - approximate the actual measurement on a screen, but there are some differences depending on a screen's resolution.
+        * `px`
+        * `mm`
+        * `in`
+    * Relative - relative to another length value
+        * `em` - For example, em is based on the size of an element's font. If you use it to set the `font-size` property itself, it's relative to the parent's font-size
+        * `rem`
+        
+### Inheritance, Overriding and Priority
+
+* Every  `html` page will have a `body` element. Which means you can still style the whole page by using `body` as the selector
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+</style>
+<h1>Hello World!</h1>
+```
+Example above, all text in the html will be green. But we can still override this by setting all `h1` to colour `pink`
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text{
+    color: pink;
+  }
+</style>
+<h1 class="pink-text">Hello World!</h1>
+```
+
+This will _override_ `body` element's colour  
+
+* OK, but what happens if the element has 2 classes ? Example below
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }  
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
+```
+The text will be blue because .blue-text came after .pink-text and it takes precedence. So in CSS it's executed from top to bottom.  
+
+
+* OK, but what happens when we give `<h1>` an ID and style the color as `orange`. What colour `<h1` will be? Example below
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }  
+  
+  
+</style>
+<h1 id="orange-text" class="pink-text blue-text">Hello World!</h1>
+```
+
+The colour will be `orange`, because, `id` takes higher precedence than `class`, no matter where you put the selector. 
+
+* OK, how about if we give an `inline` style to an element? What colour our `h1` will be? Example below
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }  
+</style>
+
+<h1 style="color: green" id="orange-text" class="pink-text blue-text">Hello World!</h1>
+```
+
+The colour will be `green` because `inline style` has more priority than `id` or `class`
+
+We just proved that inline styles will override all the CSS declarations in your style element.  But wait. There's one last way to override CSS. This is the most powerful method of all
+
+```html
+!important
+```
+
+So when you absolutely need to be sure that an element has specific CSS, you can use `!important`
+
+```html
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }  
+</style>
+
+<h1 style="color: green" id="orange-text" class="pink-text blue-text">Hello World!</h1>
+```
+
+Now `h1` will be orange because `!important` will override all.
+
+
+
+ 
 
 
 
