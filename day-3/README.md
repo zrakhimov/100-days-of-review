@@ -5,6 +5,27 @@
 Topics:
 
 * [CSS Intro](#css-intro)
+* [Change Color Of Text](#change-color-of-text)
+* [CSS Element Selectors](#css-element-selectors)
+* [CSS Class Selector](#css-class-selectors)
+* [Style Multiple Elements With CSS Class](#style-multiple-elements-with-css-class)
+* [Font-Size](#font-size)
+* [Font-Family](#font-family)
+* [Import Google Font](#import-google-font)
+* [Change Image Size](#change-image-size)
+* [Add Borders](#add-borders)
+* [Background Colour](#background-colour)
+* [Set an ID for an element](#set-an-id-for-an-element)
+* [Style using id attribute](#style-using-id-attribute)
+* [padding](#padding)
+* [margin](#margin)
+* [Clockwise notation](#clockwise-notation)
+* [Attribute Selectors To Style](#attribute-selectors-to-style)
+* [Absolute vs Relative](#absolute-vs-relative)
+* [Inheritance, Overriding and Priority](#)
+* [Inheritance, Overriding and Priority](#inheritance-overriding-and-priority)
+* [HEX and RGB colours](#hex-and-rgb-colours)
+* [CSS Variables](#css-variables)
 
 
 ### CSS Intro
@@ -24,6 +45,8 @@ CSS allows to control major styling of your page:
 * and more
 
 There are 3 ways to include CSS code:
+
+[!alt](#types_of_css.png)
 
 1. *Inline* using `style` attribute in html file
 ```html
