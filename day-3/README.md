@@ -616,10 +616,9 @@ This is how you declare and use a variable.
 When declared, use `--` in front of the property and give it a `value` after `:`. 
 When it's time to use it, select a property and use `var(--variable-name-here, fallback)` notation.
 
-⚠️ You can also provide `fallback value` after `,` in case variable doesn't exist or something goes wrong in the browser.
+⚠️ You can also provide `fallback value` after `,` in case variable doesn't exist or something goes wrong in the browser.  
 
-
-
+[🔝](#day-3---css3)   
 
 
 
