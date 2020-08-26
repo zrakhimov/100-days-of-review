@@ -458,13 +458,13 @@ So far we've seen giving values in `px` which is a pixel length. There are other
 
 There are 2 types of length units:
 
-    * Absolute - approximate the actual measurement on a screen, but there are some differences depending on a screen's resolution.
-        * `px`
-        * `mm`
-        * `in`
-    * Relative - relative to another length value
-        * `em` - For example, em is based on the size of an element's font. If you use it to set the `font-size` property itself, it's relative to the parent's font-size
-        * `rem`
+* Absolute - approximate the actual measurement on a screen, but there are some differences depending on a screen's resolution.
+    * `px`
+    * `mm`
+    * `in`
+* Relative - relative to another length value
+    * `em` - For example, em is based on the size of an element's font. If you use it to set the `font-size` property itself, it's relative to the parent's font-size
+    * `rem`
         
 ### Inheritance, Overriding and Priority
 
