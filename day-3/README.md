@@ -445,7 +445,7 @@ For example, if we have an `input` element with `type="radio"`, we can use `type
 
 ```html
 
-[type='ratio'] {
+[type='radio'] {
     margin: 20px 20px 20px 20px
 }
 
