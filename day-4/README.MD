@@ -7,8 +7,8 @@ However, these notes provide what tools developers use to create their own visua
 [Align Text](#text-align)  
 [Element Width](#width)  
 [Element Height](#height)  
-[<strong> vs font-weigth:bold](#strong-vs-font-weight-bold)  
-[<u></u> vs text-decoration: underline;](##uu-vs-text-decoration-underline)  
+[`<strong>` vs `font-weigth:bold`](#strong-vs-font-weight-bold)  
+[`<u></u>` vs `text-decoration: underline;`](##uu-vs-text-decoration-underline)  
 
 
 ### `text-align`
