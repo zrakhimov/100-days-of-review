@@ -5,6 +5,27 @@
 Topics:
 
 * [CSS Intro](#css-intro)
+* [Change Color Of Text](#change-color-of-text)
+* [CSS Element Selectors](#css-element-selectors)
+* [CSS Class Selector](#css-class-selectors)
+* [Style Multiple Elements With CSS Class](#style-multiple-elements-with-css-class)
+* [Font-Size](#font-size)
+* [Font-Family](#font-family)
+* [Import Google Font](#import-google-font)
+* [Change Image Size](#change-image-size)
+* [Add Borders](#add-borders)
+* [Background Colour](#background-colour)
+* [Set an ID for an element](#set-an-id-for-an-element)
+* [Style using id attribute](#style-using-id-attribute)
+* [padding](#padding)
+* [margin](#margin)
+* [Clockwise notation](#clockwise-notation)
+* [Attribute Selectors To Style](#attribute-selectors-to-style)
+* [Absolute vs Relative](#absolute-vs-relative)
+* [Inheritance, Overriding and Priority](#)
+* [Inheritance, Overriding and Priority](#inheritance-overriding-and-priority)
+* [HEX and RGB colours](#hex-and-rgb-colours)
+* [CSS Variables](#css-variables)
 
 
 ### CSS Intro
@@ -24,6 +45,8 @@ CSS allows to control major styling of your page:
 * and more
 
 There are 3 ways to include CSS code:
+
+<img src="types_of_css.png" alt="types of css" width="500"/>
 
 1. *Inline* using `style` attribute in html file
 ```html
@@ -92,6 +115,8 @@ Since we want to style `<h1>` element, we would specify an element in this forma
 </style>
 ```
 
+![](selector.png)
+
 ⚠️  After choosing a selector to style, we should use `{` , `}` and include all the properties we would like to enter by ending each one with `;`  
 
 [🔝](#day-3---css3)  
@@ -149,6 +174,8 @@ Font size is controlled by `font-size` property and values can be given in `px` 
 [🔝](#day-3---css3)  
 
 ### Font-Family
+
+![](fonts.png)  
 
 To choose which font a text should use, we should specify `font-family` property.
 
@@ -288,6 +315,8 @@ You can also style it using id in CSS
 
  ### `padding`
  
+ ![](box_model.png)
+ 
  CSS allows you to control the padding of all four individual sides of an element:
  * padding-top
  * padding-right
@@ -416,7 +445,7 @@ For example, if we have an `input` element with `type="radio"`, we can use `type
 
 ```html
 
-[type='ratio'] {
+[type='radio'] {
     margin: 20px 20px 20px 20px
 }
 
@@ -429,13 +458,13 @@ So far we've seen giving values in `px` which is a pixel length. There are other
 
 There are 2 types of length units:
 
-    * Absolute - approximate the actual measurement on a screen, but there are some differences depending on a screen's resolution.
-        * `px`
-        * `mm`
-        * `in`
-    * Relative - relative to another length value
-        * `em` - For example, em is based on the size of an element's font. If you use it to set the `font-size` property itself, it's relative to the parent's font-size
-        * `rem`
+* Absolute - approximate the actual measurement on a screen, but there are some differences depending on a screen's resolution.
+    * `px`
+    * `mm`
+    * `in`
+* Relative - relative to another length value
+    * `em` - For example, em is based on the size of an element's font. If you use it to set the `font-size` property itself, it's relative to the parent's font-size
+    * `rem`
         
 ### Inheritance, Overriding and Priority
 
