@@ -81,7 +81,8 @@ HTML5 `<strong>` - is often used to draw attention and happened to have `font-we
 ```
 
 Becomes
->   <p>Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at <strong>Stanford University.</strong></p>
+>   <p>Google was founded by Larry Page and Sergey Brin while they   
+>   were Ph.D. students at <strong>Stanford University.</strong></p>
 
   
 [🔝](#toc)  
@@ -91,17 +92,16 @@ Becomes
 To underline text, you can use the u tag. This is often used to signify that a section of text is important, or something to remember. With the u tag, the browser applies the CSS of text-decoration: underline; to the element.  
 
 ```html
- <p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p>
+ <p>Google was founded by Larry Page and Sergey Brin while they were   
+ <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p>
 ```
-Becomes: 
-
->  <p>Google was founded by Larry Page and Sergey Brin while they were <u>Ph.D. students</u> at <strong>Stanford University</strong>.</p>
-
 :warning: Try to avoid using the u tag when it could be confused for a link. Anchor tags also have a default underlined formatting.
   
 [🔝](#toc)  
   
 ### `<em></em>`  
+
+
   
 [🔝](#toc)  
   
