@@ -6,12 +6,50 @@ However, these notes provide what tools developers use to create their own visua
 ToC
 
 ### `text-align`
+
+Text is a large part of a web page. CSS provides several options to _align_ the text.
+
+  
+[🔝](#toc)  
+  
+
 ### `width`
+  
+[🔝](#toc)  
+  
 ### `height`
+  
+[🔝](#toc)  
+  
 ### `strong`
+  
+[🔝](#toc)  
+  
 ### `<u></u>`
-### `<em></em>`
+  
+[🔝](#toc)  
+  
+### `<em></em>`  
+  
+[🔝](#toc)  
+  
 ### `<s>`
+
+  
+[🔝](#toc)  
+  
 ### `<hr>`
+
+  
+[🔝](#toc)  
+  
 ### `background-color` with `rgba()`
+
+  
+[🔝](#toc)  
+  
 ### `font-size` of `<h>` elements
+
+  
+[🔝](#toc)  
+  
