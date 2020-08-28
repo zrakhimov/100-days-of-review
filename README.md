@@ -35,8 +35,8 @@
 - [!DOCTYPE](#doctype)
 - [Head and Body](#head-and-body)  
 
-[Day 3 - CSS Basics](day-3/README.md)
-[Day 4 - Visual Design - Part 1](day-4/README.md)
+[Day 3 - CSS Basics](day-3/README.md)  
+[Day 4 - Visual Design - Part 1](day-4/README.MD)
 
 ## Day 1 - Markup basics
 
