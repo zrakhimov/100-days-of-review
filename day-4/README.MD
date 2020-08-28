@@ -72,7 +72,7 @@ Same units apply:
   
 ### `<strong>` vs `font-weight: bold`  
 
-HTML represents meaning; CSS represents appearance. How you mark up text in a document is not determined by how that text appears on screen, but simply what it means. As another example, some other HTML elements, like headings, are styled font-weight: bold by default, but they are marked up using <h1>–<h6>, not <strong> or <b>  
+HTML represents meaning; CSS represents appearance. How you mark up text in a document is not determined by how that text appears on screen, but simply what it means. As another example, some other HTML elements, like headings, are styled font-weight: bold by default, but they are marked up using `<h1>–<h6>`, not `<strong>` or `<b>`  
   
 HTML5 `<strong>` - is often used to draw attention and happened to have `font-weight: bold` by default. You can achieve the same result by doing `<b>`, but it's often discouraged.
 
