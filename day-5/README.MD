@@ -73,7 +73,7 @@ h4 {
 
 ### `font-size` & `<h1...h6> tags`
 
-We use `font-size` to adjust the size of a text. Also <h1> to <h6> elements are given `font-size` defaults depending on <h> element by default. See the chart below
+We use `font-size` to adjust the size of a text. Also `<h1>` to `<h6>` elements are given `font-size` defaults depending on `<h>` element by default. See the chart below
   
 ![alt text](h1h6.png =250px)
   
