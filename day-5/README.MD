@@ -1,11 +1,11 @@
 # Visual Design with CSS - P2
 
 ## ToC
-* [Italicize Text](#) 
-* [Strikethrough](#)
-* [Horizontal Line](#)
-* [Background Color](#)
-* [Font Size](#)
+* [Italicize Text](#font-style-italic---italicize-text) 
+* [Strikethrough](#text-decoration-line-through--s---strikethrough-text)
+* [Horizontal Line](#hr---horizontal-line)
+* [Background Color](#background-color-rgba)
+* [Font Size](#font-size--h1h6-tags)
 
 ### `font-style: italic` - Italicize Text
 
