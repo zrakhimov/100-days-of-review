@@ -24,7 +24,7 @@ Becomes:
   
 ### `text-decoration: line-through` & `<s>` - Strikethrough Text
 
-When <s> is used, browser will apply `text-decoration: line-through` to an element.
+When `<s>` is used, browser will apply `text-decoration: line-through` to an element.
   
 ```html
 <h4> <s>Google</s> Alphabet</h4>
