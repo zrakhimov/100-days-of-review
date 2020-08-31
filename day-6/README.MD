@@ -73,10 +73,6 @@ a:hover {
 
 [🔝](#toc)  
 
-### `font-size` vs `<h> tags`
-
-  
-[🔝](#toc)  
   
   
   
