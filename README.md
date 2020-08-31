@@ -37,8 +37,8 @@
 
 [Day 3 - CSS Basics](day-3/README.md)  
 [Day 4 - Visual Design - Part 1](day-4/README.MD)  
-[Day 5 - Visual Design - Part 2](day-5/README.MD) 
-[Day 6 - Visual Design - Part 3](day-6/README.MD)
+[Day 5 - Visual Design - Part 2](day-5/README.MD)   
+[Day 6 - Visual Design - Part 3](day-6/README.MD)  
 
 ## Day 1 - Markup basics
 
