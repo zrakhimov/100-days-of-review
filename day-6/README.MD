@@ -1,38 +1,46 @@
-# Visual Design with CSS - P2
+# Visual Design with CSS - P3
 
 ## ToC
-* [Italicize Text](#) 
+* [Box Shadow](#) 
 * [Strikethrough](#)
 * [Horizontal Line](#)
 * [Background Color](#)
 * [Font Size](#)
 
-### `font-style: italic` - Italicize Text
+### Box Shadow
 
-To italicize text - use `font-style` property with value `italic`. There are other values as well:
+`box-shadow` property adds one or more shadows to an element.
+
+Following `:` takes the values
+* `offset-x` - [+10px , shadow moves right horizontally]  
+             - [-10px, shadow moves left horizontally]  
+* `offset-y` - [+10px, shadow moves down vertically]  
+             - [-10px, shadow moves up vertically]
+* `blur-radius` - [OPTIONAL] 
+* `spread-radius` - [OPTIONAL]
+* `color` - best with `rgba()`
+* use `,` to give multiple shadows
 
 ```css
-p {
-  font-style: italic;
+.fullCard {
+  box-shadow: 0 20px 20px rgba (0,0,0, 0.5), 0 6px 6px rgba(0,0,0,0.23);
 }
 ```
-Becomes:
 
-> *Hello World*
-  
+
 [🔝](#toc)  
   
-### `text-decoration: line-through` - Strikethrough Text
+### 
 
   
 [🔝](#toc)  
 
-### `<hr>` - Horizontal Line
+### 
 
   
 [🔝](#toc)  
 
-### `background-color: rgba()`
+### 
 
   
 [🔝](#toc)  
