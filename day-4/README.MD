@@ -1,3 +1,5 @@
+[Go to ToC](../README.md)
+
 # Visual Design with CSS - P1
 
 Visual Design in web development includes typography, color theory, graphics, animation and layout.
