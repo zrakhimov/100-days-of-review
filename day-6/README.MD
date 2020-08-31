@@ -6,6 +6,7 @@
 * [Box Shadow](#box-shadow)  
 * [Uppercase, Lowercase, Capitalize](#uppercase-lowercase-capitalize)
 * [Line Height](#line-height)
+* [Hover State](#hover-state)
 
 ### Box Shadow
 
@@ -54,12 +55,22 @@ You can change spacing between text vertically by using `line-height` property i
 p {
   line-height: 25px;
 }
+```
   
 [🔝](#toc)  
 
-### 
+### Hover State 
 
-  
+A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
+
+For example, you can style an element when you hover over it by using pseudo class selector `:hover`. 
+
+```css
+a:hover {
+  color: red;
+}
+```
+
 [🔝](#toc)  
 
 ### `font-size` vs `<h> tags`
