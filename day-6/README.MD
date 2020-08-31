@@ -4,7 +4,8 @@
 
 ## ToC
 * [Box Shadow](#box-shadow)  
-* [Uppercase](#uppercase)
+* [Uppercase, Lowercase, Capitalize](#uppercase-lowercase-capitalize)
+* [Line Height](#line-height)
 
 ### Box Shadow
 
@@ -29,7 +30,7 @@ Following `:` takes the values
 
 [🔝](#toc)  
   
-### Uppercase
+### Uppercase, Lowercase & Capitalize
 
 `text-transform` property is used to make text all uppercase, or all lowercase, or capitalize. THe following `values`  are used:
 
@@ -45,8 +46,14 @@ h4 {
   
 [🔝](#toc)  
 
-### 
+### Line Height
 
+You can change spacing between text vertically by using `line-height` property in CSS.
+
+```css
+p {
+  line-height: 25px;
+}
   
 [🔝](#toc)  
 
