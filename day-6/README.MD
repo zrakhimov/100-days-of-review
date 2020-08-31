@@ -2,10 +2,6 @@
 
 ## ToC
 * [Box Shadow](#) 
-* [Strikethrough](#)
-* [Horizontal Line](#)
-* [Background Color](#)
-* [Font Size](#)
 
 ### Box Shadow
 
