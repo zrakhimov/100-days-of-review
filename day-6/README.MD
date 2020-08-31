@@ -1,7 +1,8 @@
 # Visual Design with CSS - P3
 
 ## ToC
-* [Box Shadow](#) 
+* [Box Shadow](#)  
+* [Uppercase](#)
 
 ### Box Shadow
 
@@ -26,8 +27,19 @@ Following `:` takes the values
 
 [🔝](#toc)  
   
-### 
+### Uppercase
 
+`text-transform` property is used to make text all uppercase, or all lowercase, or capitalize. THe following `values`  are used:
+
+* `lowercase` - "hello world"
+* `uppercase` - "HELLO WORLD"
+* `capitalize` - "Hello World"
+
+```css
+h4 {
+  text-transform: uppercase;
+}
+```
   
 [🔝](#toc)  
 
