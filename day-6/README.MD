@@ -1,8 +1,8 @@
 # Visual Design with CSS - P3
 
 ## ToC
-* [Box Shadow](#)  
-* [Uppercase](#)
+* [Box Shadow](#box-shadow)  
+* [Uppercase](#uppercase)
 
 ### Box Shadow
 
