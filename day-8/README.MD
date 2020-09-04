@@ -1,6 +1,6 @@
 [Go to ToC](../README.md)
 
-# Visual Design with CSS - P5
+# Responsive Web Design
 
 ## ToC
 * [Center Element Horizontally](#)
