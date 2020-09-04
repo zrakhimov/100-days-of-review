@@ -109,25 +109,6 @@ They are like `%` - but relative to viewport of the device, instead of container
   
 [🔝](#toc)  
 
-### 
-
-
-  
-[🔝](#toc)  
-
-###
-
-
-
-
-[🔝](#toc)    
-  
-  
-### 
-
-
-[🔝](#toc)  
-
   
   
   
