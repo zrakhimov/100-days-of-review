@@ -48,7 +48,15 @@ Values are:
   
 ### Justify Content
 
-This defines the alignment along the **main** axis, through the items. 
+`justify-content:` defines the alignment along the **main** axis, through the items. 
+```css
+#box-container {
+    background: gray;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+  }
+```
 It has the following values:
 ![justify content](justify-content.png)
 
