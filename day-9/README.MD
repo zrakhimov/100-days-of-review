@@ -31,7 +31,7 @@
 * Once we declare the container as `flex`, we can align any children into *rows* and *columns* by using `flex-direction` property in **container CSS**.
 
 Values are:
-* `row` - by default
+* `row` - [DEFAULT]
 * `row-reverse` 
 * `column`
 * `column-reverse`
@@ -51,6 +51,9 @@ Values are:
 ### Justify Content
 
 `justify-content:` defines the alignment along the **main** axis, through the items. 
+* For `flex-direction: row` the **axis** is **hozirontal** 
+* For `flex-direction: column` the **axis** is **vertical**
+
 ```css
 #box-container {
     background: gray;
@@ -60,7 +63,7 @@ Values are:
   }
 ```  
 
-* `flex-start` - pushes items to the left
+* `flex-start` - pushes items to the left [DEFAULT]
 * `flex-end` - pushes items to the right
 * `space-between` - aligns items to the center with extra space in between. First and Last items are pushed to the edge of left and right respectively
 * `space-around` - similar to `space-between`, but first and last items are NOT pushed to the edge, but have some space.
@@ -73,7 +76,13 @@ Values are:
 [🔝](#toc)  
 
 ### Align Items
-
+  
+`align-items: ` defines alignment along the **cross** axis.  
+For a row, it tells CSS how to push the items in the entire row up and down  
+For a column, how to push all the items left or right within a container.
+  
+  
+  
 ![align items](align-items.png)
 
   
