@@ -1,9 +1,10 @@
-# :100: Days Of Review
- Repository contains review of forgotten stuff  
+[Go to ToC](../README.md)
+
+# Day 1 - Markdown
 
 ## Table of Contents
 
-[Day 1 - Markup basics](#day-1---markup-basics)  
+[Day 1 - Markdown basics](#day-1---markup-basics)  
 - [Headings](#headings)
 - [Links](#links)
 - [Styling](#styling)
