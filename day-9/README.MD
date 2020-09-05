@@ -90,7 +90,19 @@ For a column, how to push all the items left or right within a container.
 
 ### Flex Wrap
 
+We also can split items in a row. This means extra items move into a new row or column. 
+The break point of where the wrapping happens depends on teh size of the items and teh size of the container.
 
+```css
+#box-container {
+    background: gray;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;  
+}
+```
+
+![flex wrap](flex-wrap.png)
   
 [🔝](#toc)  
 
