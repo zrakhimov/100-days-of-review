@@ -1,9 +1,7 @@
-# :100: Days Of Review
- Repository contains review of forgotten stuff  
+[Go to ToC](../README.md)
 
-## Table of Contents
+# Day 2 - HTML
 
-[Day 2 - HTML](#day-2---html5) 
 - [Headings](#headings)
 - [Paragraph](#paragraph)
 - [Comment](#comment)
