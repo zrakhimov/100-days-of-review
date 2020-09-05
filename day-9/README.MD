@@ -74,7 +74,7 @@ Values are:
 
 ### Align Items
 
-
+![align items](align-item.png)
 
   
 [🔝](#toc)  
