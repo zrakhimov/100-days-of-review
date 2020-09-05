@@ -48,6 +48,9 @@ Values are:
   
 ### Justify Content
 
+This defines the alignment along the **main** axis, through the items. 
+It has the following values:
+![justify content](justify-content.png)
 
 
 
@@ -82,6 +85,14 @@ Values are:
   
   
 ### Flex Basis
+
+
+  
+[🔝](#toc)  
+
+  
+  
+### Align Self
 
 
   
