@@ -44,7 +44,7 @@ Values are:
 }
 ```
 
-![flex direction](flex-direction.pn =150x)
+![flex direction](flex-direction.png)
 
 [🔝](#toc)  
   
@@ -66,7 +66,7 @@ Values are:
 * `space-around` - similar to `space-between`, but first and last items are NOT pushed to the edge, but have some space.
 * `space-evenly` - distributes equal space between items.
 
-![justify content](justify-content.png)
+![justify content](justify-content.png =250x)
 
 
   
