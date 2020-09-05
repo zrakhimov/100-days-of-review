@@ -44,7 +44,7 @@ Values are:
 }
 ```
 
-![flex direction](flex-direction.pn =300x)
+![flex direction](flex-direction.pn =150x)
 
 [🔝](#toc)  
   
