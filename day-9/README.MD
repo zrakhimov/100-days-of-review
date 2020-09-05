@@ -56,10 +56,14 @@ Values are:
     height: 500px;
     justify-content: center;
   }
-```
-It has the following values:
-![justify content](justify-content.png)
+```  
 
+* `flex-start` - pushes items to the left
+* `flex-end` - pushes items to the right
+* `space-between` - aligns items to the center with extra space in between. First and Last items are pushed to the edge of left and right respectively
+* `space-around` - similar to `space-between`, but first and last items are NOT pushed to the edge, but have some space.
+![justify content](justify-content.png)
+* `space-evenly` - distributes equal space between items.
 
 
   
