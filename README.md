@@ -3,8 +3,8 @@
 
 ## Table of Contents
 
-[Day 1 - Markup basics](day-1/README.md)  
-[Day 2 - HTML](day-2/README.md)   
+[Day 1 - Markdown Basics](day-1/README.md)  
+[Day 2 - HTML5](day-2/README.md)   
 [Day 3 - CSS Basics](day-3/README.md)  
 [Day 4 - CSS [Align Text, Element Width, Element Height, Text Decoration]](day-4/README.MD)  
 [Day 5 - CSS [Italicize Text, Strikethrough, Horizontal Line, Background Color, Font Size]](day-5/README.MD)   
