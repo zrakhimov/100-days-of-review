@@ -3,15 +3,15 @@
 # CSS Flexbox
 
 ## ToC
-* [What is Flexbox Layout](#what-is-flexbox-layout)
-* [ ](#)
-* [ ](#)
-* [ ](#)
+* [Using Flexbox](#using-flexbox)
+* [Flex Direction ](#flex-direction)
+* [Justify Content](#justify-content)
+* [Align Items](#align-items)
 * [ ](#)
 * [](#)
 * [](#)
 
-### Positioning In Flex
+### Using Flexbox
 
 * Came out on October 2017, provides an efficient way to layout, align and distribute space among items in a container. 
 * To start using `flex` we declare `display: flex` inside a container
@@ -44,6 +44,8 @@ Values are:
 }
 ```
 
+![flex direction](flex-direction.png)
+
 [🔝](#toc)  
   
 ### Justify Content
@@ -71,6 +73,7 @@ Values are:
 [🔝](#toc)  
 
 ### Align Items
+
 
 
   
