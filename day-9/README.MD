@@ -108,6 +108,20 @@ The break point of where the wrapping happens depends on teh size of the items a
 
 ### Flex Shrink
 
+So far, all the properties we discussed goes to the container/parent of the items. We have few other properties that goes to the items themselves.. 
+
+First, let's see what `flex-shrink` does: Items shrink when the width of the parent container is smaller than the combined widths of all the flex items within it.
+
+It takes numbers as values (default = 1). Where `x` is how many times the item is going to shrink compared to the other item.
+
+```css
+#box-2 {
+    background-color: orangered;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 2;
+}
+```
 
 
 [🔝](#toc)    
