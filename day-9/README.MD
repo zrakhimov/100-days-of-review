@@ -231,19 +231,35 @@ It accepts numbers as values as well as negative numbers.
   
 [🔝](#toc)  
 
-  
-
-  
+ 
     
 ### Align Self
 
-It is possible to set `flex-grow`, `flex-shrink` and `flex-basis` through one line using **`flex: <grow> <shrink> <basis>`**
-
-Default: `flex: 0 1 auto`
+`align-self` property allows to align items individually, instead setting them all at once using `align-items`
+Accepts same values as `align-items`:
+* `flext-start`
+* `flex-end`
+* `center`
+* `stretch`
+* `baseline
 
 ```css
+#box-1 {
+    background-color: dodgerblue;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+  }
 
+  #box-2 {
+    background-color: orangered;
+    align-self: flex-end;
+    height: 200px;
+    width: 200px;
+  }
+```
 
+![align self pic](align-self.png)
   
 [🔝](#toc)  
 
