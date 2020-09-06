@@ -243,7 +243,7 @@ Accepts same values as `align-items`:
 * `flex-end`
 * `center`
 * `stretch`
-* `baseline
+* `baseline`
 
 ```css
 #box-1 {
