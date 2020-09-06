@@ -3,13 +3,13 @@
 # Visual Design with CSS - P4
 
 ## ToC
-* [Position](#)
-* [Relative Position](#)
-* [Absolute Position](#)
-* [Fixed Position](#)
-* [Sticky Position](#)
-* [Float](#)
-* [z-index](#)
+* [Position](#position)
+* [Relative Position](#relative-position)
+* [Absolute Position](#absolute-position)
+* [Fixed Position](#fixed-position)
+* [Sticky Position](#sticky-position)
+* [Float](#float)
+* [z-index](#z-index)
 
 ### Position
 
