@@ -7,9 +7,9 @@
 * [Flex Direction ](#flex-direction)
 * [Justify Content](#justify-content)
 * [Align Items](#align-items)
-* [ ](#)
-* [](#)
-* [](#)
+* [Flex Wrap](#flex-wrap)
+* [Flex Shrink](#flex-shrink)
+* [Flex Grow](#flex-grow)
 
 ### Using Flexbox
 
@@ -122,14 +122,33 @@ It takes numbers as values (default = 1). Where `x` is how many times the item i
     flex-shrink: 2;
 }
 ```
-
+:warning: Negative numbers are invalid
 
 [🔝](#toc)    
   
   
 ### Flex Grow
 
+`flex-grow` is the opposite of `flex-shrink`. 
 
+When the conainter expands, the items grow depending on the number we've given in `flex-grow`;
+
+It takes numbers as values (default = 0). Where `x` is how many times the item is going to expand compared to the other item.
+
+```css
+  #box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-grow: 1;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-grow: 2;
+  }
+```
+:warning: Negative numbers are invalid
   
 [🔝](#toc)  
 
@@ -137,7 +156,25 @@ It takes numbers as values (default = 1). Where `x` is how many times the item i
   
 ### Flex Basis
 
+The `flex-basis` property specifies the initial size of the item before CSS makes adjustments with `flex-shrink` or `flex-grow`
 
+Default value is = `auto`
+
+Units used are `px`, `em`, `%`, etc.
+
+```css 
+  #box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-basis: 10em;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-basis: 20em;
+  }
+```
   
 [🔝](#toc)  
 
