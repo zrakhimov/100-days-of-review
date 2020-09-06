@@ -13,6 +13,7 @@
 * [Flex Basis](#flex-basis)
 * [Flex Shortcut](#flex-shortcut)
 * [Order Property](#order-property)
+* [Align Self](#align-self)
 
 ### Using Flexbox
 
