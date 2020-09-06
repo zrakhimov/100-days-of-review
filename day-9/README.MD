@@ -10,6 +10,9 @@
 * [Flex Wrap](#flex-wrap)
 * [Flex Shrink](#flex-shrink)
 * [Flex Grow](#flex-grow)
+* [Flex Basis](#flex-basis)
+* [Flex Shortcut](#flex-shortcut)
+* [Order Property](#order-property)
 
 ### Using Flexbox
 
@@ -180,7 +183,65 @@ Units used are `px`, `em`, `%`, etc.
 
   
   
+### Flex Shortcut
+
+Box 1 will grow twice as fast once it's width is more than 150px
+Box 1 will shrink twice as fast once it's width is less than 150px
+Box 2 will grow once it's width is more than 150.
+
+```css
+   #box-1 {
+    background-color: dodgerblue;
+    flex: 2 2 150px;
+    height: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    flex: 1 1 150px;
+    height: 200px;
+  }
+```
+  
+[🔝](#toc)  
+
+    
+### Order Property
+
+We can give order to individual items with `order` property.
+
+It accepts numbers as values as well as negative numbers.
+
+```css
+ #box-1 {
+    background-color: dodgerblue;
+    order: 2;
+    height: 200px;
+    width: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    order: 1;
+    height: 200px;
+    width: 200px;
+  }
+```
+
+  
+[🔝](#toc)  
+
+  
+
+  
+    
 ### Align Self
+
+It is possible to set `flex-grow`, `flex-shrink` and `flex-basis` through one line using **`flex: <grow> <shrink> <basis>`**
+
+Default: `flex: 0 1 auto`
+
+```css
 
 
   
