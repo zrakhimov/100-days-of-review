@@ -11,7 +11,8 @@
 [Day 6 - CSS [Box Shadow, Uppercase, Lowercase, Capitalize, Line Height, Hover State]](day-6/README.MD)    
 [Day 7 - CSS [Position, Float, z-index]](day-7/README.MD)  
 [Day 8 - CSS [Responsive Web Design]](day-8/README.MD)  
-[Day 9 - CSS [Flexbox]](day-9/README.MD)
+[Day 9 - CSS [Flexbox]](day-9/README.MD)  
+[Day 10 - CSS [Flexbox]](day-10/README.MD)  
 
 
 
