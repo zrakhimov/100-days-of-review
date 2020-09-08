@@ -28,7 +28,7 @@ Grid helps to build complex web layouts. It turns HTML into a grid layout where 
 
 To turn the container into a Grid layout, simply apply `display:grid;` css line to container element
 
-```css
+```css3
 .container {
     font-size: 40px;
     width: 100%;
