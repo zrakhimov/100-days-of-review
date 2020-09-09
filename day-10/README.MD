@@ -117,6 +117,8 @@ First one is the `grid-column` property. It is used to control grid spacing of t
 
 Grid has `lines` which start with `1` in the left-upper corner. (See image below)
 
+![grid lines](grid.png)
+
 
    
   
