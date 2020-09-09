@@ -5,24 +5,24 @@
 Grid helps to build complex web layouts. It turns HTML into a grid layout where you have rows and columns to place your items in.
 
 ## ToC
-* [Display Grid](#display-grid)  
-* [Grid Template Columns](#grid-template-columns)  
-* [Grid Template Rows](#grid-template-rows)  
-* [Grid Units](#grid-units)  
-* [Grid Gap](#grid-gap)  
+* [Display Grid](#display-grid)
+* [Grid Template Columns](#grid-template-columns)
+* [Grid Template Rows](#grid-template-rows)
+* [Grid Units](#grid-units)
+* [Grid Gap](#grid-gap)
 
-* [Grid Column](#grid-column)  
-* [Grid Row](#grid-column)  
-* [Justify Self](#justify-self)  
-* [Align Self](#align-self)  
-* [Justify Items](#justify-items)  
-* [Align Items](#align-items)  
-* [Grid Template Area](#grid-template-area)  
-* [Grid Area](#grid-area)  
-* [Repeat](#repeat)  
-* [Minmax](#minmax)  
-* [Autofill](#autofill)  
-* [Autofit](#autofit)  
+* [Grid Column](#grid-column)
+* [Grid Row](#grid-column)
+* [Justify Self](#justify-self)
+* [Align Self](#align-self)
+* [Justify Items](#justify-items)
+* [Align Items](#align-items)
+* [Grid Template Area](#grid-template-area)
+* [Grid Area](#grid-area)
+* [Repeat](#repeat)
+* [Minmax](#minmax)
+* [Autofill](#autofill)
+* [Autofit](#autofit)
 
 
 ### Display Grid  
@@ -109,7 +109,14 @@ If we want to give grid some gap, we would use either `grid-column-gap` or `grid
   
 [🔝](#toc)  
 
-### 
+### Grid Column
+
+So far we've seen properties that are used for `containers`. The rest of the propeties will be used on the items.
+
+First one is the `grid-column` property. It is used to control grid spacing of the items.
+
+Grid has `lines` which start with `1` in the left-upper corner. (See image below)
+
 
    
   
