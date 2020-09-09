@@ -10,6 +10,7 @@ Grid helps to build complex web layouts. It turns HTML into a grid layout where 
 * [Grid Template Rows](#grid-template-rows)  
 * [Grid Units](#grid-units)  
 * [Grid Gap](#grid-gap)  
+
 * [Grid Column](#grid-column)  
 * [Grid Row](#grid-column)  
 * [Justify Self](#justify-self)  
@@ -28,7 +29,7 @@ Grid helps to build complex web layouts. It turns HTML into a grid layout where 
 
 To turn the container into a Grid layout, simply apply `display:grid;` css line to container element
 
-```css3
+```css
 .container {
     font-size: 40px;
     width: 100%;
@@ -76,16 +77,117 @@ Total # values given determines # of **rows** and each value indicates how **tal
 [🔝](#toc)  
 
 ### Grid Units
-  
+
+Here's the list of units we can use when defining the size of rows and columns:
+
+* `px` - absolute unit
+* `em` - relative unit
+* `fr` - sets the column or row to a **fraction** of the available space
+* `auto` - sets the column or row to the width or height of the content
+* `%` - adjusts the column or row to the percent width of its container.
+
+```css
+grid-template-columns: auto 50px 10% 2fr 1fr;
+```
   
   
 [🔝](#toc)  
 
-###
+### Grid Gap
+
+If we want to give grid some gap, we would use either `grid-column-gap` or `grid-row-gap` property with values in `px`. There's a shorter version as well, which is just `grid-gap` where values will be for `row` first and `column` second.
+
+
+```css
+.container {
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    grid-gap: 10px 20px;
+}
+```
+
+  
+[🔝](#toc)  
+
+### 
+
+   
+  
+[🔝](#toc)  
+
+### 
 
 
   
 [🔝](#toc)  
 
 ### 
+
+
+
+  
+[🔝](#toc)  
+
+### 
+
+
+  
+[🔝](#toc)  
+
+### 
+
+
+  
+[🔝](#toc)  
+
+### 
+
+
+  
+[🔝](#toc)  
+
+### 
+
+
+  
+[🔝](#toc)  
+
+### 
+
+
+  
+[🔝](#toc)  
+
+### 
+
+
+  
+[🔝](#toc)  
+
+### 
+
+
+  
+[🔝](#toc)  
+
+### 
+
+
+  
+[🔝](#toc)  
+
+### 
+
+
+  
+[🔝](#toc)  
+
+### 
+
+
+  
+[🔝](#toc)  
+
+### 
+
 
