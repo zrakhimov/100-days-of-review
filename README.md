@@ -12,7 +12,7 @@
 [Day 7 - CSS [Position, Float, z-index]](day-7/README.MD)  
 [Day 8 - CSS [Responsive Web Design]](day-8/README.MD)  
 [Day 9 - CSS [Flexbox]](day-9/README.MD)  
-[Day 10 - CSS [Flexbox]](day-10/README.MD)  
+[Day 10 - CSS [Grid]](day-10/README.MD)  
 
 
 
