@@ -117,7 +117,16 @@ First one is the `grid-column` property. It is used to control grid spacing of t
 
 Grid has `lines` which start with `1` in the left-upper corner. (See image below)
 
-![grid lines](grid.png)
+![grid lines](grid.png)  
+
+In a 3x3 grid, if we want to let the item consume space between 2nd and 4th line, we give the property as follows:
+
+```css
+.item {
+
+    grid-column: 2 / 4;
+}
+```
 
 
    
