@@ -10,7 +10,6 @@ Grid helps to build complex web layouts. It turns HTML into a grid layout where 
 * [Grid Template Rows](#grid-template-rows)
 * [Grid Units](#grid-units)
 * [Grid Gap](#grid-gap)
-
 * [Grid Column](#grid-column)
 * [Grid Row](#grid-column)
 * [Justify Self](#justify-self)
@@ -127,27 +126,52 @@ In a 3x3 grid, if we want to let the item consume space between 2nd and 4th line
     grid-column: 2 / 4;
 }
 ```
-
-
    
   
 [🔝](#toc)  
 
-### 
+### Grid Row
 
+`grid-row` is same as `grid-column` but instead determines how much grid space an item occupies *vertically*
+
+```css
+.item {
+ grid-row: 2 / 4;
+}
+```
 
   
 [🔝](#toc)  
 
-### 
+### Justify Self
 
+CSS Grid has *cell*, and you can align or justify items within this *cell*. One of the properties to align stuff within this cell *horizontally*, we use `justify-cell`
+Values are as follows:
+* `stretch` - [default]
+* `start` - left side
+* `center`
+* `end` - right side
 
+```css
+
+.item {
+    justify-self: center;
+}
+```
 
   
 [🔝](#toc)  
 
-### 
+### Align Self
 
+Just like `justify-self`, `align-self` aligns items *vertically*. Same values apply:
+
+```css
+.item {
+    justify-self: center;
+    align-self: center;
+}
+```
 
   
 [🔝](#toc)  
