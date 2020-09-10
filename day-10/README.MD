@@ -278,6 +278,11 @@ When we used `grid-template-rows` and `grid-template-columns` we had to specify 
     grid-template-rows: repeat(100, 50px);
 }
 ```
+:warning: You also can muliple values
+```css
+.container {
+    grid-template-column: repeat(2, 1fr 50px) 20px /*[1fr 50px 1fr 50px 20px]
+}
 
 
 
