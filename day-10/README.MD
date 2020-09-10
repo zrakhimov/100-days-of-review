@@ -10,10 +10,13 @@ Grid helps to build complex web layouts. It turns HTML into a grid layout where 
 * [Grid Template Rows](#grid-template-rows)
 * [Grid Units](#grid-units)
 * [Grid Gap](#grid-gap)
+
+
 * [Grid Column](#grid-column)
 * [Grid Row](#grid-column)
 * [Justify Self](#justify-self)
 * [Align Self](#align-self)
+
 * [Justify Items](#justify-items)
 * [Align Items](#align-items)
 * [Grid Template Area](#grid-template-area)
@@ -143,6 +146,45 @@ In a 3x3 grid, if we want to let the item consume space between 2nd and 4th line
   
 [🔝](#toc)  
 
+
+### Justify Items
+
+We can align the items in the grid **horizontally** with `justify-items` property. 
+Values accepted are:
+
+* `stretch` - [default]
+* `start` - left side
+* `center`
+* `end` - right side
+
+```css
+.container {
+    justify-items: center;
+}
+```
+  
+[🔝](#toc)  
+
+### Align Items
+
+We can align the items in the grid **vertically** with `align-items` property. 
+Values accepted are:
+
+* `stretch` - [default]
+* `start` - left side
+* `center`
+* `end` - right side
+
+```css
+.container {
+    align-items: end;
+}
+```
+
+  
+[🔝](#toc)  
+
+
 ### Justify Self
 
 CSS Grid has *cell*, and you can align or justify items within this *cell*. One of the properties to align stuff within this cell *horizontally*, we use `justify-cell`
@@ -176,31 +218,66 @@ Just like `justify-self`, `align-self` aligns items *vertically*. Same values ap
   
 [🔝](#toc)  
 
-### 
+### Grid Template Area
 
+We can group cells of our grid into *areas* and give it a custom *name*. This is done by using `grid-template-areas` property.
+```css
+.container {
+    grid-template-areas:
+        "header header header"
+        "   .   content content"
+        "footer footer footer"
+}
+```
 
-  
-[🔝](#toc)  
+The example above represents a 3x3 grid where first row is grouped into one and given a name "header"
 
-### 
+:warning: You can specify empty space by putting `.`, last 2 blocks of the 2nd row is named "content"
 
-
-  
-[🔝](#toc)  
-
-### 
-
-
-  
-[🔝](#toc)  
-
-### 
-
+Last row is grouped together and named "footer".
 
   
 [🔝](#toc)  
 
-### 
+### Grid Area
+
+After we've declared a name for each area with `grid-template-areas`, we can choose an item and place it in one of those areas by using `grid-area` property
+
+```css
+.container {
+    display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "header header header"
+      ". content content"
+      "footer footer footer";
+}
+.item5 {
+    grid-area: footer;
+}
+```
+
+:warning: `grid-area` can be used without declaring `grid-template-areas` property in the container, by using *grid lines*
+
+```css
+.item5 {
+   grid-area: 3/1/4/4;; /* h.start / v.start / h.end / v.end */
+}
+```
+  
+[🔝](#toc)  
+
+### Repeat
+
+When we used `grid-template-rows` and `grid-template-columns` we had to specify value for each column or row. What if we want 100 rows and 100 columns? It's not practical, that's why there's a `repeat()` function to specify the number of times you want your column or row to be repeated, followed by a comma and the value you want to repeat.
+
+```css
+.container {
+    grid-template-rows: repeat(100, 50px);
+}
+```
 
 
   
