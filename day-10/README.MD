@@ -24,7 +24,7 @@ Grid helps to build complex web layouts. It turns HTML into a grid layout where 
 * [Repeat](#repeat)
 * [Minmax](#minmax)
 * [Auto Fill](#auto-fill)
-* [Autofit](#autofit)
+* [Auto Fit](#auto-fit)
 
 
 ### Display Grid  
@@ -305,25 +305,26 @@ There's another built-in function to define minimum and maximum width when we us
 With `repeat`, as the first argument we can give `auto-fill` instead of specifying how many times it should repeat. This will insert as many rows or columns of desired size as possible depening on teh size of teh container.This will allow for a flexible layouts when combining `auto-fill` with `minmax`
 
 ```css
-
+.container {
+   grid-template-columns: repeat( auto-fill, minmax(60px, 1fr));
+}
 ```
 
+:warning: It's not `autofill` , but `auto-fill`
 
   
 [🔝](#toc)  
 
-### 
+### Auto Fit
 
+`auto-fit` works almost same as `auto-fill`. The only difference is that when the container's size exceeds the size of all the items, `auto-fit` collapses those empty rows or columns and stretches your items to fit the size of the container.
 
+```css
+
+grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+
+```
   
 [🔝](#toc)  
-
-### 
-
-
-  
-[🔝](#toc)  
-
-### 
 
 
