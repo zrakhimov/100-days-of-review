@@ -9,9 +9,17 @@
 :uzbekistan: Bu loyihada Google saytining “Search” (Qidiruv), “Google Image Search” (Rasm qidiruvi),  va “Google Advanced Search” ( Ilg’or qidiruv) sahifalari front-end qismini HTML va CSS orqali yaratamiz.
 
 ## ToC
+:canada:  
+* [Background]
+* [Getting Started]
+* [Specification]
+* [Hints]
 
-
-
+:uzbekistan:
+* [Izoh]
+* [Boshlash uchun]
+* [Talablar]
+* [Ishora]
 
   
 [🔝](#toc)  
