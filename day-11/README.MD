@@ -11,15 +11,15 @@
 ## ToC
 :canada:  
 * [Background](#background-izoh)
-* [Getting Started](#)
-* [Specification]
-* [Hints]
+* [Getting Started](#getting-started-boshlash-uchun)
+* [Specification](#specification-talablar)
+* [Hints](#hints-yordam)
 
 :uzbekistan:
 * [Izoh](#background-izoh)
-* [Boshlash uchun]
-* [Talablar]
-* [Yordam]
+* [Boshlash uchun](#getting-started-boshlash-uchun)
+* [Talablar](#specification-talablar)
+* [Yordam](#hints-yordam)
 
   
 [🔝](#toc)  
