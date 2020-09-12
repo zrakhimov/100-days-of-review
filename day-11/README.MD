@@ -19,7 +19,7 @@
 * [Izoh](#backgroun-izoh)
 * [Boshlash uchun]
 * [Talablar]
-* [Ishora]
+* [Yordam]
 
   
 [🔝](#toc)  
@@ -151,27 +151,39 @@ Consistent with Google’s own CSS, the “Advanced Search” button should be b
 
 Sizning proyektingiz quyidagi talablarga javob berishi kerak:  
 
-•	**Sahifalar**. Sizning veb-saytingiz kamida uchta sahifadan iborat bo'lishi kerak: biri "Google Search" uchun, ikkinchisi Google Image Search uchun va yana biri Google Advanced Search uchun.
-   *	Google Search sahifasining yuqori o'ng qismida rasmlarni qidirish (Image Search) yoki kengaytirilgan qidiruvga o'tish (Advanced Search) uchun link lar bo'lishi kerak. Qolgan ikkita sahifaning har birida Google Search-ga qaytish uchun yuqori o'ng tomonda link bo'lishi kerak.
-•	**So’rov Matni**. "Google Search" sahifasida foydalanuvchi so'rovni yozishi, "Google Search" tugmachasini bosishi va shu sahifa uchun Google qidiruv natijalariga (yangi `tab`da) o'tishi kerak.
-   o	Google-ning o'zi singari, qidiruv satri (input elementingiz) ham yumaloq burchaklar bilan markazlashtirilgan bo'lishi kerak. Qidiruv tugmasi ham markazlashtirilgan bo'lishi kerak va qidiruv satri ostida bo'lishi kerak.
-•	**So'rov rasmlari**. Google Image Search sahifasida foydalanuvchi so'rovni yozishi, qidirish tugmachasini bosishi va shu sahifa uchun Google Image qidiruv natijalariga (yangi `tab`da) o'tishi kerak.
-•	**Kengaytirilgan so'rov**. Google Advanced Search  sahifasida foydalanuvchi quyidagi to'rtta maydon (input element) uchun ma'lumotni taqdim etishi kerak (Google-ning kengaytirilgan qidiruv parametrlaridan olingan)
-o	... "bularning barchasi:" bilan sahifalarni toping.
-o	... "soʻz birikmasi:" bilan sahifalarni toping.
-o	... "bu soʻzlardan biri:" bilan sahifalarni toping.
-o	... "ushbu so'zlarning hech biri:" bilan sahifalarni toping.
-•	**Tashqi ko'rinishi.** Google-ning o'zining Kengaytirilgan qidiruv sahifasi singari, to'rtta variantni vertikal ravishda to'plash kerak va input elementlari chap tarafda bo'lishi lozim.
-   *	Google-ning o'z CSS-iga mos ravishda "Kengaytirilgan qidirish" tugmasi oq rang bilan ko'k rangda bo'lishi kerak. "Kengaytirilgan qidirish" tugmachasi bosilganda, foydalanuvchi o'z so'rovlari bo'yicha qidiruv natijalari (yangi `tab`da) sahifasiga o'tishi kerak.
-•	**Omadingizni Sinang**. Asosiy Google Search sahifasiga "Omadingizni Sinang" tugmachasini qo'shing. Google-ning o'z xatti-harakatlariga muvofiq, ushbu havolani bosish foydalanuvchilarni to'g'ridan-to'g'ri so'rov uchun birinchi Google qidiruv natijasi web saytiga olib borishi va  natijalar sahifasini chetlab o'tishi kerak.
-•	**Estetika**. Siz yozgan CSS imkon qadar Google-ning o'ziga xos estetikasiga mos kelishi kerak.
+•	**Sahifalar**. Sizning veb-saytingiz kamida uchta sahifadan iborat bo'lishi kerak: biri "Google Search" uchun, ikkinchisi Google Image Search uchun va yana biri Google Advanced Search uchun.  
+   *	Google Search sahifasining yuqori o'ng qismida rasmlarni qidirish (Image Search) yoki kengaytirilgan qidiruvga o'tish (Advanced Search) uchun link lar bo'lishi kerak. Qolgan ikkita sahifaning har birida Google Search-ga qaytish uchun yuqori o'ng tomonda link bo'lishi kerak.  
+•	**So’rov Matni**. "Google Search" sahifasida foydalanuvchi so'rovni yozishi, "Google Search" tugmachasini bosishi va shu sahifa uchun Google qidiruv natijalariga (yangi `tab`da) o'tishi kerak.  
+   o	Google-ning o'zi singari, qidiruv satri (input elementingiz) ham yumaloq burchaklar bilan markazlashtirilgan bo'lishi kerak. Qidiruv tugmasi ham markazlashtirilgan bo'lishi kerak va qidiruv satri ostida bo'lishi kerak.  
+•	**So'rov rasmlari**. Google Image Search sahifasida foydalanuvchi so'rovni yozishi, qidirish tugmachasini bosishi va shu sahifa uchun Google Image qidiruv natijalariga (yangi `tab`da) o'tishi kerak.  
+•	**Kengaytirilgan so'rov**. Google Advanced Search  sahifasida foydalanuvchi quyidagi to'rtta maydon (input element) uchun ma'lumotni taqdim etishi kerak (Google-ning kengaytirilgan qidiruv parametrlaridan olingan)  
+   *	... "bularning barchasi:" bilan sahifalarni toping.  
+   *	... "soʻz birikmasi:" bilan sahifalarni toping.  
+   *	... "bu soʻzlardan biri:" bilan sahifalarni toping.  
+   *	... "ushbu so'zlarning hech biri:" bilan sahifalarni toping.  
+•	**Tashqi ko'rinishi.** Google-ning o'zining Kengaytirilgan qidiruv sahifasi singari, to'rtta variantni vertikal ravishda to'plash kerak va input elementlari chap tarafda bo'lishi lozim.  
+   *	Google-ning o'z CSS-iga mos ravishda "Kengaytirilgan qidirish" tugmasi oq rang bilan ko'k rangda bo'lishi kerak. "Kengaytirilgan qidirish" tugmachasi bosilganda, foydalanuvchi o'z so'rovlari bo'yicha qidiruv natijalari (yangi `tab`da) sahifasiga o'tishi kerak.  
+•	**Omadingizni Sinang**. Asosiy Google Search sahifasiga "Omadingizni Sinang" tugmachasini qo'shing. Google-ning o'z xatti-harakatlariga muvofiq, ushbu havolani bosish foydalanuvchilarni to'g'ridan-to'g'ri so'rov uchun birinchi Google qidiruv natijasi web saytiga olib borishi va  natijalar sahifasini chetlab o'tishi kerak.  
+•	**Estetika**. Siz yozgan CSS imkon qadar Google-ning o'ziga xos estetikasiga mos kelishi kerak.  
 
-## Hints ( Ishoralar ) 
+## Hints ( Yordam ) 
 
+### :canada:
 
+* To determine what the parameter names should be, you’re welcome to experiment with making Google searches, and looking at the resulting URL. It may also be helpful to open the “Network” inspector (accessible in Google Chrome by choosing View -> Developer -> Developer Tools) to view details about requests your browser makes to Google.  
+   * Any <input> element (whether its type is text, submit, number, or something else entirely) can have name and value attributes that will become GET parameters when a form is submitted.  
+   * You’re may also find it helpful to look at Google’s own HTML to answer these questions. In most browsers, you can control-click or right-click on a page and choose “View Page Source” to view the page’s underlying HTML.  
+* To include an input field in a form that users cannot see or modify, you can use a “hidden” input field.  
 
+### :uzbekistan:
 
+•	Parametr nomlari qanday bo'lishi kerakligini aniqlash uchun siz Google-da qidiruv o'tkazish va natijada olingan URL manziliga qarab tajriba o'tkazishingiz mumkin. Shuningdek, brauzeringizning Google-ga qilgan so'rovlari haqidagi ma'lumotlarni ko'rish uchun "Tarmoq" inspektorini dan foydalanish (Google Chrome-da `F12`) foydali bo'lishi mumkin.  
 
+   *	Har qanday <input> elementi (uning `type` attributi `text`, `submit`, `number` yoki boshqa narsalar bo'lsin) `name` va `value` atributlariga ega bo'lishi mumkin, ular forma yuborilganda GET parametrlariga aylanadi.
+
+   * Shuningdek, ushbu savollarga javob berish uchun Google-ning o'z HTML-ga qarash foydali bo'lishi mumkin. Ko'pgina brauzerlarda sahifani boshqarish uchun `Ctrl`+`sichqonchaning chap tugmachasi`ni bosishingiz yoki `o'ng tugmachani` bosishingiz va sahifaning asosiy HTML-ni ko'rish uchun "View Source" -ni tanlashingiz mumkin.  
+   
+* `<input>` elementini foydalanuvchiga ko'rinmasligi uchun `type` atributiga `hidden` qiymati berishingiz mumkin.  
 
 
 
