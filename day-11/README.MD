@@ -10,13 +10,13 @@
 
 ## ToC
 :canada:  
-* [Background](#backgroun-izoh)
+* [Background](#background-izoh)
 * [Getting Started](#)
 * [Specification]
 * [Hints]
 
 :uzbekistan:
-* [Izoh](#backgroun-izoh)
+* [Izoh](#background-izoh)
 * [Boshlash uchun]
 * [Talablar]
 * [Yordam]
