@@ -4,9 +4,12 @@
 
 ## Project 0 - Google Clone [from CS50W](https://cs50.harvard.edu/web/2020/projects/0/)
 
+:Canada: In this project we'll design a front-end clone for Google Search, Google Image Search and Google Advanced Search
+:Uzbekistan: Bu loyihada Google saytining “Search” (Qidiruv), “Google Image Search” (Rasm qidiruvi),  va “Google Advanced Search” ( Ilg’or qidiruv) sahifalari front-end qismini HTML va CSS orqali yaratamiz.
+
 ## ToC
-:uzbekistan:
-* 
+
+
 
 
   
