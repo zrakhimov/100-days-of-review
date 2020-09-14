@@ -4,6 +4,9 @@
 
 ## ToC
 * [Course Intro](#course-intro)
+* [Internet Architecture](#internet-architecture)
+* [Browsers and Dev Tools](#browsers-and-dev-tools)
+* [JavaScript Intro](#javascript-intro)
 
 ### Course Intro
 
@@ -14,9 +17,9 @@
 [🔝](#toc)  
   
 
-### 
+### Internet Architecture
 
-
+* 
 
 
 
