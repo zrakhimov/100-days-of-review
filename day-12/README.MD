@@ -1,63 +1,34 @@
 [Go to ToC](../README.md)
 
-# Introduction to JavaScript
+# Course Overview
 
 ## ToC
 * [Course Intro](#course-intro)
-* [Internet Architecture](#internet-architecture)
-* [Browsers and Dev Tools](#browsers-and-dev-tools)
-* [JavaScript Intro](#javascript-intro)
 
 ### Course Intro
 
-  JavaScript is the programming language of the web. It started out as a way to add small bits of functionality to a website, but now JavaScript has evolved into much more. JavaScript is used on the vast majority of websites and is supported by every major browser. The language has evolved to support the creation of business applications on the web. And with web connectivity built in, almost any kind of utility, security, or data application can be created using JavaScript. Games can be created with JavaScript as well. You may have heard of Unity, a popular game engine for 3D and 2D games. JavaScript is supported as a programming language for this engine. For large business applications, JavaScript is popular and has been embraced by a scalable language called TypeScript. This language is a superset of JavaScript, so you'll need to understand JavaScript well in order to write large‑scale business applications and other software using TypeScript. JavaScript is not just for applications which run in browsers on the web. You can also create native applications for smartphones and tablets using JavaScript. A popular technology for this is Apache Cordova. JavaScript can also be used to create full‑fledged applications for the Mac and Windows desktops. There's no need for a browser at all. A popular technology to accomplish this is Electron. Writing server‑side code can also be accomplished in JavaScript. You can create web servers, web APIs, and other services using a technology called Node.js. So JavaScript is a multi‑platform language. It will run in any modern web browser. It can be used to create native applications on smartphones and tablets, it can create desktop software for Mac and Windows computers, and it can be run on any back‑end server as well. No matter where you want your application to run, you can code it in JavaScript. In this course, I'll teach you the very basics of how to develop software using JavaScript. In the next clip, I'll show you how we can get up and running very quickly.
+* Hello everyone. My name is Zokir Rakhimov, and welcome to my course, JavaScript. I am a software developer in Canada. 
 
+* JavaScript is one of the most popular programming languages. According to GitHub, JavaScript is the top programming language, and it's more than twice as popular as the runner‑up, Python. Learning the JavaScript language is valuable for any developer. 
+
+* JavaScript is the language of the web supported by all major browsers, but tools exist to take JavaScript far beyond web pages. You can crdeate native smartphone and tablet apps, desktop apps for Windows and Mac, and even server‑side apps using JavaScript. 
+
+In this course, I'll cover JavaScript programming for those who are completely new to programming. This is also valuable for programmers who are just new to the JavaScript language. We'll learn the JavaScript features needed to get you started. By the end of this course, you'll know the very basics of JavaScript and you'll be able to build simple programs for the web. 
+
+* No prior knowledge of programming is required for this course. I hope you'll join me on this journey in learning how to program with JavaScript.
+
+:uzbekistan:
+
+* Hammaga salom. Mening ismim Zokir Rahimov va mening JavaScript kursimga xush kelibsiz. Men Kanada davlatida o'qishni dasturlash yo'nalishida tugatib, shu sohada ish ishlayman.
+
+* JavaScript - eng mashhur dasturlash tillaridan biri. GitHub-ga ko'ra, JavaScript eng yuqori dasturlash tili bo'lib, u ikkinchi darajali Python-dan ikki baravar ko'proq mashhur. JavaScript tilini o'rganish har qanday dasturchi uchun juda muhimdir.
+
+* JavaScript - bu barcha yirik brauzerlar tushunadigan web tili, lekin oxirgi yillarda shu til asosida turli xil kutubxona va framework lar chiqib ketdi. Hozirda bu til orqali siz smartfon va planshet dasturlarini, Windows va Mac uchun dasturlar va hatto server tomonidagi dasturlarni ham ishlab chiqishingiz mumkin.
+
+* Ushbu kursda men dasturlash sohasida 0 bo'lganlar uchun mo'ljallangan. Lekin boshqa tildan kelib, JavaScript haqida o'rganmoqchi bo'lganlar uchun ham yaxshi resurs hisoblanadi. Ushbu kurs yakunida siz JavaScript-ni asoslarini bilib olasiz va veb uchun oddiy dasturlarni yaratishingiz mumkin bo'ladi.
+
+* Ushbu kurs uchun HTML va CSS ni bilishingiz ast qotadi. Agar bular bo'yicha bilimingiz bo'lmasa, kanalimdagi HTML va CSS kurslarini birinchi ko'rib chiqishingizni maslahat beraman.
 
 
 [🔝](#toc)  
-  
-
-### Internet Architecture
-
-* 
-
-
-
-[🔝](#toc)  
-  
-### 
-
-
-
-
-  
-[🔝](#toc)  
-
-### 
-
-
-  
-[🔝](#toc)  
-
-###
-
-
-  
-[🔝](#toc)  
-
-### 
-
-
-
-[🔝](#toc)    
-  
-  
-### 
-
-
-  
-[🔝](#toc)  
-
-  
-  
   
