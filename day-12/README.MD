@@ -25,7 +25,7 @@ In this course, I'll cover JavaScript programming for those who are completely n
 
 * JavaScript - bu barcha yirik brauzerlar tushunadigan web tili, lekin oxirgi yillarda shu til asosida turli xil kutubxona va framework lar chiqib ketdi. Hozirda bu til orqali siz smartfon va planshet dasturlarini, Windows va Mac uchun dasturlar va hatto server tomonidagi dasturlarni ham ishlab chiqishingiz mumkin.
 
-* Ushbu kursda men dasturlash sohasida 0 bo'lganlar uchun mo'ljallangan. Lekin boshqa tildan kelib, JavaScript haqida o'rganmoqchi bo'lganlar uchun ham yaxshi resurs hisoblanadi. Ushbu kurs yakunida siz JavaScript-ni asoslarini bilib olasiz va veb uchun oddiy dasturlarni yaratishingiz mumkin bo'ladi.
+* Ushbu kursda men dasturlash sohasiga yangi kirib kelganlar uchun mo'ljallangan. Lekin boshqa tildan kelib, JavaScript haqida o'rganmoqchi bo'lganlar uchun ham yaxshi resurs hisoblanadi. Ushbu kurs yakunida siz JavaScript-ni asoslarini bilib olasiz va veb uchun oddiy dasturlarni yaratishingiz mumkin bo'ladi.
 
 * Ushbu kurs uchun HTML va CSS ni bilishingiz ast qotadi. Agar bular bo'yicha bilimingiz bo'lmasa, kanalimdagi HTML va CSS kurslarini birinchi ko'rib chiqishingizni maslahat beraman.
 
