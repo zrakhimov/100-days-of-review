@@ -11,8 +11,6 @@ Notice: Materials in these notes are taken and translated from www.eloquentjavas
 
 ### Course Intro
 
-* Hello everyone. My name is Zokir Rakhimov, and welcome to my course, JavaScript. I am a software developer in Canada. 
-
 * JavaScript is one of the most popular programming languages. According to GitHub, JavaScript is the top programming language, and it's more than twice as popular as the runner‑up, Python. Learning the JavaScript language is valuable for any developer. 
 
 * JavaScript is the language of the web supported by all major browsers, but tools exist to take JavaScript far beyond web pages. You can crdeate native smartphone and tablet apps, desktop apps for Windows and Mac, and even server‑side apps using JavaScript. 
@@ -21,23 +19,11 @@ In this course, I'll cover JavaScript programming for those who are completely n
 
 * No prior knowledge of programming is required for this course. I hope you'll join me on this journey in learning how to program with JavaScript.
 
-:uzbekistan:
-
-* Hammaga salom. Mening ismim Zokir Rahimov va mening JavaScript kursimga xush kelibsiz. Men Kanada davlatida o'qishni dasturlash yo'nalishida tugatib, shu sohada ish ishlayman.
-
-* JavaScript - eng mashhur dasturlash tillaridan biri. GitHub-ga ko'ra, JavaScript eng yuqori dasturlash tili bo'lib, u ikkinchi darajali Python-dan ikki baravar ko'proq mashhur. JavaScript tilini o'rganish har qanday dasturchi uchun juda muhimdir.
-
-* JavaScript - bu barcha yirik brauzerlar tushunadigan web tili, lekin oxirgi yillarda shu til asosida turli xil kutubxona va framework lar chiqib ketdi. Hozirda bu til orqali siz smartfon va planshet dasturlarini, Windows va Mac uchun dasturlar va hatto server tomonidagi dasturlarni ham ishlab chiqishingiz mumkin.
-
-* Ushbu kursda men dasturlash sohasiga yangi kirib kelganlar uchun mo'ljallangan. Lekin boshqa tildan kelib, JavaScript haqida o'rganmoqchi bo'lganlar uchun ham yaxshi resurs hisoblanadi. Ushbu kurs yakunida siz JavaScript-ni asoslarini bilib olasiz va veb uchun oddiy dasturlarni yaratishingiz mumkin bo'ladi.
-
-* Ushbu kurs uchun HTML va CSS ni bilishingiz ast qotadi. Agar bular bo'yicha bilimingiz bo'lmasa, kanalimdagi HTML va CSS kurslarini birinchi ko'rib chiqishingizni maslahat beraman.
-
 
 [🔝](#toc)  
 
 
-### What is JavaScript?
+## What is JavaScript?
 
 * JavaScript was introduced in 1995 as a way to add programs to web pages in the Netscape Navigator browser.
 
@@ -54,7 +40,7 @@ In this course, I'll cover JavaScript programming for those who are completely n
 [🔝](#toc)  
   
   
-### Values, Types, and Operators
+## Values, Types, and Operators
 
 Inside a computer everything is data, which means everything is made out of `bits` which can be represented as 0 or 1. This means that high or low electrical charge, strong or weak signal. Any information can be reduced to be a sequence of 1s and 0s.
 
@@ -75,7 +61,7 @@ To be able to work with such quantities of bits without getting lost, we must se
 To create a value, you must merely invoke its name. This is convenient. You don’t have to gather building material for your values or pay for them. You just call for one, and whoosh, you have it. They are not really created from thin air, of course. Every value has to be stored somewhere, and if you want to use a gigantic amount of them at the same time, you might run out of memory. Fortunately, this is a problem only if you need them all simultaneously. As soon as you no longer use a value, it will dissipate, leaving behind its bits to be recycled as building material for the next generation of values.
 
 
-## Numbers
+### Numbers
 
 Values of the number type are, unsurprisingly, numeric values. In a JavaScript program, they are written as follows: 
 
@@ -102,7 +88,7 @@ For very big or very small numbers, you may also use scientific notation by addi
 
 :warning: Calculations with fractional numbers are not generally precise, just as pi cannot be precisly expressed by a finite number of decimal digits. 
 
-# Arithmetic
+### Arithmetic
 
 Main thing to do with numbers is arithmetic. Arithmetic operations such as addition or multiplication take two number values and produce a new number from them. Here's what they look like in JavaScript:
 
@@ -159,5 +145,34 @@ You can use single quotes, double quotes, or backticks to mark them, as long as 
 `half of 100 is ${100 / 2}`
 ```
 When you write something inside `${}` in a template literal, its result will be computed.
+
+
+### Unary Operators
+
+Not all operators are symbols. Some are written as words, for example `typeof` which produces a string value naming the type of the value you give it.
+
+```javascript
+console.log(typeof 4.5)
+-> number
+console.log(typeof "x")
+-> string
+```
+The `-` (minus) operator can be used both as a binary operator and as a unary operator
+
+```javascript
+console.log(- (10 - 2))
+// -> -8
+```
+
+### Boolean Values
+
+It is often usefulto have a value that distinguishes between only two possibilities, like "yes" and "no" or "on" and "off". For this purpose, JavaScript has a Boolean type, which has just two values, `true` and `false` which are written as words
+
+```javascript
+1 > 2
+-> false
+```
+
+
 
 
