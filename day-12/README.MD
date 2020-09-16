@@ -2,8 +2,11 @@
 
 # Course Overview
 
+Notice: Materials in these notes are taken and translated from www.eloquentjavascript.net. However not all the content might be word for word.
+
 ## ToC
 * [Course Intro](#course-intro)
+* [Values, Types, and Operators](#values-types-and-operators)
 
 ### Course Intro
 
@@ -31,4 +34,17 @@ In this course, I'll cover JavaScript programming for those who are completely n
 
 
 [🔝](#toc)  
-  
+ 
+ 
+### Values, Types, and Operators
+
+Inside the computer’s world, there is only data. You can read data, modify data, create new data—but that which isn’t data cannot be mentioned. All this data is stored as long sequences of bits and is thus fundamentally alike.
+
+Bits are any kind of two-valued things, usually described as zeros and ones. Inside the computer, they take forms such as a high or low electrical charge, a strong or weak signal, or a shiny or dull spot on the surface of a CD. Any piece of discrete information can be reduced to a sequence of zeros and ones and thus represented in bits.
+
+For example, we can express the number 13 in bits. It works the same way as a decimal number, but instead of 10 different digits, you have only 2, and the weight of each increases by a factor of 2 from right to left. Here are the bits that make up the number 13, with the weights of the digits shown below them:
+
+   0   0   0   0   1   1   0   1
+ 128  64  32  16   8   4   2   1
+ 
+So that’s the binary number 00001101. Its non-zero digits stand for 8, 4, and 1, and add up to 13.
