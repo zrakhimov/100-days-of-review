@@ -157,7 +157,7 @@ console.log(typeof 4.5)
 console.log(typeof "x")
 -> string
 ```
-The `-` (minus) operator can be used both as a binary operator and as a unary operator
+The `-` (minus) operator can be used both as a *binary operator* and as a unary operator
 
 ```javascript
 console.log(- (10 - 2))
@@ -166,7 +166,7 @@ console.log(- (10 - 2))
 
 ### Boolean Values
 
-It is often usefulto have a value that distinguishes between only two possibilities, like "yes" and "no" or "on" and "off". For this purpose, JavaScript has a Boolean type, which has just two values, `true` and `false` which are written as words
+It is often useful to have a value that distinguishes between only two possibilities, like "yes" and "no" or "on" and "off". For this purpose, JavaScript has a Boolean type, which has just two values, `true` and `false` which are written as words
 
 ```javascript
 1 > 2
@@ -174,5 +174,23 @@ It is often usefulto have a value that distinguishes between only two possibilit
 ```
 
 
+### Comparison Operators
 
+The `>` and `<` signs are the traditional symbols for “is greater than” and “is less than”, respectively. They are binary operators. Applying them results in a Boolean value that indicates whether they hold true in this case.
+
+```javascript
+
+console.log("Aardvark" < "Zoroaster")
+// → true
+
+```
+When comparing strings, JavaScript goes over the characters from left to right, comparing the Unicode codes one by one.
+
+Other similar operators are `>=` (greater than or equal to), `<=` (less than or equal to), `==` (equal to), and `!=` (not equal to).
+
+:warning: There is only one value in JavaScript that is not equal to itself, and that is NaN (“not a number”). NaN is supposed to denote the result of a nonsensical computation, and as such, it isn’t equal to the result of any other nonsensical computations.
+```javascript
+console.log(NaN == NaN)
+// → false
+```
 
