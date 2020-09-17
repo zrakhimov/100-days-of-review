@@ -40,7 +40,7 @@ Notice: Materials in these notes are taken and/or translated from www.eloquentja
 [🔝](#toc)  
   
   
-## Values, Types, and Operators
+## Under the Hood
 
 Inside a computer everything is data, which means everything is made out of `bits` which can be represented as 0 or 1. This means that high or low electrical charge, strong or weak signal. Any information can be reduced to be a sequence of 1s and 0s.
 
@@ -61,7 +61,7 @@ To be able to work with such quantities of bits without getting lost, we must se
 To create a value, you must merely invoke its name. This is convenient. You don’t have to gather building material for your values or pay for them. You just call for one, and whoosh, you have it. They are not really created from thin air, of course. Every value has to be stored somewhere, and if you want to use a gigantic amount of them at the same time, you might run out of memory. Fortunately, this is a problem only if you need them all simultaneously. As soon as you no longer use a value, it will dissipate, leaving behind its bits to be recycled as building material for the next generation of values.
 
 
-### Numbers
+## Numbers
 
 Values of the number type are, unsurprisingly, numeric values. In a JavaScript program, they are written as follows: 
 
@@ -88,7 +88,7 @@ For very big or very small numbers, you may also use scientific notation by addi
 
 :warning: Calculations with fractional numbers are not generally precise, just as pi cannot be precisly expressed by a finite number of decimal digits. 
 
-#### Arithmetic
+#### Arithmetic Operators
 
 Main thing to do with numbers is arithmetic. Arithmetic operations such as addition or multiplication take two number values and produce a new number from them. Here's what they look like in JavaScript:
 
@@ -117,7 +117,7 @@ The first two are `Infinity` and `-Infinity`, which represent the positive and  
 
 The third one is `NaN` stands for `not a number`, even though it is a value of the number type. You'll get this result when you, for example, try to calculate ` 0 / 0`, `Infinity - Infinity` or any number of other numeric operations that don't yield a meaningful result.
 
-### Strings
+## Strings
 
 The next basic data type is teh `string`. Strings are used to represent text. They are written by enclosing their content in quotes
 
@@ -147,7 +147,7 @@ You can use single quotes, double quotes, or backticks to mark them, as long as 
 When you write something inside `${}` in a template literal, its result will be computed.
 
 
-### Unary Operators
+## Unary Operators
 
 Not all operators are symbols. Some are written as words, for example `typeof` which produces a string value naming the type of the value you give it.
 
@@ -164,7 +164,7 @@ console.log(- (10 - 2))
 // -> -8
 ```
 
-### Boolean Values
+## Boolean Values
 
 It is often useful to have a value that distinguishes between only two possibilities, like "yes" and "no" or "on" and "off". For this purpose, JavaScript has a Boolean type, which has just two values, `true` and `false` which are written as words
 
@@ -193,4 +193,7 @@ Other similar operators are `>=` (greater than or equal to), `<=` (less than or 
 console.log(NaN == NaN)
 // → false
 ```
+
+### Logical Operators
+
 
