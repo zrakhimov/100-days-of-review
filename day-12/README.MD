@@ -273,4 +273,20 @@ true
 false
 ```
 
+## Short-Circuiting of Logical Operators
+
+The logical operators ``&&`` and ``||`` handle values of different types in a peculiar way. They will convert the value on their left side to Boolean type in order to decide what to do, but depending on the operator and the result of that conversion, they will return either the original left-hand value or the right-hand value.
+
+:important: The rules for converting strings and numbers to Boolean values state that `0`, `NaN`, and the empty string (`""`) count as `false`
+
+* The `||` operator, for example, will return the value to its left when that can be converted to true and will return the value on its right otherwise. This has the expected effect when the values are Boolean and does something analogous for values of other types.
+
+* The `&&` operator works similarly but the other way around. When the value to its left is something that converts to false, it returns that value, and otherwise it returns the value on its right.
+
+
+## Summary
+
+Such values are created by typing in their name `(true, null)` or value `(13, "abc")`. You can combine and transform values with operators. We saw binary operators for arithmetic `(+, -, *, /, and %)`, string concatenation `(+)`, comparison `(==, !=, ===, !==, <, >, <=, >=)`, and logic `(&&, ||)`, as well as several unary operators (- to negate a number, ! to negate logically, and typeof to find a value’s type) and a ternary operator (?:) to pick one of two values based on a third value.
+
+This gives you enough information to use JavaScript as a pocket calculator but not much more. The next chapter will start tying these expressions together into basic programs.
 
