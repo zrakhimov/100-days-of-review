@@ -98,7 +98,7 @@ Main thing to do with numbers is arithmetic. Arithmetic operations such as addit
 
 The `+` and `*` symbols are called *operators*. 
 
-Just as in mathematics, multiplication is done first, and you can change this by wrapping the addition in parenthesies. 
+Just as in mathematics, multiplication is done first, and you can change this by wrapping the addition in *parenthesies*. 
 
 For subtraction `-` and for division `/` operators are used.
 
@@ -113,13 +113,17 @@ This operator is called `modulo`
 
 There are three special values in JavaScipt that are considered numbers but don't behave like normal numbers.
 
+* `Infinity`
+* `-Infinity`
+* `NaN`
+
 The first two are `Infinity` and `-Infinity`, which represent the positive and  negative infinities. 
 
 The third one is `NaN` stands for `not a number`, even though it is a value of the number type. You'll get this result when you, for example, try to calculate ` 0 / 0`, `Infinity - Infinity` or any number of other numeric operations that don't yield a meaningful result.
 
 ## Strings
 
-The next basic data type is teh `string`. Strings are used to represent text. They are written by enclosing their content in quotes
+The next basic data type is the `string`. Strings are used to represent text. They are written by enclosing their content in quotes
 
 ```javascript
 `Down on the sea`
@@ -195,5 +199,78 @@ console.log(NaN == NaN)
 ```
 
 ### Logical Operators
+
+There are also some operations that can be applied to Boolean values themselves. JavaScript supports three logical operators:
+
+* `&&` - and
+* `||` - or
+* `!` - not
+
+```javascript
+console.log(true && false)
+// → false
+console.log(false || true)
+// → true
+console.log(!false)
+// → true
+```
+
+
+:warning: The last logical operator I will discuss is not unary, not binary, but *ternary, operating on three values. It is written with a question mark and a colon, like this:
+
+```javascript
+console.log(true ? 1 : 2);
+// → 1
+console.log(false ? 1 : 2);
+// → 2
+```
+This one is called the conditional operator (or sometimes just the ternary operator since it is the only such operator in the language). The value on the left of the question mark “picks” which of the other two values will come out. When it is true, it chooses the middle value, and when it is false, it chooses the value on the right.
+
+## Empty Values
+
+There are two special empty values, which denote absence of a meaningful value
+
+* `null`
+* `undefined`
+
+Many operations in the language that don’t produce a meaningful value (you’ll see some later) yield undefined simply because they have to yield some value.
+
+The difference in meaning between undefined and null is an accident of JavaScript’s design, and it doesn’t matter most of the time. In cases where you actually have to concern yourself with these values, I recommend treating them as mostly interchangeable.
+
+## Automatic Type Conversion
+
+JavaScript goes out of its way to accept almost any program you give it, even programs that do odd things. This is nicely demonstrated by the following expressions:
+
+```javascript
+console.log(8 * null)
+// → 0
+console.log("5" - 1)
+// → 4
+console.log("5" + 1)
+// → 51
+console.log("five" * 2)
+// → NaN
+console.log(false == 0)
+// → true
+```
+
+When an operator is applied to the “wrong” type of value, JavaScript will quietly convert that value to the type it needs, using a set of rules that often aren’t what you want or expect
+
+When comparing values of the same type using ==, the outcome is easy to predict: you should get true when both values are the same, except in the case of NaN. But when the types differ, JavaScript uses a complicated and confusing set of rules to determine what to do. In most cases, it just tries to convert one of the values to the other value’s type. However, when null or undefined occurs on either side of the operator, it produces true only if both sides are one of null or undefined.
+
+```javascript
+console.log(null == undefined);
+// → true
+console.log(null == 0);
+// → false
+```
+:warning: When you do not want any type conversions to happen, there are two additional operators: `===` and `!==`
+
+```javascript
+"5" == 5
+true
+"5" === 5
+false
+```
 
 
