@@ -88,7 +88,7 @@ For very big or very small numbers, you may also use scientific notation by addi
 
 :warning: Calculations with fractional numbers are not generally precise, just as pi cannot be precisly expressed by a finite number of decimal digits. 
 
-### Arithmetic
+#### Arithmetic
 
 Main thing to do with numbers is arithmetic. Arithmetic operations such as addition or multiplication take two number values and produce a new number from them. Here's what they look like in JavaScript:
 
