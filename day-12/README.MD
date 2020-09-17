@@ -2,7 +2,7 @@
 
 # Course Overview
 
-Notice: Materials in these notes are taken and translated from www.eloquentjavascript.net. However not all the content might be word for word.
+Notice: Materials in these notes are taken and/or translated from www.eloquentjavascript.net. However not all the content might be word for word.
 
 ## ToC
 * [Course Intro](#course-intro)
@@ -15,9 +15,9 @@ Notice: Materials in these notes are taken and translated from www.eloquentjavas
 
 * JavaScript is the language of the web supported by all major browsers, but tools exist to take JavaScript far beyond web pages. You can crdeate native smartphone and tablet apps, desktop apps for Windows and Mac, and even server‑side apps using JavaScript. 
 
-In this course, I'll cover JavaScript programming for those who are completely new to programming. This is also valuable for programmers who are just new to the JavaScript language. We'll learn the JavaScript features needed to get you started. By the end of this course, you'll know the very basics of JavaScript and you'll be able to build simple programs for the web. 
+* In this course, I'll cover JavaScript programming for those who are completely new to programming. This is also valuable for programmers who are just new to the JavaScript language. We'll learn the JavaScript features needed to get you started. By the end of this course, you'll know the very basics of JavaScript and you'll be able to build simple programs for the web. 
 
-* No prior knowledge of programming is required for this course. I hope you'll join me on this journey in learning how to program with JavaScript.
+* No prior knowledge of programming is required for this course. 
 
 
 [🔝](#toc)  
