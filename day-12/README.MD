@@ -17,7 +17,7 @@ Notice: Materials in these notes are taken and/or translated from www.eloquentja
 
 * In this course, I'll cover JavaScript programming for those who are completely new to programming. This is also valuable for programmers who are just new to the JavaScript language. We'll learn the JavaScript features needed to get you started. By the end of this course, you'll know the very basics of JavaScript and you'll be able to build simple programs for the web. 
 
-* No prior knowledge of programming is required for this course. 
+* No prior knowledge of programming is required for this course.   
 
 
 [🔝](#toc)  
@@ -33,7 +33,7 @@ Notice: Materials in these notes are taken and/or translated from www.eloquentja
   
 * After its adoption outside of Netscape, a standard document was written to describe the way the JavaScript language should work so that the various pieces of software that claimed to support JavaScript were actually talking about the same language. This is called the ECMAScript standard, after the Ecma International organization that did the standardization. In practice, the terms ECMAScript and JavaScript can be used interchangeably—they are two names for the same language.
 
-* Major version came out (ES6) in 2015.
+* Major version came out (ES6) in 2015.  
 
 
   
@@ -49,7 +49,11 @@ For example, we can express the number 13 in bits. It works the same way as a de
 ```  0   0   0   0   1   1   0   1  ```  
 ```128  64  32  16   8   4   2   1  ```
  
-So that’s the binary number 00001101. Its non-zero digits stand for 8, 4, and 1, and add up to 13.
+So that’s the binary number 00001101. Its non-zero digits stand for 8, 4, and 1, and add up to 13.  
+
+
+[🔝](#toc)  
+
 
 
 ### Values
@@ -58,7 +62,11 @@ In a RAM memory there can be more than 30 billion bits and in a hard disk even m
 
 To be able to work with such quantities of bits without getting lost, we must separate them into chunks that represent pieces of information. In a JavaScript environment, those chunks are called values. Though all values are made of bits, they play different roles. Every value has a type that determines its role. Some values are numbers, some values are pieces of text, some values are functions, and so on.
 
-To create a value, you must merely invoke its name. This is convenient. You don’t have to gather building material for your values or pay for them. You just call for one, and whoosh, you have it. They are not really created from thin air, of course. Every value has to be stored somewhere, and if you want to use a gigantic amount of them at the same time, you might run out of memory. Fortunately, this is a problem only if you need them all simultaneously. As soon as you no longer use a value, it will dissipate, leaving behind its bits to be recycled as building material for the next generation of values.
+To create a value, you must merely invoke its name. This is convenient. You don’t have to gather building material for your values or pay for them. You just call for one, and whoosh, you have it. They are not really created from thin air, of course. Every value has to be stored somewhere, and if you want to use a gigantic amount of them at the same time, you might run out of memory. Fortunately, this is a problem only if you need them all simultaneously. As soon as you no longer use a value, it will dissipate, leaving behind its bits to be recycled as building material for the next generation of values.  
+
+
+[🔝](#toc)  
+
 
 
 ## Numbers
@@ -86,7 +94,13 @@ For very big or very small numbers, you may also use scientific notation by addi
 2.998e8
 ```
 
-:warning: Calculations with fractional numbers are not generally precise, just as pi cannot be precisly expressed by a finite number of decimal digits. 
+:warning: Calculations with fractional numbers are not generally precise, just as pi cannot be precisly expressed by a finite number of decimal digits.   
+
+
+
+[🔝](#toc)  
+
+
 
 #### Arithmetic Operators
 
@@ -107,7 +121,13 @@ The `%` symbol is used to represent the `remainder` operation.
 ```javascript
 144 % 12 gives = 0
 ```
-This operator is called `modulo`
+This operator is called `modulo`  
+
+
+[🔝](#toc)  
+
+
+
 
 ### Special Numbers
 
@@ -119,7 +139,12 @@ There are three special values in JavaScipt that are considered numbers but don'
 
 The first two are `Infinity` and `-Infinity`, which represent the positive and  negative infinities. 
 
-The third one is `NaN` stands for `not a number`, even though it is a value of the number type. You'll get this result when you, for example, try to calculate ` 0 / 0`, `Infinity - Infinity` or any number of other numeric operations that don't yield a meaningful result.
+The third one is `NaN` stands for `not a number`, even though it is a value of the number type. You'll get this result when you, for example, try to calculate ` 0 / 0`, `Infinity - Infinity` or any number of other numeric operations that don't yield a meaningful result.  
+
+
+[🔝](#toc)  
+
+
 
 ## Strings
 
@@ -148,7 +173,12 @@ You can use single quotes, double quotes, or backticks to mark them, as long as 
 ```javascript
 `half of 100 is ${100 / 2}`
 ```
-When you write something inside `${}` in a template literal, its result will be computed.
+When you write something inside `${}` in a template literal, its result will be computed.  
+
+
+
+[🔝](#toc)  
+
 
 
 ## Unary Operators
@@ -166,7 +196,10 @@ The `-` (minus) operator can be used both as a *binary operator* and as a unary 
 ```javascript
 console.log(- (10 - 2))
 // -> -8
-```
+```  
+
+[🔝](#toc)  
+
 
 ## Boolean Values
 
@@ -175,7 +208,10 @@ It is often useful to have a value that distinguishes between only two possibili
 ```javascript
 1 > 2
 -> false
-```
+```  
+ 
+[🔝](#toc)  
+
 
 
 ### Comparison Operators
@@ -196,7 +232,10 @@ Other similar operators are `>=` (greater than or equal to), `<=` (less than or 
 ```javascript
 console.log(NaN == NaN)
 // → false
-```
+```    
+[🔝](#toc)  
+
+
 
 ### Logical Operators
 
@@ -224,7 +263,14 @@ console.log(true ? 1 : 2);
 console.log(false ? 1 : 2);
 // → 2
 ```
-This one is called the conditional operator (or sometimes just the ternary operator since it is the only such operator in the language). The value on the left of the question mark “picks” which of the other two values will come out. When it is true, it chooses the middle value, and when it is false, it chooses the value on the right.
+This one is called the conditional operator (or sometimes just the ternary operator since it is the only such operator in the language). The value on the left of the question mark “picks” which of the other two values will come out. Whe
+n it is true, it chooses the middle value, and when it is false, it chooses the value on the right.  
+
+
+[🔝](#toc)  
+
+
+
 
 ## Empty Values
 
@@ -235,7 +281,12 @@ There are two special empty values, which denote absence of a meaningful value
 
 Many operations in the language that don’t produce a meaningful value (you’ll see some later) yield undefined simply because they have to yield some value.
 
-The difference in meaning between undefined and null is an accident of JavaScript’s design, and it doesn’t matter most of the time. In cases where you actually have to concern yourself with these values, I recommend treating them as mostly interchangeable.
+The difference in meaning between undefined and null is an accident of JavaScript’s design, and it doesn’t matter most of the time. In cases where you actually have to concern yourself with these values, I recommend treating them as mostly interchangeable.    
+
+  
+[🔝](#toc)  
+
+
 
 ## Automatic Type Conversion
 
@@ -271,7 +322,11 @@ console.log(null == 0);
 true
 "5" === 5
 false
-```
+```  
+
+[🔝](#toc)  
+
+
 
 ## Short-Circuiting of Logical Operators
 
@@ -281,12 +336,19 @@ The logical operators ``&&`` and ``||`` handle values of different types in a pe
 
 * The `||` operator, for example, will return the value to its left when that can be converted to true and will return the value on its right otherwise. This has the expected effect when the values are Boolean and does something analogous for values of other types.
 
-* The `&&` operator works similarly but the other way around. When the value to its left is something that converts to false, it returns that value, and otherwise it returns the value on its right.
+* The `&&` operator works similarly but the other way around. When the value to its left is something that converts to false, it returns that value, and otherwise it returns the value on its right.  
+
+
+[🔝](#toc)  
+
 
 
 ## Summary
 
 Such values are created by typing in their name `(true, null)` or value `(13, "abc")`. You can combine and transform values with operators. We saw binary operators for arithmetic `(+, -, *, /, and %)`, string concatenation `(+)`, comparison `(==, !=, ===, !==, <, >, <=, >=)`, and logic `(&&, ||)`, as well as several unary operators (- to negate a number, ! to negate logically, and typeof to find a value’s type) and a ternary operator (?:) to pick one of two values based on a third value.
 
-This gives you enough information to use JavaScript as a pocket calculator but not much more. The next chapter will start tying these expressions together into basic programs.
+This gives you enough information to use JavaScript as a pocket calculator but not much more. The next chapter will start tying these expressions together into basic programs.  
+
+
+[🔝](#toc)  
 
