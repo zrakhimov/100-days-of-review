@@ -5,9 +5,22 @@
 Notice: Materials in these notes are taken and/or translated from www.eloquentjavascript.net. However not all the content might be word for word.
 
 ## ToC
-* [Course Intro](#course-intro)
-* [What is JavaScript?](#what-is-javascript)
-* [Values, Types, and Operators](#values-types-and-operators)
+* [Course Intro](#course-intro)  
+* [What is JavaScript?](#what-is-javascript)  
+* [Under the Hood](#under-the-hood)  
+* [Values](#values)  
+* [Numbers](#number)  
+  * [Arithmetic Operators](#arithmetic-operators)  
+  * [Special Numbers](#special-numbers)  
+* [Strings](#strings)  
+  * [Unary Operators](#unary-operators)  
+* [Boolean Values](#boolean-values)  
+  * [Comparison Operators](#comparison-operators)
+  * [Logical Operators](#logical-operators)
+* [Empty Values](#empty-values)
+* [Automatic Type Conversion](#automatic-type-conversion)
+* [Short-Circuiting of Logical Operators](#short---circuitting-of-logical-operators)
+* [Summary](#summary)
 
 ### Course Intro
 
@@ -181,7 +194,7 @@ When you write something inside `${}` in a template literal, its result will be 
 
 
 
-## Unary Operators
+### Unary Operators
 
 Not all operators are symbols. Some are written as words, for example `typeof` which produces a string value naming the type of the value you give it.
 
@@ -343,7 +356,9 @@ The logical operators ``&&`` and ``||`` handle values of different types in a pe
 
 
 
-## Summary
+## Summary  
+
+We looked at four types of JavaScript values: numbers, strings, boolean, and undefined values.
 
 Such values are created by typing in their name `(true, null)` or value `(13, "abc")`. You can combine and transform values with operators. We saw binary operators for arithmetic `(+, -, *, /, and %)`, string concatenation `(+)`, comparison `(==, !=, ===, !==, <, >, <=, >=)`, and logic `(&&, ||)`, as well as several unary operators (- to negate a number, ! to negate logically, and typeof to find a value’s type) and a ternary operator (?:) to pick one of two values based on a third value.
 
