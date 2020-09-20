@@ -14,7 +14,8 @@
 [Day 9 - CSS [Flexbox]](day-9/README.MD)  
 [Day 10 - CSS [Grid]](day-10/README.MD)  
 [Day 11 - Project 0 [Google Clone]](day-11/README.MD)  
-[Day 12 - JS [Values, Types, and Operators]](day-12/README.MD)
+[Day 12 - JS [Values, Types, and Operators]](day-12/README.MD)  
+[Day 13 - JS [Program Structure]](#day-13/README.MD)
 
 
 
