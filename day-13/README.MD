@@ -479,19 +479,150 @@ fuzzyLittleTurtle
     
 ## Comments
 
+Often, raw code does not convey all the information you want a program to convey to human readers, or it conveys it in such a cryptic way that people might not understand it. At other times, you might just want to include some related thoughts as part of your program. This is what `comments` are for.
+
+* To write a single-line comment, you can use two slash characters (`//`) and then the comment text after it.
+
+```javascript
+let accountBalance = calculateBalance(account);
+// It's a green hollow where a river sings
+accountBalance.adjust();
+// Madly catching white tatters in the grass.
+let report = new Report();
+// Where the sun on the proud mountain rings:
+addToReport(accountBalance, report);
+// It's a little valley, foaming like light in a glass.
+```
+
+* A section of text between `/*` and `*/` will be ignored in its entirety, regardless of whether it contains line breaks. This is useful for adding blocks of information about a file or a chunk of program.
+
+```javascript
+/*
+  I first found this number scrawled on the back of an old notebook.
+  Since then, it has often dropped by, showing up in phone numbers
+  and the serial numbers of products that I've bought. It obviously
+  likes me, so I've decided to keep it.
+*/
+const myNumber = 11213;
+```
   
 [🔝](#toc)  
 
     
 ## Summary
 
+* You now know that a program is built out of statements, which themselves sometimes contain more statements. Statements tend to contain expressions, which themselves can be built out of smaller expressions.
+
+* Putting statements after one another gives you a program that is executed from top to bottom. You can introduce disturbances in the flow of control by using conditional (if, else, and switch) and looping (while, do, and for) statements.
+
+* Bindings can be used to file pieces of data under a name, and they are useful for tracking state in your program. The environment is the set of bindings that are defined. JavaScript systems always put a number of useful standard bindings into your environment.
+
+* Functions are special values that encapsulate a piece of program. You can invoke them by writing functionName(argument1, argument2). Such a function call is an expression and may produce a value.
   
 [🔝](#toc)  
 
     
 ## Exercises
 
-  
+:canada: 
+1. Looping a triangle
+* Write a loop that makes seven calls to console.log to output the following triangle:
+```
+#
+##
+###
+####
+#####
+######
+#######
+```
+:warning: Hints: It may be useful to know that you can find the length of a string by writing `.length ` after it.
+```
+let abc = "abc";
+console.log(abc.length);
+// → 3
+```
+
+
+2. FizzBuzz
+
+Write a program that uses console.log to print all the numbers from 1 to 100, with two exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers divisible by 5 (and not 3), print "Buzz" instead.
+
+When you have that working, modify your program to print "FizzBuzz" for numbers that are divisible by both 3 and 5 (and still print "Fizz" or "Buzz" for numbers divisible by only one of those).
+
+(This is actually an interview question that has been claimed to weed out a significant percentage of programmer candidates. So if you solved it, your labor market value just went up.)
+
+:warning: Hints: You'll have to use `%` modulo operator and `if/else/else if` statements
+
+3. Chessboard
+
+Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines. At each position of the grid there is either a space or a "#" character. The characters should form a chessboard.
+
+Passing this string to console.log should show something like this:
+
+ # # # #
+# # # # 
+ # # # #
+# # # # 
+ # # # #
+# # # # 
+ # # # #
+# # # #
+
+When you have a program that generates this pattern, define a binding size = 8 and change the program so that it works for any size, outputting a grid of the given width and height.
+
+
+:uzbekistan:
+1. To'g'ri burchakli uchburchak
+* `console.log` ni `loop` orqali 7 marta chaqirib quyidagi uchburchakni yasang:
+```
+#
+##
+###
+####
+#####
+######
+#######
+```
+:warning: Yordam: `string` ni uzunligini bilish uchun o'zgaruvchini ketidan `.length` deb yozish kerak. Masalan:
+```javascript
+let abc = "abc";
+console.log(abc.length);
+// → 3
+```  
+
+2. FizzBuzz
+
+* `console.log` ga 1 dan 100 gacha bo'lgan sonlarni chiqaring, lekin 2 ta mustasno bor.
+Birinchisi agar son 3 ga bo'linadigan bo'lsa, sonni o'rniga "Fizz" deb chiqaring
+Ikkinchisi agar son 5 ga (3 ga emas) bo'linadigan bo'lsa, sonni o'rniga "Buzz" deb chiqaring.
+
+* Bu ishlagandan keyingi qiladigan ishingiz, yana bitta mustasno qo'shasiz: ya'ni agar son 3 va 5 ga (ikkisiga) ham bo'linadigan bo'lsa o'sha sonni o'rniga "FizzBuzz" deb chiqaring.
+
+* (Bu aslida intervyularda beriladigan savollardan biri bo'lib, agar yecha olsangiz, boshqa kandidatlardan hoziroq darajangiz ko'tarilgan bo'ladi :)
+
+3. Shaxmat doskasi
+
+* 8 ga 8 (8x8) grid ichida `#` simvolini shaxmat doskasi singari joylashtiramiz. Ya'ni qora ranglar `#` orqali oq ranglar esa "  " (bo'shliq) orqali tasvirlanadi.
+
+* `console.log` ga quyidagi ko'rinishdagi `string` lar chiqishi kerak
+
+```javascript
+ # # # #
+# # # # 
+ # # # #
+# # # # 
+ # # # #
+# # # # 
+ # # # #
+# # # #
+```
+
+* Buni qilib bo'lganingizdan keyin, faqat 8x8 emas, balki istalgan kattalikdagi shaxmat doskasini tasvirlash imkoni bo'lsin. Buning uchun `size` degan o'zgaruvchini qiymatini o'zgartirish havola bo'lishi kerak.
+
+
+
+
 [🔝](#toc)  
 
   
