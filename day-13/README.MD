@@ -6,12 +6,25 @@ In this lesson, we will start to do things that can actually be called *programm
 
 ## ToC
 * [Expressions and statements](#expressions-and-statements)
-* [ ](#)
-* [ ](#)
-* [ ](#)
-* [ ](#)
-* [](#)
-* [](#)
+* [Bindings](#bindings)  
+* [Binding Names](#binding-names)  
+* [The Environment ](#the-environment)  
+* [Functions](#functions)  
+* [Console Log Function](#console-log-function)  
+* [Return Values](#return-values)  
+* [Control Flow](#control-flow)   
+* [Conditional Execution](#conditional-execution)  
+* [While And Do Loops](#while-and-do-loops)  
+* [Indenting](#indenting)  
+* [For Loop](#for-loop)  
+* [Breaking Out of a Loop](#breaking-out-of-a-loop)  
+* [Updating bindings succinctly](#updating-bindings-succinctly)  
+* [Switch](#switch)
+* [Capitalization](#capitalization)
+* [Comments](#comments)
+* [Summary](#summary)
+* [Excercises](#excercises)
+
 
 ## Expressions and statements
 
@@ -82,37 +95,360 @@ console.log(one + two);
 
 The words ```var``` and const can also be used to create bindings, in a way similar to let.
 
+```javascript
+var name = "Ayda";
+const greeting = "Hello ";
+console.log(greeting + name);
+// → Hello Ayda
+```
+
+:exclamation: The first, ```var``` (short for “variable”), is the way bindings were declared in pre-2015 JavaScript.
+
+The word `const` stands for constant. It defines a constant binding, which points at the same value for as long as it lives. This is useful for bindings that give a name to a value so that you can easily refer to it later.
 
 [🔝](#toc)  
   
-### 
+## Binding Names
 
+Binding names can be any word. Digits can be part of binding names—`catch22` is a valid name, for example—but the name must not start with a digit. A binding name may include dollar signs (`$`) or underscores (`_`) but no other punctuation or special characters.
 
+Words with a special meaning, such as `let`, are keywords, and they may not be used as binding names. There are also a number of words that are “*reserved for use*” in future versions of JavaScript, which also can’t be used as binding names. The full list of keywords and reserved words is rather long.   
+
+```javascript
+break case catch class const continue debugger default
+delete do else enum export extends false finally for
+function if implements import interface in instanceof let
+new package private protected public return static super
+switch this throw true try typeof var void while with yield
+```
+
+Don’t worry about memorizing this list. When creating a binding produces an unexpected syntax error, see whether you’re trying to define a reserved word.
 
 
   
 [🔝](#toc)  
 
-### 
+### The Environment
 
-
-  
-[🔝](#toc)  
-
-###
-
+The collection of bindings and their values that exist at a given time is called the **environment**. When a program starts up, this environment is not empty. It always contains bindings that are part of the language standard, and most of the time, it also has bindings that provide ways to interact with the surrounding system. For example, in a browser, there are functions to interact with the currently loaded website and to read mouse and keyboard input.
 
   
 [🔝](#toc)  
 
-### 
+### Functions
 
+* A lot of the values provided in the default environment have the type **function**.
+
+* A function is a piece of program wrapped in a value. Such values can be applied in order to run the wrapped program. For example, in a browser environment, the binding prompt holds a function that shows a little dialog box asking for user input. It is used like this:
+
+```javascript
+
+prompt("Enter passcode");
+
+```
+
+:warning: Executing a function is called **invoking**, **calling**, or **applying** it.
+
+* In the example, the prompt function uses the string that we give it as the text to show in the dialog box. Values given to functions are called **arguments**. Different functions might need a different number or different types of arguments.
+
+  
+[🔝](#toc)  
+
+### Console Log function
+
+If you've noticed in the examples, we're using `console.log()` function a lot. 
+
+* Most JavaScript systems (including all modern web browsers and Node.js) provide a console.log function that writes out its arguments to some text output device.
+
+* In browsers, the output lands in the JavaScript console. (`F12` button on windows)
+
+```javascript
+
+let x = 30;
+console.log("the value of x is", x);
+
+```
+
+:warning: Though binding names cannot contain period characters, console.log does have one. This is because console.log isn’t a simple binding. It is actually an expression that retrieves the log property from the value held by the console binding.
+ 
 
 
 [🔝](#toc)    
   
   
-### 
+### Return Values
+
+Showing a dialog box or writing text to the screen is a **side effect**. A lot of functions are useful because of the side effects they produce. Functions may also produce values, in which case they don’t need to have a side effect to be useful. For example, the function Math.max takes any amount of number arguments and gives back the greatest: 
+
+```javascript
+
+console.log(Math.max(2, 4));
+// → 4
+
+```
+* When a function produces a value, it is said to **return** that value
+
+:warning: we'll see how to create our own functions in the next lesson
+
+  
+[🔝](#toc)  
+
+  
+  
+## Control Flow
+
+* When your program contains more than one statement, the statements are executed as if they are a story, from top to bottom. This example program has two statements. The first one asks the user for a number, and the second, which is executed after the first, shows the square of that number.
+
+```javascript
+let x = Number(prompt("Pick a number"));
+console.log("Your number is the square root of " + x * x);
+```
+The function Number converts a value to a number. We need that conversion because the result of prompt is a string value, and we want a number. There are similar functions called String and Boolean that convert values to those types.  
+
+
+
+[🔝](#toc)  
+
+    
+## Conditional Execution
+
+* We may, for example, want to create a branching road, where the program takes the proper branch based on the situation at hand. This is called conditional execution. 
+
+* Conditional execution is created with the `if` keyword in JavaScript. 
+
+```javascripot
+let x = Number(prompt("Pick a number"));
+if (!Number.isNaN(x)) {
+  console.log("Your number is the square root of " + x * x);
+}
+```
+
+* The `if` keyword executes or skips a statement depending on the value of a Boolean expression. The deciding expression is written after the keyword, between parentheses, followed by the statement to execute.
+
+* The Number.isNaN function is a standard JavaScript function that returns true only if the argument it is given is NaN. The Number function happens to return NaN when you give it a string that doesn’t represent a valid number. Thus, the condition translates to `unless x is not-a-number, do this`.
+
+* The statement after the `if` is wrapped in braces (`{` and `}`) in this example. The braces can be used to group any number of statements into a single statement, called a **block**. 
+
+:warning: You can skip `{}` if the there's only one statement, however is not the best practice to omit them.
+
+* You often won’t just have code that executes when a condition holds true, but also code that handles the other case. This alternate path is represented by the second arrow in the diagram. You can use the **`else`** keyword, together with if, to create two separate, alternative execution paths.
+
+```javascript
+let x = Number(prompt("Pick a number"));
+if (!Number.isNaN(x)) {
+  console.log("Your number is the square root of " +
+              x * x);
+} else {
+  console.log("Hey. Why didn't you give me a number?");
+}
+```
+* If you have more than two paths to choose from, you can “chain” multiple if/else pairs together with **`else if`**.
+
+```javascript
+
+let num = Number(prompt("Pick a number"));
+
+if (num < 10) {
+  console.log("Small");
+} else if (num < 100) {
+  console.log("Medium");
+} else {
+  console.log("Large");
+}
+
+```  
+
+[🔝](#toc)  
+
+    
+## While And Do Loops
+
+Consider a program that outputs all even numbers from 0 to 12. One way to write this is as follows:
+
+```javascript
+console.log(0);
+console.log(2);
+console.log(4);
+console.log(6);
+console.log(8);
+console.log(10);
+console.log(12);
+```
+
+What if we want until 1000? It won't be practical to do it one by one. What we need is a way to run a piece of code multiple times. This form of control flow is called a **loop**.
+
+```javascript
+let number = 0;
+while (number <= 12) {
+  console.log(number);
+  number = number + 2;
+}
+// → 0
+// → 2
+//   … etcetera
+```
+
+* A statement starting with the keyword **`while`** creates a loop. The word while is followed by an expression in parentheses and then a statement, much like `if`. 
+
+* The loop keeps entering that statement as long as the expression produces a value that gives `true` when converted to Boolean.
+
+* With this in mind, let's look at another example that calculates 2^10:
+
+```javascript
+let result = 1;
+let counter = 0;
+while (counter < 10) {
+  result = result * 2;
+  counter = counter + 1;
+}
+console.log(result);
+// → 1024
+```
+:warning: TIP: get used to count from 0 :)
+
+* A **`do`** loop is a control structure similar to a `while` loop. It differs only on one point: a do loop always executes its body at least once, and it starts testing whether it should stop only after that first execution. To reflect this, the test appears after the body of the loop.
+
+```javascript
+let yourName;
+do {
+  yourName = prompt("Who are you?");
+} while (!yourName);
+console.log(yourName);
+```
+* This program will force you to enter a name. It will ask again and again until it gets something that is not an empty string. Applying the `!` operator will convert a value to Boolean type before negating it, and all strings except `""` convert to true. This means the loop continues going round until you provide a non-empty name.
+
+
+  
+[🔝](#toc)  
+
+    
+## Indenting
+
+* The role of this indentation inside blocks is to make the structure of the code stand out. In code where new blocks are opened inside other blocks, it can become hard to see where one block ends and another begins. With proper indentation, the visual shape of a program corresponds to the shape of the blocks inside it.
+
+```javascript
+
+if (false != true) {
+  console.log("That makes sense.");
+  if (1 < 2) {
+    console.log("No surprise there.");
+  }
+}
+
+```
+
+  
+[🔝](#toc)  
+
+
+    
+## For Loops
+
+* Many loops follow the pattern shown in the `while` examples. First a “counter” binding is created to track the progress of the loop. Then comes a while loop, usually with a test expression that checks whether the counter has reached its end value. At the end of the loop body, the counter is updated to track progress.
+
+* Because this pattern is so common, JavaScript and similar languages provide a slightly shorter and more comprehensive form, the `for` loop.
+
+```javascript
+for (let number = 0; number <= 12; number = number + 2) {
+  console.log(number);
+}
+// → 0
+// → 2
+//   … etcetera
+```
+
+:warning: The parentheses after a `for` keyword must contain two semicolons. 
+  1. The part before the first semicolon **initializes** the loop, usually by defining a binding. 
+  2. The second part is the expression that **checks** whether the loop must continue. 
+  3. The final part **updates** the state of the loop after every iteration. In most cases, this is shorter and clearer than a while construct.
+
+* Here's the code to find 2^10 with `for` loop
+
+```javascript
+let result = 1;
+for (let counter = 0; counter < 10; counter = counter + 1) {
+  result = result * 2;
+}
+console.log(result);
+// → 1024
+```
+  
+[🔝](#toc)  
+
+      
+## Breaking Out of a Loop
+
+* Having the looping condition produce `false` is not the only way a loop can finish. * * There is a special statement called **`break`** that has the effect of immediately jumping out of the enclosing loop.
+
+```javascript
+for (let current = 20; ; current = current + 1) {
+  if (current % 7 == 0) {
+    console.log(current);
+    break;
+  }
+}
+// → 21
+```
+
+:warning: If you were to remove that break statement or you accidentally write an end condition that always produces true, your program would get stuck in an **`infinite loop`**. A program stuck in an infinite loop will never finish running, which is usually a bad thing.
+
+* The `continue` keyword is similar to break, in that it influences the progress of a loop. The `continue` statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+  
+[🔝](#toc)  
+
+      
+## Updating bindings succinctly
+
+* Especially when looping, a program often needs to *update* a binding to hold a value based on that binding’s previous value.
+
+``` counter = counter + 1; ```
+
+JavaScript provides a shortcut for this:
+
+``` counter += 1; ```
+
+This allows us to shorten our counting example a little more.
+
+```javascript
+for (let number = 0; number <= 12; number += 2) {
+  console.log(number);
+}
+```
+
+:exclamation: For counter += 1 and counter -= 1, there are even shorter equivalents: `counter++` and `counter--`.
+
+
+  
+[🔝](#toc)  
+
+      
+## Switch
+
+It is not uncommon for code to look like this:
+```javascript
+if (x == "value1") action1();
+else if (x == "value2") action2();
+else if (x == "value3") action3();
+else defaultAction();
+```
+* There is a construct called `switch` that is intended to express such a “dispatch” in a more direct way.
+
+```javascript
+switch (prompt("What is the weather like?")) {
+  case "rainy":
+    console.log("Remember to bring an umbrella.");
+    break;
+  case "sunny":
+    console.log("Dress lightly.");
+    break;
+  case "cloudy":
+    console.log("Go outside.");
+    break;
+  default:
+    console.log("Unknown weather type!");
+    break;
+}
+```
 
 
   
@@ -120,4 +456,42 @@ The words ```var``` and const can also be used to create bindings, in a way simi
 
   
   
+## Capitalization
+
+* Binding names may not contain spaces, yet it is often helpful to use multiple words to clearly describe what the binding represents. These are pretty much your choices for writing a binding name with several words in it:
+
+```
+fuzzylittleturtle
+fuzzy_little_turtle
+FuzzyLittleTurtle
+fuzzyLittleTurtle
+```
+
+* The first style can be hard to read. I rather like the look of the underscores, though that style is a little painful to type. 
+
+* The standard JavaScript functions, and most JavaScript programmers, follow the bottom style—they capitalize every word except the first. 
+
+* In a few cases, such as the Number function, the first letter of a binding is also capitalized. This was done to mark this function as a constructor.
+  
+[🔝](#toc)  
+
+  
+    
+## Comments
+
+  
+[🔝](#toc)  
+
+    
+## Summary
+
+  
+[🔝](#toc)  
+
+    
+## Exercises
+
+  
+[🔝](#toc)  
+
   
