@@ -23,7 +23,7 @@ In this lesson, we will start to do things that can actually be called *programm
 * [Capitalization](#capitalization)
 * [Comments](#comments)
 * [Summary](#summary)
-* [Excercises](#excercises)
+* [Exercises](#exercises)
 
 
 ## Expressions and statements
