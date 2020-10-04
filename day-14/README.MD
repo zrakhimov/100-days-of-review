@@ -11,7 +11,7 @@ Like we humans have a vocabulary to use in our speech, JavaScript has also a voc
 * [Bindings and scopes](#bindings-and-scopes)  
 * [Nested scope](#nested-scope)  
 * [Functions as values](#functions-as-values)  
-* [Declaration notation](#declaration-notation
+* [Declaration notation](#declaration-notation)  
 * [Arrow functions](#arrow-functions)
 * [The call stack](#the-call-stack)
 * [Optional Arguments](#optional-arguments)  
