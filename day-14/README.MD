@@ -82,7 +82,40 @@ console.log(power(2, 10));
 
 ### Bindings and scopes
 
+* Each binding has a *scope*, which is part of the program in which the binding is visible
+* For bindings which are declared outside of any function of *block* the scope is the whole program. These called *global scope*  
+* For bindings which are declared inside of any function or block, they can only be accessed within that block. These are called *local scope*
 
+* Bindings declared with `let` and `const` are in fact local to the block that they are declared in.
+
+:warning: `var` works differently in this case, are visible throughout the whole function that they appear in—or throughout the global scope, if they are not in a function.
+
+```javascript 
+let x = 10;
+if (true) {
+  let y = 20;
+  var z = 30;
+  console.log(x + y + z);
+  // → 60
+}
+// y is not visible here
+console.log(x + z);
+// → 40
+```  
+
+```javascript
+
+const halve = function(n) {
+  return n / 2;
+};
+
+let n = 10;
+console.log(halve(100));
+// → 50
+console.log(n);
+// → 10
+
+```
 
 
 
@@ -90,20 +123,78 @@ console.log(power(2, 10));
   
 ### Nested scope
 
+* Blocks and functions can be created inside other blocks and functions, producing multiple degrees of locality.
 
-
+```javascript
+const hummus = function(factor) {
+  const ingredient = function(amount, unit, name) {
+    let ingredientAmount = amount * factor;
+    if (ingredientAmount > 1) {
+      unit += "s";
+    }
+    console.log(`${ingredientAmount} ${unit} ${name}`);
+  };
+  ingredient(1, "can", "chickpeas");
+  ingredient(0.25, "cup", "tahini");
+  ingredient(0.25, "cup", "lemon juice");
+  ingredient(1, "clove", "garlic");
+  ingredient(2, "tablespoon", "olive oil");
+  ingredient(0.5, "teaspoon", "cumin");
+};
+```
+* The code inside the ingredient function can see the factor binding from the outer function. But its local bindings, such as unit or ingredientAmount, are not visible in the outer function. 
 
   
 [🔝](#toc)  
 
 ### Functions as values
 
+* A function binding usually simply acts as a name for specific piece of the program. 
+
+* It acts just any other value, which means it can do all the things that other values can do such as:
+
+      * use it in arbitrary expressions, not just call it
+      * store function value it in a new binding
+      * pass it as argument to a function
+      * assign it a new value
+      
+```javascript
+let launchMissiles = function() {
+  missileSystem.launch("now");
+};
+if (safeMode) {
+  launchMissiles = function() {/* do nothing */};
+}
+```
 
 
   
 [🔝](#toc)  
 
 ### Declaration notation
+
+* There's a slightly shorter way to declare a function binding.
+
+* When `function` keyword is used at the start of a statement, it works differently:
+
+```javascript
+function square(x) {
+   return x * x;
+}
+```
+:exclamation: This is a **function declaration** and doesn't require `;`
+
+```javascript
+console.log("The future says:", future());
+
+function future() {
+  return "You'll never have flying cars";
+}
+```  
+
+:warning: The code above works, even though the function is defined *below* the code that uses it. 
+
+* Function declarations are not part of the regular top-to-bottom flow of control. They are conceptually moved to the top of their scope and can be used by all the code in that scope.
 
 
 
@@ -126,12 +217,6 @@ console.log(power(2, 10));
 [🔝](#toc)  
 
   
-  
-  
-  
-
-  
-[🔝](#toc)  
 
 ### Optional Arguments
 
@@ -161,12 +246,7 @@ console.log(power(2, 10));
 [🔝](#toc)  
 
   
-  
-  
 
-
-  
-[🔝](#toc)  
 
 ### Functions and side effects
 
