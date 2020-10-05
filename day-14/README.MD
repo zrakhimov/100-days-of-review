@@ -265,8 +265,48 @@ console.log(chicken() + " came first.");
 
 ### Optional Arguments
 
+* JavaScript is very broadminded about the number of arguments you pass to a function. 
+* If you pass too many, the extra ones are ignored.
+* If you pass too few, the missing ones will get the value `undefined`
 
+```javascript
+function square(x) { return x * x; }
+console.log(square(4, true, "hedgehog"));
+// → 16
+```
 
+* This has an upside and a downside
+   * The downside is: if you pass wrong number of arguments you don't get any errors, which means it'll be harder for you to find the mistake.
+   * The upside however, is that you can define one function that behaves according to the number of arguments given
+   
+```javascript
+function minus(a, b) {
+  if (b === undefined) return -a;
+  else return a - b;
+}
+
+console.log(minus(10));
+// → -10
+console.log(minus(10, 5));
+// → 5
+```  
+
+:exclamation: If you write an `=` operator after a parameter, followed by an expression, the value of that expression will replace the argument when it is not given.
+
+```javascript
+function power(base, exponent = 2) {
+  let result = 1;
+  for (let count = 0; count < exponent; count++) {
+    result *= base;
+  }
+  return result;
+}
+
+console.log(power(4));
+// → 16
+console.log(power(2, 6));
+// → 64
+```
   
 [🔝](#toc)  
 
