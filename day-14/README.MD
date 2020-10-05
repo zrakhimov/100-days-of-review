@@ -203,7 +203,33 @@ function future() {
 
 ### Arrow functions
 
+* Third notation for functions, called **arrow functions** (=>) made up of equal sign and a greater-than character (**not >=**) 
 
+```javascript
+const power = (base, exponent) => {
+  let result = 1;
+  for (let count = 0; count < exponent; count++) {
+    result *= base;
+  }
+  return result;
+};
+```  
+* We can omit `function` keyword, give parameter list **in `()`** and `=>` followed by `{}` which is the body
+
+```javascript
+const square1 = (x) => { return x * x; };
+const square2 = x => x * x;
+```
+:exclamation: When parameter list has only one, we can omit `()`
+:exclamation: If body is only has single expression, rather than a block in braces, that expression will be return from th function.
+
+* When an arrow function has no parameters at all, its parameter list is just an empty set of parantheses:
+
+```javascript
+const horn = () => {
+  console.log("Toot");
+};
+```
 
 
 [🔝](#toc)    
