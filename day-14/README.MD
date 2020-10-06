@@ -17,7 +17,6 @@
 * [Optional Arguments](#optional-arguments)  
 * [Closure](#closure)  
 * [Recursion](#recursion)  
-* [Growing functions](#growing-functions)  
 * [Functions and side effects](#functions-and-side-effects)  
 * [Summary](#summary)  
 * [Exercises](#exercises)   
@@ -349,21 +348,31 @@ console.log(twice(5));
 
 ### Recursion
 
+* A function that calls itself is called **recursive**. It is okay for a function to call itself *as long as it doesn't do it so often that it overflows the stack* (now you know the meaning of stackoverflow :)
+
+```javascript
+
+function power(base, exponent) {
+  if (exponent == 0) {
+    return 1;
+  } else {
+    return base * power(base, exponent - 1);
+  }
+}
+
+console.log(power(2, 3));
+// → 8
+
+``` 
+
+:warning: But this implementation has one problem: in typical JavaScript implementations, it’s about three times slower than the looping version. Running through a simple loop is generally cheaper than calling a function multiple times.  
+
+* The dilemma of speed versus elegance is an interesting one. You can see it as a kind of continuum between human-friendliness and machine-friendliness. Almost any program can be made faster by making it bigger and more convoluted. The programmer has to decide on an appropriate balance.
 
 
 
 [🔝](#toc)    
   
-  
-### Growing functions
-
-
-
-  
-[🔝](#toc)  
-
-  
-
 
 ### Functions and side effects
 
