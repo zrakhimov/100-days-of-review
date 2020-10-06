@@ -312,11 +312,43 @@ console.log(power(2, 6));
 
 ### Closure
 
+* What happens to local bindings when the function call that created them is no longer active?
 
+```javascript
+
+function wrapValue(n) {
+  let local = n;
+  return () => local;
+}
+
+let wrap1 = wrapValue(1);
+let wrap2 = wrapValue(2);
+console.log(wrap1());
+// → 1
+console.log(wrap2());
+// → 2
+
+```
+* Being able to reference a specific instance of a local binding in an enclosing scope is called **closure**
+
+* A function that references bindings from local scopes around it is called **a** *closure*.
+
+```javascript
+function multiplier(factor) {
+  return number => number * factor;
+}
+
+let twice = multiplier(2);
+console.log(twice(5));
+// → 10
+```  
+
+:warning: Thinking about programs like this takes some practice. A good mental model is to think of function values as containing both the code in their body and the environment in which they are created. When called, the function body sees the environment in which it was created, not the environment in which it is called.  
   
 [🔝](#toc)  
 
 ### Recursion
+
 
 
 
