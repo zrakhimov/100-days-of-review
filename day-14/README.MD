@@ -445,15 +445,78 @@ Write a function countBs that takes a string as its only argument and returns a 
 
 Next, write a function called countChar that behaves like `countBs`, except it takes a second argument that indicates the character that is to be counted (rather than counting only uppercase “B” characters). Rewrite countBs to make use of this new function.
 
-```javascript
+```javacript
 // Your code here.
 
 console.log(countBs("BBC"));
 // → 2
 console.log(countChar("kakkerlak", "k"));
 // → 4
+```  
+
+:uzbekistan:  
+
+**1. Minimum** 
+
+`Math.min` funksiyasini ko'rdik. Huddi shu funksiyani o'zingiz yarating. 
+
+* Funksiya nomi `min`
+* 2 ta argument qabul qiladi
+* 2 argumentdan kichigini tanlab, shu qiymatni qaytaradi (`return`)
+
+Misol:
+```javascript
+
+// Kodni bu yerga yozing
+
+console.log(min(0, 10));
+// → 0
+console.log(min(0, -10));
+// → -10
 ```
 
+
+**2. Rekursiya** 
+
+`%` (modulo) operatori qoldiqlarni hisoblashini bildik. Toq va Juft sonlarni topish uchun `n % 2` qilar edik. Siz shunday funksiya hosil qilingki (`%` ishlatmasdan), `n` sonini toq yoki juftligini aniqlab bersin. Ya'ni quyidagi algoritm dan foydalanishingiz mumkin (rekursiya orqali). 
+
+* n == 1 bo'lsa bu toq son
+* n == 0 bo'lsa bu juft son
+* qolgan hamma hollarda, `n` ning juftligi ` n - 2 ` qiymati bilan bir xil.
+
+:warning: `n` minus bo'lgan hollarni ham to'g'irlang.
+
+1. Funksiyani nomi `isEven`
+2. 1 ta argument qabul qiladi
+3. Agar `juft` son bo'lsa `true` qaytaradi, `toq` bo'lsa `false`
+
+Misol:
+```javascript
+// Kodni bu yerga yozing
+
+console.log(isEven(50));
+// → true
+console.log(isEven(75));
+// → false
+console.log(isEven(-1));
+// → ??
+```
+
+
+
+**3. Harf sanaydigan funksiya** 
+1. Birinchi qism:
+
+   * `countBs` degan funksiya hosil qiling.
+   * 1 ta argument (`string`) qabul qilsin
+   * Funksiya ichida, berilgan `string` ni ichida nechta `b` harfi borligini aniqlasin
+   * Shu raqamni `return` qilsin.
+2. Ikkinchi qism:
+   * Bu safar `countChar` degan funksiya hosil qiling
+   * 2 ta argument qabul qilsin 
+   * `b` harfini sanash o'rniga, 2 chi argumentda kelgan harf, 1 chi stringda nechtaligini `return` qilsin.
+   
+:warning: `string` ni uzunligini bilish uchun `.length` property dan foydalaning
   
 [🔝](#toc)  
 
