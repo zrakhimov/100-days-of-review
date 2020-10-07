@@ -516,7 +516,17 @@ console.log(isEven(-1));
    * 2 ta argument qabul qilsin 
    * `b` harfini sanash o'rniga, 2 chi argumentda kelgan harf, 1 chi stringda nechtaligini `return` qilsin.
    
-:warning: `string` ni uzunligini bilish uchun `.length` property dan foydalaning
+:warning: `string` ni uzunligini bilish uchun `.length` property dan foydalaning  
+
+Misol:
+```javascript
+// Kodni bu yerga yozing
+
+console.log(countBs("BBC"));
+// → 2
+console.log(countChar("kakkerlak", "k"));
+// → 4
+```
   
 [🔝](#toc)  
 
