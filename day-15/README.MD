@@ -7,7 +7,7 @@
 * [Properties](#properties)
 * [Methods](#methods)
 * [Objects](#objects)
-* [ ](#)
+* [Mutability](#mutability)
 * [](#)
 * [](#)
 
@@ -160,9 +160,35 @@ console.log(objectA);
   
 [🔝](#toc)  
 
-###
+### Mutability
 
+* We saw that object values can be modified. The types of values discussed in earlier chapters, such as numbers, strings, and Booleans, are all **immutable** —it is impossible to change values of those types.
 
+    * If you have a string that contains "cat", it is not possible for other code to change a character in your string to make it spell "rat".
+    
+* Objects work differently. You can change their properties, causing a single object value to have different content at different times.
+
+```javascript
+let object1 = {value: 10};
+let object2 = object1;
+let object3 = {value: 10};
+
+console.log(object1 == object2);
+// → true
+console.log(object1 == object3);
+// → false
+
+object1.value = 15;
+console.log(object2.value);
+// → 15
+console.log(object3.value);
+// → 10
+```
+:warning: `const` binding to an object can itself not be changed and will continue to point at the same object, the **contents** of that object might change.
+
+:exclamation: When you compare objects with JavaScript’s `==` operator, it compares by identity: it will produce `true` only if both objects are precisely the same value.
+
+* There is no “deep” comparison operation built into JavaScript, which compares objects by contents, but it is possible to write it yourself
   
 [🔝](#toc)  
 
