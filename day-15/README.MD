@@ -4,8 +4,8 @@
 
 ## ToC
 * [Arrays](#arrays)
-* [Properties](#Properties)
-* [ ](#)
+* [Properties](#properties)
+* [Methods](#methods)
 * [ ](#)
 * [ ](#)
 * [](#)
@@ -61,11 +61,42 @@ null.length;
 
 [🔝](#toc)  
   
-### 
+### Methods
 
+* Both string and array values contain, in addition to the `length` property, a number of properties that hold function values:
+  *   `.toUpperCase()`
+  
+```javascript
+let doh = "Doh";
+console.log(typeof doh.toUpperCase);
+// → function
+console.log(doh.toUpperCase());
+// → DOH
+```
+* Every string has a `toUpperCase()` property. When called, it will return a copy of the string in which all letters have been converted to uppercase.
+* There's also `toLowerCase()`, going the other way
 
+:exclamation: Properties that contain *functions* are generally called **methods** of the value they belong to, as in `toUpperCase` is a method of a string.
 
+* This example demonstrates two methods you can use to manipulate arrays:
 
+```javascript
+let sequence = [1, 2, 3];
+sequence.push(4);
+sequence.push(5);
+console.log(sequence);
+// → [1, 2, 3, 4, 5]
+console.log(sequence.pop());
+// → 5
+console.log(sequence);
+// → [1, 2, 3, 4]
+
+```
+
+* `push()` method adds values to the end of an array
+* `pop()` method removes the last value in the array
+
+:warning: These are traditional terms for operations on a `stack`. A Stack, in programming, is a data structure that allows you to push values into it and pop them out again in the opposite order so that the thing that was added last is removed first. 
   
 [🔝](#toc)  
 
