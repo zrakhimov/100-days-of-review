@@ -195,6 +195,31 @@ console.log(object3.value);
 
 ### Array Loops
 
+```javascript
+const foodArray = [
+  { name: 'Burrito' },
+  { name: 'Pizza' },
+  { name: 'Burger' },
+  { name: 'Pasta' }
+];
+
+for (let i = 0; i < foodArray.length; i++) {
+  console.log(`Food Name: ${foodArray[i].name}`);
+}
+```
+
+* This kind of loop is common in classical JavaScript - going over arrays one element at a time is something that comes up a lot, and to do that you'd run a counter over the length of the array and pick out each element in turn
+
+* There's a simpler way to write such loops in modern JavaScript
+
+```javascript
+for (let food of foodArray) {
+  console.log(`$ Food Name: {food.name}`);
+}
+```
+
+* This works not only for arrays, but also for strings and some other data structures.
+
 
 
 
