@@ -4,7 +4,7 @@
 
 ## ToC
 * [Arrays](#arrays)
-* [ ](#)
+* [Properties](#Properties)
 * [ ](#)
 * [ ](#)
 * [ ](#)
@@ -34,9 +34,28 @@ console.log(listOfNumbers[2 - 1]);
 [🔝](#toc)  
   
 
-### 
+### Properties
 
+* So far we've seen some weird looking `myString.length` and `Math.max` in the past. These are expressions that access a **property** of some value.
 
+    * `length` is the *property* of the value `myString`
+    * `max` is the *property* of `Math` object.
+    
+* Almost all javascript values have properties except `null` and `undefined`
+
+```javascript
+null.length;
+// → TypeError: null has no properties
+```
+
+* There are **2 ways** to access properties in JavaScript:
+    1. `.` (dot notation) => `value.x`
+    2. `[]` (square bracket) => `value[x]`
+    
+* When using a `.` dot, the word after dot is the **literal name** of the property
+* When using a `[]` square brackets, the expression between the brackets is *evaluated* to get the property name
+
+:exclamation: The elements in an array are stored as the *properties*, using numbers as *property names*, You can't use dot notation with the numbers.
 
 
 
