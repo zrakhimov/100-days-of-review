@@ -8,7 +8,7 @@
 * [Methods](#methods)
 * [Objects](#objects)
 * [Mutability](#mutability)
-* [](#)
+* [Array Loops](#array-loops)
 * [](#)
 
 ### Arrays
@@ -95,6 +95,7 @@ console.log(sequence);
 
 * `push()` method adds values to the end of an array
 * `pop()` method removes the last value in the array
+* `includes()` method checks whether a given value exists in the array (ES6)
 
 :warning: These are traditional terms for operations on a `stack`. A Stack, in programming, is a data structure that allows you to push values into it and pop them out again in the opposite order so that the thing that was added last is removed first. 
   
@@ -192,7 +193,9 @@ console.log(object3.value);
   
 [🔝](#toc)  
 
-### 
+### Array Loops
+
+
 
 
 
