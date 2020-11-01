@@ -17,8 +17,8 @@
 [Day 12 - JS [Values, Types, and Operators]](day-12/README.MD)  
 [Day 13 - JS [Program Structure]](day-13/README.MD)  
 [Day 14 - JS [Functions]](day-14/README.MD)  
-[Day 15 - JS [Objects and Data Structures - Part 1]](day-15/README.MD)   
-[Day 16 - JS [Objects and Data Structures - Part 2]](day-16/README.MD)   
+[Day 15 - JS [Objects and Data Structures]](day-15/README.MD)   
+[Day 16 - JS []](day-16/README.MD)   
 
 
 
