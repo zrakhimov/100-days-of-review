@@ -6,7 +6,7 @@
 * [Arrays](#arrays)
 * [Properties](#properties)
 * [Methods](#methods)
-* [ ](#)
+* [Objects](#objects)
 * [ ](#)
 * [](#)
 * [](#)
@@ -100,7 +100,61 @@ console.log(sequence);
   
 [🔝](#toc)  
 
-### 
+### Objects
+
+* **Objects** are arbitrary *collection of properties*. One way to create an object is by using **braces** as an expression.
+
+```javascript
+let myCar = {
+    make: 'Ford',
+    model: 'Mustang',
+    year: 1969
+};
+```
+* Properties are separated by **commas**.
+* Each property has a **name** , **colon** and a **value**
+* Indent for readability
+* If property name has a **space** wrap them around **quotes**
+
+:warning: if `{}` in the start of the statement, they are a block, in other positions they describe an object.
+
+* If the property name doesn't exist, referincing that property will give you `undefined`
+
+* It is possible to give a *property* a value with `=` operator. 
+    * replaces value on that property
+    * OR creates a new property if object doesn't have that property
+    
+* `delete` unary operator is used (rarely) to delete a property from an object
+* `in` operator when applied to string or object, tells you whether it has a property with that name
+
+```javascript
+let anObject = {left: 1, right: 2};
+console.log(anObject.left);
+// → 1
+delete anObject.left;
+console.log(anObject.left);
+// → undefined
+console.log("left" in anObject);
+// → false
+console.log("right" in anObject);
+// → true
+
+```
+
+* `Object.keys` function - return an array of strings with the Object's property names
+```javascript
+console.log(Object.keys({x: 0, y: 0, z: 2}));
+// → ["x", "y", "z"]
+```
+* `Object.assign` function - copies all properties from one object to another
+```javascript
+let objectA = {a: 1, b: 2};
+Object.assign(objectA, {b: 3, c: 4});
+console.log(objectA);
+// → {a: 1, b: 3, c: 4}
+```
+
+:exclamation: In summary, arrays, are just a kind of object specialized for storing sequences of things. If you evaluate ```typeof []```, it produces `"object"`
 
 
   
