@@ -9,7 +9,7 @@
 * [Objects](#objects)
 * [Mutability](#mutability)
 * [Array Loops](#array-loops)
-* [](#)
+* [Additional Methods for Arrays](#Additional-Methods-for-Arrays)
 
 ### Arrays
 
@@ -227,7 +227,92 @@ for (let food of foodArray) {
 [🔝](#toc)    
   
   
-### 
+### Additional Methods for Arrays
+
+#### `shift()`, `unshift()`
+* We saw `push` and `pop`, which add and remove elements at the end of an array earlier. The corresponding methods for adding and removing things at the **start** of an array are called `unshift` and `shift`.
+
+```javascript
+let todoList = [];
+function remember(task) {
+  todoList.push(task);
+}
+function getTask() {
+  return todoList.shift();
+}
+function rememberUrgently(task) {
+  todoList.unshift(task);
+}
+```
+ * That program manages a queue of tasks. You add tasks to the end of the queue by calling remember("groceries"), and when you’re ready to do something, you call getTask() to get (and remove) the front item from the queue. The rememberUrgently function also adds a task but adds it to the front instead of the back of the queue. 
+ 
+#### `indexOf()`, `lastIndexOf()`
+
+* To search for a specific value, arrays provide an `indexOf` method. 
+* The method searches through the array from the start to the end and returns the index at which the requested value was found—or `-1` if it wasn’t found. 
+* To search from the end instead of the start, there’s a similar method called `lastIndexOf`.
+
+```javascript
+console.log([1, 2, 3, 2, 1].indexOf(2));
+// → 1
+console.log([1, 2, 3, 2, 1].lastIndexOf(2));
+// → 3
+```
+:warning: Both indexOf and lastIndexOf take an optional second argument that indicates where to start searching.  
+
+ 
+#### `slice()`
+
+* Another fundamental array method is `slice`, which takes start and end indices and returns an array that has only the elements between them. 
+* The start index is inclusive, the end index exclusive.
+
+```javascript
+console.log([0, 1, 2, 3, 4].slice(2, 4));
+// → [2, 3]
+console.log([0, 1, 2, 3, 4].slice(2));
+// → [2, 3, 4]
+```
+:warning: When the end index is not given, slice will take all of the elements after the start index. You can also omit the start index to copy the entire array.
+
+ 
+ 
+[🔝](#toc)  
+
+  
+  
+  
+  
+### `shift()` & `unshift`
+
+
+  
+[🔝](#toc)  
+
+  
+  
+    
+  
+### `shift()` & `unshift`
+
+
+  
+[🔝](#toc)  
+
+  
+  
+    
+  
+### `shift()` & `unshift`
+
+
+  
+[🔝](#toc)  
+
+  
+  
+    
+  
+### `shift()` & `unshift`
 
 
   
