@@ -415,12 +415,46 @@ console.log(["will", ...words, "understand"]);
   
 ### Destructuring
 
-  
+* Destructuring assignment allows you to assign the properties of an array or object to variables using syntax that looks similar to array or object literals
+
+* Without destructuring assignment, you might access the first three items in an array like this:
+
+```javascript
+var first = someArray[0];
+var second = someArray[1];
+var third = someArray[2];
+```
+
+* With destructuring assignment, the equivalent code becomes more concise and readable:
+```javascript
+var [first, second, third] = someArray;
+```
+
+* Destructuring on objects lets you bind variables to different properties of an object. You specify the property being bound, followed by the variable you are binding its value to.
+
+```javascript
+var robotA = { name: "Bender" };
+var robotB = { name: "Flexo" };
+
+var { name: nameA } = robotA;
+var { name: nameB } = robotB;
+
+console.log(nameA);
+// "Bender"
+console.log(nameB);
+// "Flexo"
+```
+
+:warning: Note that if you try to destructure null or undefined, you get an error, much as you would if you directly try to access a property of those values.
+
+```javascript
+var {blowUp} = null;
+// TypeError: null has no properties
+```
     
 [🔝](#toc)  
 
-  
-    
+
   
 ### JSON
 
