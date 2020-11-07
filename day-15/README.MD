@@ -499,6 +499,9 @@ console.log(JSON.parse(string).events);
 * Next, write a `sum` function that takes an array of numbers and returns the sum of these numbers.
 
 ```javascript
+
+// Your code here
+
 console.log(range(1, 10));
 // → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log(range(5, 2, -1));
@@ -510,17 +513,53 @@ console.log(sum(range(1, 10)));
 * BONUS: Modify your range function to take an optional third argument that indicates the “step” value used when building the array. If no step is given, the elements go up by increments of one, corresponding to the old behavior. The function call range(1, 10, 2) should return [1, 3, 5, 7, 9]. Make sure it also works with negative step values so that range(5, 2, -1) produces [5, 4, 3, 2].
 
 
+#### 2) Reversing an array
+
+* Arrays have a `reverse` method that changes the array by inverting the order in which its elements appear.
+* For this exercise, write two functions, `reverseArray` and `reverseArrayInPlace`
+* The first, `reverseArray`, takes an array as argument and produces a **new** array that has the same elements in the inverse order.
+* The second, `reverseArrayInPlace`, does what the reverse method does: it **modifies the array** given as argument by reversing its elements. 
+:warning: Neither may use the standard reverse method.
+
+HINT: Useful to use `Math.floor` to round down.
+
+```javascript
+
+// Your code here.
+
+console.log(reverseArray(["A", "B", "C"]));
+// → ["C", "B", "A"];
+let arrayValue = [1, 2, 3, 4, 5];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue);
+// → [5, 4, 3, 2, 1]
+
+```
 
 
+#### 3) Deeper Comparison
+
+* The `==` operator compares objects by identity. But sometimes you’d prefer to compare the values of their actual properties.
 
 
+* Write a function deepEqual that takes two values and returns true only if they are the same value or are objects with the same properties, where the values of the properties are equal when compared with a recursive call to deepEqual.
+
+* To find out whether values should be compared directly (use the === operator for that) or have their properties compared, you can use the typeof operator. If it produces "object" for both values, you should do a deep comparison. But you have to take one silly exception into account: because of a historical accident, typeof null also produces "object".
+
+:warning: Hint: The `Object.keys` function will be useful when you need to go over the properties of objects to compare them.
 
 
+```javascript
+// Your code here.
 
-
-
-
-
+let obj = {here: {is: "an"}, object: 2};
+console.log(deepEqual(obj, obj));
+// → true
+console.log(deepEqual(obj, {here: 1, object: 2}));
+// → false
+console.log(deepEqual(obj, {here: {is: "an"}, object: 2}));
+// → true
+```
 
   
 [🔝](#toc)  
