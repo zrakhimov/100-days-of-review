@@ -14,6 +14,7 @@
 * [Rest Parameters](#rest-parameters)
 * [Destructuring](#destructuring)
 * [JSON](#json)
+* [Exercises](#exercises)
 
 ### Arrays
 
@@ -491,7 +492,8 @@ console.log(JSON.parse(string).events);
   
     
   
-### `shift()` & `unshift`
+### Exercises
+
 
 
   
