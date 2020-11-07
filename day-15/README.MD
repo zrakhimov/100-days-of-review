@@ -10,6 +10,10 @@
 * [Mutability](#mutability)
 * [Array Loops](#array-loops)
 * [Additional Methods for Arrays](#Additional-Methods-for-Arrays)
+* [Strings & Their Properties](#strings-and-their-properties)
+* [Rest Parameters](#rest-parameters)
+* [Destructuring](#destructuring)
+* [JSON](#json)
 
 ### Arrays
 
@@ -274,7 +278,20 @@ console.log([0, 1, 2, 3, 4].slice(2));
 ```
 :warning: When the end index is not given, slice will take all of the elements after the start index. You can also omit the start index to copy the entire array.
 
- 
+#### `concat()`
+
+* The `concat` method can be used to glue arrays together to create a new array, similar to what the `+` operator does for strings.  
+```javascript
+function remove(array, index) {
+  return array.slice(0, index)
+    .concat(array.slice(index + 1));
+}
+console.log(remove(["a", "b", "c", "d", "e"], 2));
+// → ["a", "b", "d", "e"]
+
+```
+
+:warning: If you pass concat an argument that is not an array, that value will be added to the new array as if it were a one-element array.
  
 [🔝](#toc)  
 
@@ -282,29 +299,157 @@ console.log([0, 1, 2, 3, 4].slice(2));
   
   
   
-### `shift()` & `unshift`
+### Strings and Their Properties
+
+* We can read properties like `length` and `toUpperCase` from string values. But if we try to create a new property, javascript doesn't complain, but it doesn't actually work.
+
+```javascript
+let kim = "Kim";
+kim.age = 88;
+console.log(kim.age);
+// → undefined
+```
+#### `slice()` & `indexOf`
+
+* But these types do have built-in properties. Every string value has a number of methods. Some very useful ones are `slice` and `indexOf`, which resemble the array methods of the same name.
+
+```javascript
+
+console.log("coconuts".slice(4, 7));
+// → nut
+console.log("coconut".indexOf("u"));
+// → 5
+
+```
+:exclamation: One difference is that a string’s indexOf can search for a string containing more than one character, whereas the corresponding array method looks only for a single element.
+
+```javascript
+console.log("one two three".indexOf("ee"));
+// → 11
+```
+
+#### `trim()`
+
+* The `trim` method removes whitespace (spaces, newlines, tabs, and similar characters) from the start and end of a string.
+
+```javascript
+console.log("  okay \n ".trim());
+// → okay
+```
+
+#### `padStart()`
+
+* `padStart` takes the desired length and padding character as arguments.
+
+```javascript
+console.log(String(6).padStart(3, "0"));
+// → 006
+```
+
+#### `split() & join()`
+
+* You can split a string on every occurrence of another string with split and join it again with join.
+
+```javascript
+let sentence = "Secretarybirds specialize in stomping";
+let words = sentence.split(" ");
+console.log(words);
+// → ["Secretarybirds", "specialize", "in", "stomping"]
+console.log(words.join(". "));
+// → Secretarybirds. specialize. in. stomping
+```
+
+#### `repeat()`
+
+* A string can be repeated with the repeat method, which creates a new string containing multiple copies of the original string, glued together.
+
+```javascript
+console.log("LA".repeat(3));
+// → LALALA
+```
+  
+[🔝](#toc)  
+
+ 
+### Rest Parameters
+
+* It can be useful for a function to accept any number of arguments. For example, `Math.max` computes the maximum of **all** the arguments it is given.
+
+* To write such a function, you put three dots before the function’s last parameter, like this:
+* When such a function is called, the **rest parameter** is bound to an array containing all further arguments.
+```javascript
+function max(...numbers) {
+  let result = -Infinity;
+  for (let number of numbers) {
+    if (number > result) result = number;
+  }
+  return result;
+}
+console.log(max(4, 1, 9, -2));
+// → 9
+
+```
+* You can use a similar three-dot notation to **call** a function with an array of arguments.
+
+```javascript
+let numbers = [5, 1, 7];
+console.log(max(...numbers));
+// → 7
+```
+
+* This **spreads** out the array into the function call, passing its elements as separate arguments. It is possible to include an array like that along with other arguments, as in `max(9, ...numbers, 2)`.
+
+* Square bracket array notation similarly allows the `spread operator` to spread another array into the new array.
+
+```javascript
+let words = ["never", "fully"];
+console.log(["will", ...words, "understand"]);
+// → ["will", "never", "fully", "understand"]
+```
 
 
   
 [🔝](#toc)  
 
+
   
+### Destructuring
+
+  
+    
+[🔝](#toc)  
+
   
     
   
-### `shift()` & `unshift`
+### JSON
 
+* Because properties only grasp their value, rather than contain it, objects and arrays are stored in the computer’s memory as sequences of bits holding the addresses—the place in memory—of their contents. So an array with another array inside of it consists of (at least) one memory region for the inner array, and another for the outer array, containing (among other things) a binary number that represents the position of the inner array.
 
-  
-[🔝](#toc)  
+* If you want to save data in a file for later or send it to another computer over the network, you have to somehow convert these tangles of memory addresses to a description that can be stored or sent. You could send over your entire computer memory along with the address of the value you’re interested in, I suppose, but that doesn’t seem like the best approach.
 
-  
-  
-    
-  
-### `shift()` & `unshift`
+* What we can do is serialize the data. That means it is converted into a flat description. A popular serialization format is called **JSON (pronounced “Jason”), which stands for JavaScript Object Notation**. It is widely used as a data storage and communication format on the Web, even in languages other than JavaScript.
 
+```javascript
+{
+  "squirrel": false,
+  "events": ["work", "touched tree", "pizza", "running"]
+}
+```
+:exclamation: All property names have to be surrounded by double quotes, and only simple data expressions are allowed—no function calls, bindings, or anything that involves actual computation. Comments are not allowed in JSON.
 
+#### `JSON.srtingify() & JSON.parse()`
+
+* JavaScript gives us the functions JSON.stringify and JSON.parse to convert data to and from this format. The first takes a JavaScript value and returns a JSON-encoded string. The second takes such a string and converts it to the value it encodes.
+
+```javascript
+let string = JSON.stringify({squirrel: false,
+                             events: ["weekend"]});
+console.log(string);
+// → {"squirrel":false,"events":["weekend"]}
+console.log(JSON.parse(string).events);
+// → ["weekend"]
+```
   
 [🔝](#toc)  
 
