@@ -565,5 +565,28 @@ console.log(deepEqual(obj, {here: {is: "an"}, object: 2}));
 [🔝](#toc)  
 
   
+# :uzbekistan:  
+
+## Amaliy Vazifalar
+
+1) `range` degan funksiya yozing. Bu funksiya `start` va `end` degan ikkita argument qabul qiladi, va o'sha `start` ichidagi sondan `end` ichidagi songacha bo'lgan hamma sonlarni array shaklida qaytaradi.
+Masalan: `range(1,10)` berilganda bu funksiya [1,2,3,4,5,6,7,8,9,10] ni qaytaradi.
+
+Undan keyin, `sum` degan funksiya yozing. Bu funksiya argument orqali array qabul qiladi, ichida array dagi hamma elementlarni yig'indisini hisoblab, shu yig'indini qaytaradi. Masalan, tepadagi 1 dan 10 gacha bo'lgan array ni `sum` ga bersak, bu funksiya `55` sonini qaytaradi.
+
+```javascript
+connsole.log(range(1, 10));
+// → [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(range(5, 2, -1));
+// → [5, 4, 3, 2]
+console.log(sum(range(1, 10)));
+// → 55
+```
+:exclamation: Bonus: tepadagi `range` funksiyani ozgina o'zgartiring, bu funksiya **ixtiyoriy** uchinchi argument qabul qilsin. Bu argument array qurilayotgan paytda nechta "sakrash" kerakligini bildiradi. Masalan, bu argumentga `2` soni berilsa (`range(1,10,2)`), [1,3,5,7,9] ni qaytaradi. Uchinchi argument, manfiy bo'lishi ham mumkin. Bu holatda "sakrash" orqaga qarab ketadi. Masalan, bu argumentga `-1` berilsa (`range(5,2,-1)`) funksiya [5,4,3,2] ni qaytarsin.
+  
+  
+  
+[🔝](#toc)  
+
   
   
