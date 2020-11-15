@@ -588,5 +588,32 @@ console.log(sum(range(1, 10)));
   
 [🔝](#toc)  
 
+2)  Array ni teskarisi
+
+Array larda `reverse` degan metod bor. Bu metod array ni ketma ketligini teskarisiga o'giradi. Bu vazifa uchun, siz ikkita funksiya yozing: `reverseArray` va `reverseArrayInPlace`. 
+
+1. `reverseArray` argumentiga bitta array ni qabul qilsin va bu arrayni usida ishlab **yangi** array ni qaytirsin. Bu yangi array, original arrayni teskarisi bo'lsin. Masalan ['A', 'B', 'C'] array kirsa, bu funksiyadan **yangi** ['C', 
+'A', 'B'] chiqadi. (bu funksiya pure (sof) bo'lib, argumentga tushgan array ni o'zgartirmaydi)
+
+2. `reverseArrayInPlace` funksiyasi tepadadgi funksiyaga o'xshab array ni teskarisiga o'giradi, lekin farqi, bu funksiya yangi array emas, shu argumentga berilgan arrayni teskarisiga o'girib bersin. 
+
+:warning: Bu ikkala funksiya ham `reverse()` metodini *ishlatmagan holda* yaratilsin.
+
+```javascript
+
+// Sizning code ingiz
+
+console.log(reverseArray(["A", "B", "C"]));
+// → ["C", "B", "A"];
+let arrayValue = [1, 2, 3, 4, 5];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue);
+// → [5, 4, 3, 2, 1]
+```
+
+  
+  
+[🔝](#toc)  
+
   
   
