@@ -616,4 +616,34 @@ console.log(arrayValue);
 [🔝](#toc)  
 
   
+3)  Chuqur solishtirish
+
+Biz bilamizki `==` operatori obyektlarda qo'llanilganda, bu obyektlar ikkisi birmi, ya'ni  bitta addressda joylashganmi yoki yo'qmi, shuni solishtiradi. Lekin ba'zida bu ikki obyektni `id` si emas, balki ichidagi qiymatlari bir biriga tengmi yoki yo'qmi shuni bilmoqchi bo'lamiz. 
+
+Sizni vazifangiz, shu funksiyani yaratish. `deepEqual` degan funksiya yarating: bu funksiya 2 ta argument qabul qilsin, va shu 2 argumentni solishtirib, agar teng bo'lsa `true` yoki teng bo'lmasa `false` deb qaytarsin.
+
+:warning: Obyekt bo'lmagan argumentlarni solishtirayotganda "qat'iy" tenglik operatorini ishlatish afzalroq `===`
+
+Agar 2 argument ham "object" type bo'lsa (`typeof arg1 == "object"`), unda "deep comparison" (chuqur solishtirish) ni amalga oshiring: ya'ni obyektning har bir `property` si ikkinchi obyektning xuddi shu `property`siga teng.
+
+:exclamation: `typeof null` ham "object" ni beradi, shuni hisobga oling. 
+
+Yordam: `Object.keys` funksiyasi sizga obyektni `property`larini solishtirgani yordam beradi.
+
+```javascript
+
+// Sizning code ingiz
+
+let obj = {here: {is: "an"}, object: 2};
+console.log(deepEqual(obj, obj));
+// → true
+console.log(deepEqual(obj, {here: 1, object: 2}));
+// → false
+console.log(deepEqual(obj, {here: {is: "an"}, object: 2}));
+// → true
+```
   
+  
+[🔝](#toc)  
+
+    
