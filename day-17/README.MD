@@ -61,7 +61,7 @@ The browser will parse and render this into a tree of nodes, the [DOM Tree](http
 
 * The dev tools allow us to view and work with the parsed DOM elements in a page. We can also use the dev tools to visually select an element in the page, and find its associated DOM element:
 
-![Find Individual Elements in a Web Page](images/inspect-element.gif 
+![Find Individual Elements in a Web Page](images/inspect-element.gif)
 
 Web pages are dynamic: they can change in response to user actions, different data,
 JavaScript code, etc.  Where HTML defines the initial structure and content of a page,
@@ -76,7 +76,16 @@ So how does one modify a web page after it's been rendered in the browser?  The 
 We've been using this "DOM" acronym without defining it, and its high time we did.
 
 The [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) is a programming interface (i.e., set of Objects, functions, properties) allowing scripts to interact with, and modify documents (HTML, XML).  The DOM is an object-oriented representation of a web page.  Client-side web programming is essentially *using* the DOM via JavaScript to make web pages *do* things or *respond* to actions (e.g., user actions).
-    
+
+You may have noticed in our work with JavaScript that there was nothing particularly “webby” about it as a language: we wrote functions, worked with arrays, created objects. Lots of programming languages let you do this. JavaScript can’t do anything with the web on its own. Instead, we need to access and use the Objects, functions, and properties made available to us by the DOM using JavaScript.
+
+As web programmers we use the DOM via JavaScript to accomplish a number of important tasks:
+
+Finding and getting references to elements in the page
+Creating, adding, and removing elements from the DOM tree
+Inspecting and modifying elements and their content
+Run code in response to events triggered by the user, browser, or other parts of our code
+Let’s look at each one in turn.
 
 [🔝](#toc)  
   
