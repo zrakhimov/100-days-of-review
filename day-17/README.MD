@@ -90,11 +90,48 @@ Let’s look at each one in turn.
 [🔝](#toc)  
   
 
-### 
+### Finding elements in the DOM with JavaScript
 
+* Our entry point to the DOM from JavaScript is via the global variable [`window`](https://developer.mozilla.org/en-US/docs/Web/API/Window).
+Every web page runs in an environment created by the browser, and that environment includes
+a global variable named [`window`](https://developer.mozilla.org/en-US/docs/Glossary/Global_object#window_object_in_the_Browser),
+which is provided by the browser (i.e., we don't create it).
 
+* There are hundreds of Objects, methods, and properties available to our JavaScript code
+via `window`.  One example is [`window.document`](https://developer.mozilla.org/en-US/docs/Web/API/Document),
+which is how we access the DOM in our code:
 
+```js
+// Access the document object for our web page, which is in the current window
+let document = window.document;
+```
 
+:warning: NOTE: since properties like document are available on the global window object, it is common to simply write document instead of window.document, since the global object is implied if no other scope is given.
+
+Our document's tree of elements are now accessible to us, and we can access a number of 
+well-known elements by name, for example:
+
+```js
+// Get the value of the document's <title>
+let title = document.title;
+
+// Return a reference to the document's <body> element
+let body = document.body;
+
+// Return a list of all <a> elements in the document
+let hyperlinks = document.links;
+
+// Return a list of all the <img> elements in the document
+let images = document.images;
+```
+* There are lots more. We can easily experiment with these in the dev tools web console, where we can access our window object
+
+For example, here is the web page
+[https://unsplash.com/search/photos/toronto](https://unsplash.com/search/photos/toronto) with the
+web console open, and the result of `window.document.images` is shown, 41 `<img>` elements
+are returned in a collection:
+
+![window.document.images via the Web Console](images/window-document-images.png)
 
 [🔝](#toc)  
   
