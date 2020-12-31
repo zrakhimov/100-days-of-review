@@ -18,5 +18,32 @@
 
 10. Rasmni `width` va `height` ini ya'ni balandlik va kengligini sahifaga mos tushadigan qilib to'g'irlang. (Attribute dan foydalaning)
 
-11. 
+11. `cats` papkangizda yana bitta fayl hosil qiling. Nomi `script.js` bo'lsin va ichiga `console.log('mushuklar!')` deb yozing.
 
+12. `<body>` elementini oxiriga `<script>` elementini hosil qilib, bu javascript faylini ulang:
+```javascript
+...
+  <script src="script.js"></script>
+ </body>
+```
+
+13. Browserni yangilan, `Dev Tools (F12)` orqali `mushuklar!` degan tekst chiqqanini ko'rishingiz kerak
+
+14. `script.js` faylida `mushuklar!` degan tekstni boshqa tekstga o'zgartiring, va browserda console da tekst o'zgarganini kuzating.
+
+15. `index.html` fayliga o'zgartirish kiriting: `<img>` teg ga `id="cat-picture"` attribute ini qo'shing va `src="..."` attributini olib tashlang:
+
+```javascript
+<!-- NOTE: src attribute olib tashlandi, javascript orqali qo'shamiz uni endi-->
+ <img id="cat-picture">
+```
+
+16. `script.js` faylingizga quyidagi kodni yozing:
+
+```javascript
+ window.onload = function() {
+     var img = document.getElementById('cat-picture');
+     img.src = 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Six_weeks_old_cat_%28aka%29.jpg';
+ };
+
+```
