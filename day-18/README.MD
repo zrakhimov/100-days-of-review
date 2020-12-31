@@ -12,5 +12,11 @@
 
 7. `index.html` faylini saqlang, va uni browser da ochib ko'ring. Buning uchun, browserda `localhost:8080` adresini oching, chunki bu proyektingiz web serverda ishlamoqda.
 
-8. 
+8. VS Code orqali `<body>` ni ichiga mana bu -> [cats.txt](cats.txt) matnni HTML da web uchun yozing. 
+
+9. Sahifanizga mushukning rasmini joylashtiring. Rasmni bu linkdan (https://upload.wikimedia.org/wikipedia/commons/c/c1/Six_weeks_old_cat_%28aka%29.jpg.) olishingiz mumkin
+
+10. Rasmni `width` va `height` ini ya'ni balandlik va kengligini sahifaga mos tushadigan qilib to'g'irlang. (Attribute dan foydalaning)
+
+11. 
 
