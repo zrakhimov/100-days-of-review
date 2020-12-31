@@ -20,7 +20,7 @@
 [Day 15 - JS [Objects and Data Structures]](day-15/README.MD)   
 [Day 16 - JS [Higher-Order Functions]](day-16/README.MD)   
 [Day 17 - JS [JavaScript and DOM]](day-17/README.MD)  
-[Day 18 - Project 1 [Cats](day-18/README.MD)
+[Day 18 - Project 1 [Cats]](day-18/README.MD)
 
 
 
