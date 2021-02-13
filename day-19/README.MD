@@ -1,4 +1,15 @@
 
+[Go to ToC](../README.md)
+
+# AJAX and Fetch API
+
+## ToC
+* [AJAX](#ajax)
+* [How to work with AJAX request?](#how-to-work-with-ajax-request)
+* [Demo: Bitcoin in USD](#demo-bitcoin-in-usd)
+* [JSON](#json)
+* [Demo: Currency Exchange](#demo-currency-exchange)
+* [FETCH() API](#fetch-api)
 
 
 
@@ -120,7 +131,7 @@ function getBitcoinValue() {
 
 We should be seeing the value when we open our `index.html` file.
 
-![[Pasted image 20210213151731.png]]
+!(Pasted image 20210213151731.png)
 
 
 2) Now the next task is to update it every 60 seconds:
@@ -344,7 +355,7 @@ window.addEventListener('load', () => {
 ```
 
 Final Output should look like this
-![[Pasted image 20210213121708.png]]
+!(Pasted image 20210213121708.png)
 
 
 
