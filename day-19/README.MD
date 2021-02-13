@@ -13,7 +13,7 @@
 
 
 
-### AJAX
+## AJAX
 
 AJAX stands for Asynchronous JavaScript and XML and the term was coined by [Jesse James Garret](http://adaptivepath.org/ideas/ajax-new-approach-web-applications/) in 2005.
 
@@ -25,7 +25,7 @@ For example, when you visit `gmail` or `facebook`, you can simply interact with 
 
 Instead of modifying the entire DOM, we instead make background requests for data from servers, and then use that data to update the page's contents live via the DOM's APIs.
 
-### How to work with AJAX request?
+## How to work with AJAX request?
 
 Browsers provide an API to work with `XMLHttpRequest` object (XHR) for short. This will let us to send HTTP requests and recieve data responses in various formats such as XML, HTML, JSON, text, binary and etc.
 
@@ -52,7 +52,7 @@ xhr.send()
 
 ```
 
-### Demo: Bitcoin in USD
+## Demo: Bitcoin in USD
 
 For the demo, we'll be using https://www.blockchain.com/ which provides a number of web services we can use to get the value of bitcoin in USD.
 
@@ -172,7 +172,7 @@ function getBitcoinValue() {
 }
 ```
 
-### JSON 
+## JSON 
 
 Our previous example was very simple data format: a single number. Often we'll need to work with more complex data, with complex hierarchies such as arrays, both texts and numbers and lists. To do this we need a format that allows us to serialize (turn into strings) data structures like `Array`s, `Object`s etc.
 
@@ -267,7 +267,7 @@ Finally, same data in JSON format
 ``` 
 
 
-### Demo: Currency Exchange
+## Demo: Currency Exchange
 
 In this example we'll add on to our existing bitcoin value web page. 
 
@@ -360,7 +360,7 @@ Final Output should look like this
 
 
 
-## FETCH()  API
+## FETCH() API
 
 While `XHR` is a popular choice for accessing data from web services, in recent years a new APIs have also emerged that offer similar and enhanced capabilities. 
 
