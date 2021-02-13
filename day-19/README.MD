@@ -131,7 +131,7 @@ function getBitcoinValue() {
 
 We should be seeing the value when we open our `index.html` file.
 
-![](Pasted image 20210213151731.png)
+![](Pasted%20image%2020210213151731.png)
 
 
 2) Now the next task is to update it every 60 seconds:
@@ -355,7 +355,7 @@ window.addEventListener('load', () => {
 ```
 
 Final Output should look like this
-![](Pasted image 20210213121708.png)
+![](Pasted%20image%2020210213121708.png)
 
 
 
