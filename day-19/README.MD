@@ -1,3 +1,7 @@
+
+
+
+
 ### AJAX
 
 AJAX stands for Asynchronous JavaScript and XML and the term was coined by [Jesse James Garret](http://adaptivepath.org/ideas/ajax-new-approach-web-applications/) in 2005.
