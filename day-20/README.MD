@@ -102,3 +102,204 @@ This should open up the initial app in the browser located at `localhost:3000`
 
 
 
+## Intro to React Components
+
+As stated in the previous post, applications developed by using React focuses on **components**.  We've seen `App` component which comes in a boilerplate.
+
+![[Pasted image 20210220185150.png]]
+
+* This component is known as a [functional component](https://reactjs.org/docs/components-and-props.html#function-and-class-components), since it's defined as a *function*. 
+
+	The name of the component is used as a tag when rendering this component. When you look at index.js, you can see how the component is rendered. Notice the tag, it's *self-closing* tag. Most of the time, self-closing tags are used to render a component, except when you wish to write the component as a wrapper. When used as a wrapper, you can use `<App></App>` and include other components within these tags.
+
+	![[Pasted image 20210220185512.png]]
+
+
+* There are 4 other lines outside the functional component within `App.js`
+	* `import React from 'react'` - Needed for JSX code, but not necessary from React version 17
+	* `import logo from './logo.svg'` - cool "React" logo svg code
+	* `import '/App.css'` - includes styling for the component
+	* `export default App` - This is required becuase our component exists as a separate `js` file (module) and we need to import it in `index.js` (See [ES6 module syntax](https://exploringjs.com/es6/ch_modules.html)). 
+		![[Pasted image 20210220190519.png]]
+
+## Creating component called `Hello`
+
+Let's create a component called `Hello`. It's sole purpose would be to display `Hello World` as a paragraph. 
+
+1. In `src` folder create a new file called `Hello.js`
+2. Inside `Hello.js` add imports and exports
+
+	![[Pasted image 20210220203232.png]]
+
+3. To create a component, simply create a function that returns JSX.
+	
+	![[Pasted image 20210220203549.png]]
+	
+4. Next, we need render it somewhere to see it in the browser. Let's actually just include as a component inside `App` component. Go to App.js and add `Hello` component below "Learn React" link. First you'd need to import Hello into App module:
+	
+	![[Pasted image 20210220213507.png]]
+	
+5. You should now see our component rendered on the browser `localhost:3000`:
+	![[Pasted image 20210221094805.png]]
+	
+### Functional and Class Components
+
+There are 2 ways of creating a React Component. Class and Functional:
+
+They both have their advantages and disadvantages
+In our "Hello" component example we've used functional component. However same can be written using `class` component
+
+
+```javascript
+	// Functional
+	function Hello() {
+		return (
+			<p>Hello World</p>
+		)
+	}
+	
+	
+	// Class
+	class Hello extends React.Component {
+		render() {
+			return <p>Hello World</p>
+		}
+	}
+	
+	
+	
+```
+
+In React, there's a concept of "State" where we'll talk about in later posts, which was only available in `class` implementation of the components. However starting React version 16, the team introduced **React Hooks** which enable class components to have "State" as well. 
+
+Going forward, we'll only focus on the functional components and "hooks" rather than OOP related `class` components.
+
+	
+	
+## What is JSX?
+
+Have you seen the strange syntax that the component returns? It's called JSX (JavaScript XML), and makes it easier to write HTML in React. 
+
+Instead of using DOM methods to create an element like `createElement()` or `appendChild()`, you can use JSX which will be translated into javascript at runtime.  	For example, these are the same:
+
+```javascript
+const element = (
+  <p className="greeting">
+    Hello, world!
+  </p>
+);
+```
+
+and 
+
+```javascript
+const element = React.createElement(
+  'p',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+```
+
+> Always use self-closing tags, becase in JSX there's no such thing as empty element `<br` -> `<br />`	
+
+### Expressions in JSX
+
+Just like [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) in javascript, where you can insert any expressions inside `${ }`, you can do the same within JSX, by using **curly braces** `{}`
+
+![[Pasted image 20210221100143.png]]
+
+or 
+
+![[Pasted image 20210221100446.png]]
+
+	
+### JSX in as an expression
+
+Since JSX becomes regular JavaScript at runtime, you can treat it as an expression too. This will enable you to use it in `if` statements, assign it to `variables`, accept it as `arguments` and `return` from functions.
+
+![[Pasted image 20210221101001.png]]
+
+
+### Attributes in JSX
+
+JSX is closer to JavaScript than HTML, so ReactDOM uses *camelCase* property naming convention instead of HTML attribute names
+
+For example, class becomes [className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className) in JSX, and tabindex becomes [tabIndex](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/tabIndex).
+```jsx
+<div tabIndex={-1} />      // Just like node.tabIndex DOM API
+<div className="Button" /> // Just like node.className DOM API
+<input readOnly={true} />  // Just like node.readOnly DOM API
+```
+
+
+### Accepting "Props"
+
+"Props" are short for properties. Essentially components are just like JavaScript functions: they can accept inputs from the caller, do something with them or return them to the caller in the format specified within the component.
+
+`App.js`
+![[Pasted image 20210227195617.png]]
+
+`Hello.js`
+![[Pasted image 20210227195706.png]]
+
+`Output`
+![[Pasted image 20210227195727.png]]
+
+## React Hooks
+
+As mentioned earlier, in October 2018, starting React v.16.8, the team introduced a new feature called "Hooks", which enables **functional components** to do *side effects* and have *state* among other things.
+
+These "hooks" are `useEffect()` and `useState()` functions. Let's see a `Clock` component which demonstrate examples using hooks.
+
+### Clock component
+1) Let's create a new component called `Clock` which recieves a date as a prop
+2) It's sole purpose is to output the current time (toLocaleTimeString()) within `h2` tags
+3) Import this component into our main `App` component and give it a prop called `date` by creating a Date object.
+
+![[Pasted image 20210227201023.png]]
+
+The problem with this, is that it doesn't keep a **state**. That's why in order to update our time, we need to refresh the page.
+
+### Clock component with Hooks
+
+State of a component is a way to store data in a component that is synchronized with the UI. Whenever there's a change in the state, UI gets updated with the latest changes. 
+
+We'll need to do 2 things:
+- Keep internal state of the current date with `useState()` hook
+- Update our internal state using `useEffect()` hook
+
+#### `useState()`
+
+- Make sure you import useState() and useEffect() from react library
+- Using "array destructuring", we're creating a variable for state ( `const date`) and a function to update this variable (`const setDate`)
+- We're setting these 2 with `useState()` function
+- `useState()` can accept an argument which will be the initial value for the state variable. In this case we're giving it a date object
+
+![[Pasted image 20210228101442.png]]
+
+
+> Why we're using `const` for the variables? Because we shouldn't be able to change it within the scope of our component, but only use `setDate` to update it. By using setDate we're also re-rendering the component 
+
+
+We have the internal state and rendering the value from internal state. However are not updating the value, and if you look at the output, the clock doesn't actually update.
+
+To update the clock every second, we need to implement `setInterval`
+
+![[Pasted image 20210228103910.png]]
+
+But this implementation is wrong. It updates the component every second, but if you look at how many times the component is rendering, it's out of control.
+
+![[Pasted image 20210228104226.png]]
+
+In this case we only want to execute the "side-effect" **once**. To achieve that we use a lifecycle method (hook) `useEffect()` with an empty `[]` for the 2nd argument.
+> UseEffect accepts 2 arguments
+> First one is a callback function which executes when state changes
+> Second one is optional argument which accepts  a list of state variables to watch out for. Sometimes we just want the side-effect to execute when a particular state has been changed.
+
+Let's change our code:
+
+
+![[Pasted image 20210228105804.png]]
+
+
+Now everything for the Clock component is implemented, you can see the result on the browser that it's updating every second. You can also use this component anywhere and it will function everywhere since it's managing it's own state.
