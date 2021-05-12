@@ -1,6 +1,22 @@
 [Go to ToC](../README.md)
 
 # React Introduction
+- Welcome to the introduction video of the React JS Tutorial Series
+- In this series we're going to learn the following concepts
+	- Core concepts and fundamentals
+	- Build a "task tracker application"
+	- Components
+	- Props
+	- State
+	- React Hooks
+	- "Aldakasm" JSON server
+	- React Router
+	- Etc...
+```
+ 📌 In this video we're going to talk about the concepts of React 
+at a high level through slides and dive into details and code in the following videos
+```
+
 
 ## ToC
 * [](#)
@@ -10,6 +26,31 @@
 * [ ](#)
 * [](#)
 * [](#)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# WEB422
 
 ## Introduction
 
