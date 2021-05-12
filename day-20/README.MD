@@ -18,9 +18,8 @@ at a high level through slides and dive into details and code in the following v
 ```
 
 ## ToC
-* [](#)
-* [ ](#)
-* [ ](#)
+* [What is React?](#what-is-react)
+* [Why React?](#why-would-you-use-react)
 * [ ](#)
 * [ ](#)
 * [](#)
@@ -37,6 +36,22 @@ at a high level through slides and dive into details and code in the following v
 - React is often referred to as a front-end "framework" because it is capable and directly comparable to a framework such as Angular or Vue
 	> Since it's a front-end framework, it doesn't really directly communicates with the database, for that reason it's often used in combination with other technologies to create a full stack application.
 
+## Why Would You Use React?
+
+- Structure the "view" layer of your application
+	> MVC (Model-View-Controller)
+- Reusable components with their own state
+	> Every part of the UI is dynamic component
+- JSX - Dynamic markup
+	> No need to separate HTML and JavaScript
+- Interactive UIs with Virtual DOM
+	> Allows you to update parts of the page without re-loading the page
+- Performance & Testing
+- Very popular in the industry
+	> It's easy to work on projects with teams
+- Managing Data is Easy
+	- One-way-binding: from view to the component
+	- Immutable state: If state needs a change, React will allow re-create the state, helps with debugging and testing. 
 
 
 
