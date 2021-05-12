@@ -21,9 +21,10 @@ at a high level through slides and dive into details and code in the following v
 * [What is React?](#what-is-react)
 * [Why React?](#why-would-you-use-react)
 * [Pre-requisites](#what-should-you-know-first)
-* [ ](#)
-* [](#)
-* [](#)
+* [UI Components](#ui-components)
+* [Components: Functions vs Classes](#components-functions-vs-classes)
+* [Working with State](#working-with-state)
+* [React Hooks](#react-hooks)
 
 
 ## What is React?
@@ -79,7 +80,7 @@ You should have a good handle on JavaScript
 [🔝](#toc)  
 
 
-## Components: Funcations vs. Classes
+## Components: Functions vs Classes
 
 ![Pasted image 20210511205626](https://user-images.githubusercontent.com/22464933/117909123-ab690080-b2a7-11eb-9318-a71d89a9f6e6.png)
 
