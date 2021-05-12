@@ -17,7 +17,6 @@
 at a high level through slides and dive into details and code in the following videos
 ```
 
-
 ## ToC
 * [](#)
 * [ ](#)
@@ -26,6 +25,20 @@ at a high level through slides and dive into details and code in the following v
 * [ ](#)
 * [](#)
 * [](#)
+
+
+## What is React?
+
+- React is a library for building user interfaces
+	> Created and maintained by Facebook
+- React runs on the client as a SPA (Single Page App), but can be used to build full stack apps by communicating with a server/API (eg. MERN stack)
+	> PHP for example runs on the server and serves html files to the client, whereas React app is a single html page and then all the routing etc is javascript which is bundled together loaded by the browser
+
+- React is often referred to as a front-end "framework" because it is capable and directly comparable to a framework such as Angular or Vue
+	> Since it's a front-end framework, it doesn't really directly communicates with the database, for that reason it's often used in combination with other technologies to create a full stack application.
+
+
+
 
 
 
