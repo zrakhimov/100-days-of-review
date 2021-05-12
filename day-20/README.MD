@@ -20,7 +20,7 @@ at a high level through slides and dive into details and code in the following v
 ## ToC
 * [What is React?](#what-is-react)
 * [Why React?](#why-would-you-use-react)
-* [ ](#)
+* [Pre-requisites](#what-should-you-know-first)
 * [ ](#)
 * [](#)
 * [](#)
@@ -34,7 +34,10 @@ at a high level through slides and dive into details and code in the following v
 	> PHP for example runs on the server and serves html files to the client, whereas React app is a single html page and then all the routing etc is javascript which is bundled together loaded by the browser
 
 - React is often referred to as a front-end "framework" because it is capable and directly comparable to a framework such as Angular or Vue
-	> Since it's a front-end framework, it doesn't really directly communicates with the database, for that reason it's often used in combination with other technologies to create a full stack application.
+	> Since it's a front-end framework, it doesn't really directly communicates with the database, for that reason it's often used in combination with other technologies to create a full stack application.  
+
+[🔝](#toc)  
+
 
 ## Why Would You Use React?
 
@@ -51,8 +54,67 @@ at a high level through slides and dive into details and code in the following v
 	> It's easy to work on projects with teams
 - Managing Data is Easy
 	- One-way-binding: from view to the component
-	- Immutable state: If state needs a change, React will allow re-create the state, helps with debugging and testing. 
+	- Immutable state: If state needs a change, React will allow re-create the state, helps with debugging and testing.   
 
+[🔝](#toc)  
+
+
+## What Should You Know First?
+
+You should have a good handle on JavaScript
+
+- Data Types, Variables, functions, loops etc
+- Arrays methods like forEach() & map()
+- Fetch API & making HTTP requests
+
+  
+[🔝](#toc)  
+
+
+## UI components
+
+
+  ![Pasted image 20210511205258](https://user-images.githubusercontent.com/22464933/117908820-21209c80-b2a7-11eb-9d0d-2cce88be6da7.png)
+
+[🔝](#toc)  
+
+
+## Components: Funcations vs. Classes
+
+![Pasted image 20210511205626](https://user-images.githubusercontent.com/22464933/117909123-ab690080-b2a7-11eb-9318-a71d89a9f6e6.png)
+
+- Components render/return JSX (JavaScript Syntax Extension)
+- Components can also take in "props"
+```javascript
+<Header title="My Title"/>
+```
+  
+[🔝](#toc)  
+
+## Working with State
+
+- Components can have a **state** which is object that determines how a component renders and behaves
+
+- **App** or **global** state refers to state that is available to the entire UI, not just a single component.
+	> Sometimes it gets messy having too many "app" level state. In these cases you can take advantage of "Context API" which provides an easier way to mange those, or use 3rd party state manager such as Redux. But it's outside of the course's scope.
+
+- Prior to React 16.8, we had to use class based components to use state, Now we can use functional components with state, called **Hooks**
+
+
+  
+[🔝](#toc)  
+
+
+## React Hooks
+
+**React Hooks** are functions that let us "hook" into the React state and lifecycle features form function components.
+
+- `useState` - Returns a stateful value and a function to update it
+- `useEffect` - Perform side effects in a function components
+- Others: `useContext`, `useReducer`, `useRef` (out of scope for this series)
+
+
+[🔝](#toc)  
 
 
 
