@@ -1,7 +1,17 @@
 [Go to ToC](../README.md)
 
 # React Introduction
-
+- Welcome to the introduction video of the React JS Tutorial Series
+- In this series we're going to learn the following concepts
+	- Core concepts and fundamentals
+	- Build a "task tracker application"
+	- Components
+	- Props
+	- State
+	- React Hooks
+	- "Aldakasm" JSON server
+	- React Router
+	- Etc...
 ## ToC
 * [](#)
 * [ ](#)
@@ -11,7 +21,7 @@
 * [](#)
 * [](#)
 
-## Introduction
+## What is React?
 
 React is the most popular library for **building user interfaces**. Most people refer to it as a framework, and I personally agree with that because of the whole tooling that comes with developing React applications.
 
@@ -19,6 +29,8 @@ At its core, it's really a "JavaScript library for building user interfaces" and
 
 ![](assets/Pasted%20image%2020210220144624.png)
 
+* React runs on the client as a SPA (Single Page App), but can be used to build full stack apps by communicating with a server/API (eg. MERN stack)
+	> PHP for example runs on the server and serves html files to the client, whereas React app is a single html page and then all the routing etc is javascript which is bundled together loaded by the browser
 
 ## History
 
