@@ -12,6 +12,12 @@
 	- "Aldakasm" JSON server
 	- React Router
 	- Etc...
+```
+ 📌 In this video we're going to talk about the concepts of React 
+at a high level through slides and dive into details and code in the following videos
+```
+
+
 ## ToC
 * [](#)
 * [ ](#)
@@ -20,6 +26,10 @@
 * [ ](#)
 * [](#)
 * [](#)
+
+
+
+# WEB422
 
 ## What is React?
 
