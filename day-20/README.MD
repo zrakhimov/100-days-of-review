@@ -43,10 +43,10 @@ The component is usually responsible for a *area* in the user interface, includi
 
 ## Example of Components on a page
 
-> Online Store
-![](assets/Pasted%20image%2020210220151540.png)
-> Weather App
-![](assets/Pasted%20image%2020210220151602.png)
+> Online Store  
+![](assets/Pasted%20image%2020210220151540.png)  
+> Weather App  
+![](assets/Pasted%20image%2020210220151602.png)  
 
 
 ## React Boilerplate
