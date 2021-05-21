@@ -2,6 +2,14 @@
 
 # React Introduction
 
+# ToC
+
+- [What is React](##what-is-react)  
+- [History](#history)  
+- [Difference In Approach](#difference-in-approach)  
+- [Components](#components)  
+- [Component Example](#example-of-components-on-a-page)
+
 ## What is React?
 
 React is the most popular library for **building user interfaces**. Most people refer to it as a framework, and I personally agree with that because of the whole tooling that comes with developing React applications.
