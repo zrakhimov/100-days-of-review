@@ -4,7 +4,7 @@
 
 # ToC
 
-- [What is React](##what-is-react)  
+- [What is React](#what-is-react)  
 - [History](#history)  
 - [Difference In Approach](#difference-in-approach)  
 - [Components](#components)  
