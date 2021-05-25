@@ -22,7 +22,9 @@
 [Day 17 - JS [JavaScript and DOM]](day-17/README.MD)  
 [Day 18 - Project 1 [Cats]](day-18/README.MD)  
 [Day 19 - JS [AJAX and Fetch() API]](day-19/README.MD)  
-[Day 20 - React [React Intro, Components and Hooks]](day-20/README.MD)  
+[Day 20 - React [React Intro]](day-20/README.MD)    
+[Day 21 - React [JavaScript review]](day-21/README.MD)    
+
 
 
 
