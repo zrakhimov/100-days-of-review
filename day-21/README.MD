@@ -22,7 +22,7 @@
 [🔝](#toc)  
   
 
-## Pre ES6 class
+### Pre ES6 class
 
 ```js
 // constructor
@@ -44,7 +44,7 @@ poly.sayName();
 
 ```
 
-## ES6 class
+### ES6 class
 
 ```js
 class Polygon {
@@ -67,7 +67,7 @@ poly.sayName();
 
 ```
 
-## ES6 class with Inheritance
+### ES6 class with Inheritance
 
 ```js
 class Square extends Polygon {
@@ -95,6 +95,32 @@ s.sayName();
 console.log('The area of this square is ' + s.area);
 
 ```
+
+### Component Example Using ES6 and Prototype Based Classes
+
+```js
+function Component(value) {
+  this.value = value;
+}
+
+Component.prototype.render = function() {
+  return `Hello $(this.value)`;
+}
+```
+
+```js
+class Component {
+  constructor(value) {
+    this.value = value;
+  }
+  
+  render () {
+    return `Hello ${this.value)`;
+  }
+}
+```
+
+
 
 
 
