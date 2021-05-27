@@ -4,71 +4,91 @@
 
 ## ToC
 * [JavaScript for React](#javascript-for-react)  
-* [ ](#)  
-* [ ](#)  
-* [ ](#)  
-* [ ](#)  
-* [](#)  
-* [](#)  
+* [Object Oriented Programming](#object-oriented-programming)  
+  * [Pre-ES6 Class](#pre-es6-class)  
+  * [ES6 Class](#es6-class)  
+  * [ES6 Class with Inheritance](#es6-class-with-inheritance)
+  * [Class Based Component Idea](#class-based-component-idea)
+* [Functional Programming](#functional-programming)
+* [Syntax Review](#syntax-review)  
+  * [Arrow Functions](#arrow-functions)
+  * [Destructuring](#destructuring)
+  * [Immutable Data and Cloning](#immutable-data-and-cloning)  
+
 
 ### JavaScript for React
 
-- There are aspects of JavaScript that React **requires** you to know
+- To understand React code, you have to understand some aspects of JavaScript. Today we'll be covering some of the syntax of JavaScript syntax which is used widely throughout React code.
 - React leans on existing parts of JavaScript where possible instead of inventing new ways of to do things.
 - It has a new syntax (JSX for example), but uses a ton of existing JavaScript syntax compared to other frameworks where they fill in gaps by introducing a lot of new syntax, API and frameworks.
-- Originally React used JavaScript classes, but going forward we'll use functional components 
-- So let's go over some of the JavaScript syntax that React uses a lot, so hopefully by keeping this in mind, it'll be easier to understand the code in React.
+- Originally React used JavaScript classes to create components, but heavily favours functional components with *hooks*. You might see both implementations when you encounter React projects
+- So let's go over some of the JavaScript syntax that React uses a lot, so hopefully by keeping this in mind, it'll be easier to understand the code.
 
 [🔝](#toc)  
 
   
+## Object Oriented Programming
 
-### Pre ES6 class
+
+### Pre ES6 Class
 
 ```js
-// constructor
+// Constructor Declaration
 function Polygon (height, width) {
   this.name = 'Polygon';
   this.height = height;
   this.width = width;
 }
 
-// method
+// Method(s)
 Polygon.prototype.sayName = function() {
   console.log('Hi', this.name);
 }
 
-// usage
+// Instance
 
 let poly = new Polygon(300, 300);
 poly.sayName();
 
 ```
 
+
+[🔝](#toc)  
+
+  
+
 ### ES6 class
 
 ```js
 class Polygon {
-  // constructor
+
+  // Constructor Declaration
   constructor(height, width) {
     this.name = 'Polygon';
     this.height = height;
     this.width = width;
   }
   
-  //method
+  // Method
   sayName() {
    console.log('Hi', this.name );
   }
-
+}
   
-// usage
+// Instance
 let poly = new Polygon(300, 300);
 poly.sayName();
 
 ```
 
+
+[🔝](#toc)  
+
+  
+
 ### ES6 class with Inheritance
+
+* Examples are from: https://googlechrome.github.io/samples/classes-es6/ 
 
 ```js
 class Square extends Polygon {
@@ -88,18 +108,23 @@ class Square extends Polygon {
   }
 }
 
-// usage 
-
+// Instance
 let s = new Square(5);
 
 s.sayName();
 console.log('The area of this square is ' + s.area);
 
 ```
-https://googlechrome.github.io/samples/classes-es6/ 
 
 
-### Component Example Using ES6 and Prototype Based Classes
+
+
+[🔝](#toc)  
+
+  
+
+
+### Class Based  Component Idea
 
 ```js
 function Component(value) {
@@ -129,14 +154,20 @@ let comp = new Component(1234)
 let rendered = comp.render();
 ```
 
-### Functional Pattern
-- Why is this relevant? Going forward, we're going to rewrite these class component in a functional pattern.
-- If we look at the previous example, we can see there are 3 steps involved in creating and using the component
-1) define component with state
-2) create an instance of the component
-3) render the component so it returns the representation of the state that it has
 
-- In **functional** pattern we can do the following:
+[🔝](#toc)  
+
+  
+
+
+## Functional Programming
+
+- If we look at the previous example, we can see there are 3 steps involved in creating a class based component:
+  1) Define component with state
+  2) Create an instance of the component
+  3) Render the component so it `return`s the representation of the state that it has
+
+- In **functional pattern** we can do the following:
 
 ```js
 
@@ -148,12 +179,17 @@ let rendered = Component(1234);
 
 ```
 
-- What's been done is essentially we've collapsed the class pattern of doing things in a functional way, where the function almost acts like a constructor, and returns a value just like class method. 
-- You're going to see these 2 ways of writing components, but React heavily favours the functional pattern.
+- What's been done is that we've collapsed the class pattern of doing things in a functional way, where the function almost acts like a constructor, and returns a value just like class method. 
+- You're going to see these 2 ways of writing components, but **React heavily favours the functional pattern** because there are lots of problems with `this`.
 
-### Why React ditched OOP 
 
-- problems with `this`
+
+[🔝](#toc)  
+
+  
+
+
+## Syntax Review
 
 ### Arrow functions
 
@@ -175,6 +211,11 @@ const g = (a,b) => a + b
 
 
 ```
+
+
+[🔝](#toc)  
+
+  
 
 
 ### Destructuring
@@ -239,6 +280,13 @@ h(options);
 
 ```
 
+
+
+[🔝](#toc)  
+
+  
+
+
 ### Immutable Data and Cloning
 
 - `string`s are immutable, meaning once you create them, you can't change it
@@ -261,8 +309,7 @@ For example:
 let user = {
   id: 7,
   name: 'zokir'
-};
-
+}
 // we could change any value of the object by reaching into it and changing it
 
 user.name = 'Zokir Rakhimov'
@@ -289,6 +336,11 @@ let copy = [0, ...list, 5] // 0 , 1, 2, 3, 4, 5
 ```
 
 
+
+
+[🔝](#toc)  
+
+  
 
 
 
