@@ -27,6 +27,7 @@
 ```js
 // constructor
 function Polygon (height, width) {
+  this.name = 'Polygon';
   this.height = height;
   this.width = width;
 }
@@ -38,7 +39,7 @@ Polygon.prototype.sayName = function() {
 
 // usage
 
-let poly = new Polygon('name', 300, 300);
+let poly = new Polygon(300, 300);
 poly.sayName();
 
 ```
@@ -61,11 +62,39 @@ class Polygon {
 
   
 // usage
-let p = new Polygon(300, 400);
-p.sayName();
+let poly = new Polygon(300, 300);
+poly.sayName();
 
 ```
 
+## ES6 class with Inheritance
+
+```js
+class Square extends Polygon {
+  
+  // constructor
+  constructor(length) {
+    super(length, length);
+    this.name = 'Square';
+  }
+  // methods (getter and setter)
+  get area() {
+    return this.height * this.width;
+  }
+
+  set area(value) {
+    this.area = value;
+  }
+}
+
+// usage 
+
+let s = new Square(5);
+
+s.sayName();
+console.log('The area of this square is ' + s.area);
+
+```
 
 
 
