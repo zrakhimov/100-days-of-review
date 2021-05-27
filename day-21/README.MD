@@ -20,6 +20,7 @@
 - So let's go over some of the JavaScript syntax that React uses a lot, so hopefully by keeping this in mind, it'll be easier to understand the code in React.
 
 [🔝](#toc)  
+
   
 
 ### Pre ES6 class
@@ -95,6 +96,8 @@ s.sayName();
 console.log('The area of this square is ' + s.area);
 
 ```
+https://googlechrome.github.io/samples/classes-es6/ 
+
 
 ### Component Example Using ES6 and Prototype Based Classes
 
@@ -106,6 +109,9 @@ function Component(value) {
 Component.prototype.render = function() {
   return `Hello $(this.value)`;
 }
+
+let comp = new Component(1234)
+let rendered = comp.render();
 ```
 
 ```js
@@ -118,7 +124,56 @@ class Component {
     return `Hello ${this.value)`;
   }
 }
+
+let comp = new Component(1234)
+let rendered = comp.render();
 ```
+
+### Functional Pattern
+- Why is this relevant? Going forward, we're going to rewrite these class component in a functional pattern.
+- If we look at the previous example, we can see there are 3 steps involved in creating and using the component
+1) define component with state
+2) create an instance of the component
+3) render the component so it returns the representation of the state that it has
+
+- In **functional** pattern we can do the following:
+
+```js
+
+function Component(value) {
+  return `Hello ${this.value}`
+}
+
+let rendered = Component(1234);
+
+```
+
+- What's been done is essentially we've collapsed the class pattern of doing things in a functional way, where the function almost acts like a constructor, and returns a value just like class method. 
+- You're going to see these 2 ways of writing components, but React heavily favours the functional pattern.
+
+### Why React ditched OOP 
+
+- problems with `this`
+
+### Arrow functions
+
+```js
+// function declaration
+function f(a, b) {
+  return a + b;
+}
+
+// function expression
+
+const g = (a,b) => {
+  return a+b;
+}
+
+// same as
+
+const g = (a,b) => a + b
+
+
 
 
 
