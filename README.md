@@ -24,6 +24,8 @@
 [Day 19 - JS [AJAX and Fetch() API]](day-19/README.MD)  
 [Day 20 - React [React Intro]](day-20/README.MD)    
 [Day 21 - React [JavaScript review]](day-21/README.MD)    
+[Day 22 - React [JSX]](day-22/README.MD)  
+
 
 
 
