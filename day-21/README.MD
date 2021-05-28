@@ -220,6 +220,8 @@ const g = (a,b) => a + b
 
 ### Destructuring
 
+* Objects
+
 ```js
 let user = {
   id: 1234,
@@ -233,6 +235,8 @@ const {fname} = user;
 const {email = 'default@google.com'} = user;
 ```
 
+* Arrays
+
 ```js
 
 let coord = [43.7955, -79.345];
@@ -243,7 +247,7 @@ let lng = coord[1];
 let [lat,lng] = coord;
 
 ```
-
+* Arguments 
 ```js
 
 // 1
@@ -310,15 +314,20 @@ let user = {
   id: 7,
   name: 'zokir'
 }
-// we could change any value of the object by reaching into it and changing it
 
-user.name = 'Zokir Rakhimov'
+/* We could change any value of the object 
+   by reaching into it and changing it */
+  user.name = 'Zokir Rakhimov'
 
-// The problem React has with this, that it is very interested when the data changes and wants to manage it. So it is preferred to replace the whole object when it's changed. So one of the things you see might see is this "replacement" of the state/object
+/* The problem React has with this, that it is very interested when
+ the data changes and wants to manage it. So it is preferred to 
+ replace the whole object when it's changed. So one of the things
+  you see might see is this "replacement" of the state/object */
 
-// Take all the values from `user`, create new `user` object and copy all the values from the old `user` object
-// Also called cloning an object
-user = {...user}
+/* Take all the values from `user`, create new `user` object and 
+copy all the values from the old `user` object.Also called 
+cloning an object */
+  user = {...user}
 ```
 
 - We can do the same cloning for arrays
@@ -334,8 +343,6 @@ let copy = [0, ...list, 5] // 0 , 1, 2, 3, 4, 5
 
 
 ```
-
-
 
 
 [🔝](#toc)  
