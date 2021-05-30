@@ -1,6 +1,6 @@
 [Go to ToC](../README.md)
 
-# 
+# JSX, Elements and Components
 
 ## ToC
 * [](#)
