@@ -5,7 +5,7 @@
 ## ToC
 * [Intoducing JSX](#introducing-jsx)  
 * [Variables Inside JSX](#variables-inside-jsx)  
-* [ ](#)
+* [JSX in Multiple Lines](#jsx-in-multiple-lines)
 * [ ](#)
 * [ ](#)
 * [](#)
@@ -52,8 +52,47 @@ const element = <h1>Hello, { 'User ' + uppercase('zokir')}
 [🔝](#toc)  
   
 
-  
-### 
+
+### JSX In Multiple Lines
+
+- You can use JSX anywhere in places of an JavaScript expression
+
+```js
+if (x == 1) 
+    return <h1> Value is 1 </h1>
+else
+    return <h2> Value is something else!</h2>
+```
+
+- When you have JSX expressino with multiple lines, just like in html structure, you'd have to wrap them in `()` paranthesis.
+
+```js
+const element = (
+    <div>
+        <h1>...</h1>
+    </div>
+)
+```
+
+- :warning: JSX Expression has to be **one** react element. For example you can't do this:
+
+```js
+const list = (
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+)
+```
+- You have to wrap it in an element, in this case maybe `<ul>`
+```js
+const list = (
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+)
+```
 
 
 
