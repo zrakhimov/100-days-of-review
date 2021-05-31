@@ -6,7 +6,7 @@
 * [Intoducing JSX](#introducing-jsx)  
 * [Variables Inside JSX](#variables-inside-jsx)  
 * [JSX in Multiple Lines](#jsx-in-multiple-lines)
-* [ ](#)
+* [Attributes in JSX](#attributes-in-jsx)
 * [ ](#)
 * [](#)
 * [](#)
@@ -17,7 +17,7 @@
 - Looking at this you might be very confused, is it JavaScript or is it HTML?
 - People are opinionated regarding the extension that it needs to have. You can write `file.js` or `file.jsx`. You might see both of these out there
 - This is not valid javascript, but this needs to be converted to a version which actually can be run.
-```js
+```jsx
 // JSX
 const element = <h1>Hello, world</h1>;
 // JavaScript
@@ -42,7 +42,7 @@ console.log(element);
 
 - Insdie the `{}` you'd put JavaScript expression. It could be as simple as `1+1` inside
 
-```js
+```jsx
 
 const uppercase = name => name.toUpperCase();
 
@@ -57,7 +57,7 @@ const element = <h1>Hello, { 'User ' + uppercase('zokir')}
 
 - You can use JSX anywhere in places of an JavaScript expression
 
-```js
+```jsx
 if (x == 1) 
     return <h1> Value is 1 </h1>
 else
@@ -66,7 +66,7 @@ else
 
 - When you have JSX expressino with multiple lines, just like in html structure, you'd have to wrap them in `()` paranthesis.
 
-```js
+```jsx
 const element = (
     <div>
         <h1>...</h1>
@@ -76,7 +76,7 @@ const element = (
 
 - :warning: JSX Expression has to be **one** react element. For example you can't do this:
 
-```js
+```jsx
 const list = (
     <li>One</li>
     <li>Two</li>
@@ -84,7 +84,7 @@ const list = (
 )
 ```
 - You have to wrap it in an element, in this case maybe `<ul>`
-```js
+```jsx
 const list = (
     <ul>
         <li>One</li>
@@ -93,14 +93,21 @@ const list = (
     </ul>
 )
 ```
-
-
-
-
   
 [🔝](#toc)  
 
-### 
+### Attributes in JSX
+
+- `class` attribute is `className` in JSX
+- Be careful on naming the attributes, it's a **camelCase** in JSX
+
+```jsx
+const reactElement = <p id="intro" tabIndex="3" className="" onClick=""></p>
+```
+- we can include dynamic attribute values
+```jsx
+const url = 'https://cats.com/image.jpg' 
+```
 
 
   
