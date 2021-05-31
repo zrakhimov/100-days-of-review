@@ -3,8 +3,8 @@
 # JSX, Elements and Components
 
 ## ToC
-* [Intoducing JSX](#introducing-jsx)
-* [ ](#)
+* [Intoducing JSX](#introducing-jsx)  
+* [Variables Inside JSX](#variables-inside-jsx)  
 * [ ](#)
 * [ ](#)
 * [ ](#)
@@ -29,20 +29,29 @@ console.log(element);
 
 - To convert from JSX syntax to JavaScript code, you'd need something called a **transpiler**.
 
-
-
+- React uses Babel to transpile JSX code inside React into JavaScript
+- [DEMO BABEL]
 
 
 [🔝](#toc)  
   
 
-### 
+### Variables Inside JSX
 
+- It is possible to use JavaScript inside JSX expression. You'd have to use `{}` (single braces)
 
+- Insdie the `{}` you'd put JavaScript expression. It could be as simple as `1+1` inside
 
+```js
 
+const uppercase = name => name.toUpperCase();
+
+const element = <h1>Hello, { 'User ' + uppercase('zokir')}
+```
 
 [🔝](#toc)  
+  
+
   
 ### 
 
