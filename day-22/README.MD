@@ -145,7 +145,9 @@ function Hello(props) {
 
 - Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
 - Components can include other components.
-- Notice how the data is flowing through parent-child components
+- Notice how the data is flowing through parent-child components (one-way dataflow)
+- If the data ever changes, React is very efficient making adjustments to the DOM and updating all the cascading components right away.
+ 
 
 ```jsx
 // inside component
@@ -164,51 +166,3 @@ function Person({name}) {
 
 ```
 
-
-[🔝](#toc)    
-  
-  
-### 
-
-  
-[🔝](#toc)  
-
-###
-
-
-  
-[🔝](#toc)  
-
-### 
-
-
-
-[🔝](#toc)    
-  
-  
-### 
-  
-[🔝](#toc)  
-
-###
-
-
-  
-[🔝](#toc)  
-
-### 
-
-
-
-[🔝](#toc)    
-  
-  
-### 
-
-
-  
-[🔝](#toc)  
-
-  
-  
-  
