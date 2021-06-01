@@ -7,8 +7,8 @@
 * [Variables Inside JSX](#variables-inside-jsx)  
 * [JSX in Multiple Lines](#jsx-in-multiple-lines)
 * [Attributes in JSX](#attributes-in-jsx)
-* [ ](#)
-* [](#)
+* [Props](#props)
+* [Components](#components)
 * [](#)
 
 ### Introducing JSX
@@ -111,8 +111,82 @@ const reactElement = <p id="intro" tabIndex="3" className="" onClick=""></p>
 const url = 'https://cats.com/image.jpg' 
 const img = <img src={ url } width={250} height="250" />
 ```
+  
+[🔝](#toc)  
+
+### Props
+
+- Consider this Component which creates a React Element
+
+```jsx
+function Hello() {
+    return <p>Hello</p>
+}
+```
+- It's not that useful, because it doesn't let's us pass any data to it. So React has introduced the concept of **props** (which is short for **properties**)
+- So props are data which changes the outcome of the element. (Data -> function component -> React Element)
+- Basically you're modelling how your interface looks based on the data that has been passed
+- Prop is object
+```jsx
+// inside component
+function Hello(props) {
+    const name = props.name
+    return <p> Hello {name}</p>
+}
+
+// usage
+<Hello name={'Zokir'}/>
+
+```
+  
+[🔝](#toc)  
+
+### Component
+
+- Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+- Components can include other components.
+- Notice how the data is flowing through parent-child components
+
+```jsx
+// inside component
+function Person({name}) {
+    return (
+        <div>
+            <Hello name={name} />
+        </div>
+    )
+}
 
 
+// usage
+<Person name={'Zokir'} />
+
+
+```
+
+
+[🔝](#toc)    
+  
+  
+### 
+
+  
+[🔝](#toc)  
+
+###
+
+
+  
+[🔝](#toc)  
+
+### 
+
+
+
+[🔝](#toc)    
+  
+  
+### 
   
 [🔝](#toc)  
 
