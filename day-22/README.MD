@@ -104,9 +104,12 @@ const list = (
 ```jsx
 const reactElement = <p id="intro" tabIndex="3" className="" onClick=""></p>
 ```
-- we can include dynamic attribute values
+- We can include dynamic attribute values
+- When we dont' have content, we'd have to put `/` to close the tag: `<img></img>` and `<img src={url} />`
+- Some people also use `{}` to put static values like `width={250}`, which is totally ok.
 ```jsx
 const url = 'https://cats.com/image.jpg' 
+const img = <img src={ url } width={250} height="250" />
 ```
 
 
