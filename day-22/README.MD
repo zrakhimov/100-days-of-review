@@ -63,7 +63,7 @@ else
     return <h2> Value is something else!</h2>
 ```
 
-- When you have JSX expressino with multiple lines, just like in html structure, you'd have to wrap them in `()` paranthesis.
+- When you have JSX expression with multiple lines, just like in html structure, you'd have to wrap them in `()` paranthesis.
 
 ```jsx
 const element = (
