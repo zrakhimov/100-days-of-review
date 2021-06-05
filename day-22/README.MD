@@ -9,7 +9,6 @@
 * [Attributes in JSX](#attributes-in-jsx)
 * [Props](#props)
 * [Components](#components)
-* [](#)
 
 ### Introducing JSX
 
