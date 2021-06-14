@@ -1,0 +1,5 @@
+.profile-card {
+  display: flex;
+  margin-bottom: 15px;
+  min-width: 415px;
+}

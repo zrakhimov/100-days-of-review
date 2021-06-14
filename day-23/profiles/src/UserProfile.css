@@ -1,0 +1,24 @@
+.user-info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Set the size of the text for the user's name, and eliminate margin */
+.profile-name {
+  color: #001f3f;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Set the size of the text for the user's email, and eliminate margin */
+.profile-email {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+/* Use a lighter blue for the email link */
+.profile-email a {
+  color: #0074d9;
+}
