@@ -10,7 +10,7 @@
 - [Dependencies](#dependencies)
 - [Adding page functionality](#adding-page-functionality)
 - [Paging Component](#paging-component)
-- [](#)
+- [Add click event](#add-click-event)
 
 ### Load Data From Web API
 
@@ -191,16 +191,95 @@ useEffect(() => {
 
 ### Paging Component
 
+- Now we have the ability to change the pages, but we have no way of changing it on the app, let's code a button which uses our paging functionality.
+
+```jsx
+// App.js
+
+<Paging currentPage={currentPage} totalPage={totalPage} />;
+
+// Paging.js
+
+function Paging({ currentPage, totalPage }) {
+  let label = currentPage === totalPage ? "Previous" : "Next";
+
+  return (
+    <div>
+      <button>{label}</button>
+    </div>
+  );
+}
+```
+
 [🔝](#toc)
 
-###
+### Add Click Event
 
-[🔝](#toc)
+- We have a button, but it doesn't really change anything when clicked. Let's add this functionality.
 
-###
+```jsx
+// App.js
 
-[🔝](#toc)
+<Paging currentPage={currentPage} totalPage={totalPage} />;
 
-###
+// Paging.js
+
+function Paging({ currentPage, totalPage }) {
+  let label = currentPage === totalPage ? "Previous" : "Next";
+
+  const onClickHandler = () => {
+    let newPage;
+    if (currentPage === totalPage) {
+      newPage = currentPage - 1;
+    } else {
+      newPage = currentPage + 1;
+    }
+  };
+
+  return (
+    <div>
+      <button onClick={onClickHandler}>{label}</button>
+    </div>
+  );
+}
+```
+
+- There's a problem with this, because we're actually trying to change props but it doesn't really change the state from our `App` component.
+
+- We have to pass `setCurrentPage` as a prop, so `Paging` component can use it to update the state. Let's fix that.
+
+⚠️ So this is a fundamental idea in React where data and functions that updates this data are passed down from top to bottom.
+
+```jsx
+// App.js
+
+<Paging
+  currentPage={currentPage}
+  totalPage={totalPage}
+  setCurrentPage={setCurrentPage}
+/>;
+
+// Paging.js
+
+function Paging({ currentPage, totalPage, setCurrentPage }) {
+  let label = currentPage === totalPage ? "Previous" : "Next";
+
+  const onClickHandler = () => {
+    let newPage;
+    if (currentPage === totalPage) {
+      newPage = currentPage - 1;
+    } else {
+      newPage = currentPage + 1;
+    }
+    setCurrentPage(newPage);
+  };
+
+  return (
+    <div>
+      <button onClick={onClickHandler}>{label}</button>
+    </div>
+  );
+}
+```
 
 [🔝](#toc)
