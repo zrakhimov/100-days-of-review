@@ -8,8 +8,8 @@
 - [useEffect Hook](#useeffect-hook)
 - [useState Hook](#usestate-hook)
 - [Dependencies](#dependencies)
-- [](#)
-- [](#)
+- [Adding page functionality](#adding-page-functionality)
+- [Paging Component](#paging-component)
 - [](#)
 
 ### Load Data From Web API
@@ -40,6 +40,8 @@ function load() {
     .catch(err) {
         console.log(err);
     }
+
+    return data;
 }
 
 export default load;
@@ -106,13 +108,88 @@ function App() {
 
 ### Dependencies
 
+- If you look at the result with the above code, it will run **nonstop**.
+- `useEffect` hook accepts dependencies as an array on it's second argument. So if we want the component to render once, we have to give it an empty array.
+
+```jsx
+useEffect(() => {
+  load().then((data) => {
+    setUsers(data);
+  });
+}, []);
+```
+
 [🔝](#toc)
 
-###
+### Adding Page Functionality
+
+- Let's make some changes to our app by adding a button and when clicked, it will show different set of data (different page) by emulating turning a page:
+
+- In our `reqres` api, there's a data about pages, we'll use that information to code our app. In order to do that, first we need some modifications to `users.js` file:
+
+```js
+
+// users.js file
+function load(page = 1) {
+    const data = fetch('https://reqres.in/api?page=${page}')
+    .then(response => {
+        return response.json();
+    })
+    // .then(results => results.data)
+    .catch(err) {
+        console.log(err);
+    }
+    return data;
+}
+
+export default load;
+
+//App.js
+
+...
+    useEffect( () => {
+        load(2).then(data => setUsers(data));
+    })
+
+...
+
+```
+
+- Now if we manually change the passing value to load() as 2 or 1, we can see our data is changing on the browser
+- Let's actually store this data about the page as a state in the `App` component. currentPage and totalPages store our paging data and has `1` as a default
+
+```jsx
+const [currentPage, setCurrentPage] = useState(1);
+const [totalPages, setTotalPages] = useState(1);
+```
+
+- change our `useEffect`
+
+```jsx
+useEffect(() => {
+  load(currentPage).then((result) => {
+    setCurrentPage(result.page);
+    setTotalPages(result.total_pages);
+    setUsers(result.data);
+  });
+});
+```
+
+- don't forget to add the missing dependency
+
+```jsx
+useEffect(() => {
+  load(currentPage).then((result) => {
+    setCurrentPage(result.page);
+    setTotalPages(result.total_pages);
+    setUsers(result.data);
+  });
+}, [currentPage]);
+```
 
 [🔝](#toc)
 
-###
+### Paging Component
 
 [🔝](#toc)
 
