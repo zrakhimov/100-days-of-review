@@ -48,18 +48,28 @@ export default load;
 
 - Now we have to use it in our `App` component, but we can't really do the following:
 
-```jsx{4}
-import load from "./users";
+```js
+const users = load();
+```
+
+- Since we're working with React and `load` is a promise, React takes care of **when** things are happening. So we have to use "hooks" which will manage when to do side effects.
+- So we have to use `useEffect` hook from 'react' library
+
+```jsx
+import {useEffect} from 'react'
 
 function App() {
-    const users = load();
-   return (
-       <div className="App">
-            <Profiles users={users}>
-       </div>
-   )
-}
 
+    useEffect( () => {
+
+    })
+
+    return (
+        <div className='App'>
+            <Profiles users={users}>
+        </div>
+    )
+}
 
 ```
 
