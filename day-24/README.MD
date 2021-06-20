@@ -5,9 +5,9 @@
 ## ToC
 
 - [Load data from Web API](#load-data-from-web-api)
-- [](#)
-- [](#)
-- [](#)
+- [useEffect Hook](#useeffect-hook)
+- [useState Hook](#usestate-hook)
+- [Dependencies](#dependencies)
 - [](#)
 - [](#)
 - [](#)
@@ -46,6 +46,10 @@ export default load;
 
 ```
 
+[🔝](#toc)
+
+### `useEffect` Hook
+
 - Now we have to use it in our `App` component, but we can't really do the following:
 
 ```js
@@ -61,7 +65,7 @@ import {useEffect} from 'react'
 function App() {
 
     useEffect( () => {
-
+        load().then(data => console.log(data))
     })
 
     return (
@@ -70,12 +74,37 @@ function App() {
         </div>
     )
 }
-
 ```
 
 [🔝](#toc)
 
-###
+### `UseState` Hook
+
+- Now this code works, but there's no way to store data that is coming from an API call. We could have used object instance as a state in class components, but in functional components , we have to have a way to store state somewhere outside of the function. This is where we can take advantage of `useState` hook.
+
+```jsx
+import {useEffect, useState} from 'react'
+
+function App() {
+    // users - an array
+    // setUsers - function to update `users`
+    const [users, setUsers] = useState([]);
+
+    useEffect( () => {
+        load().then(data => setUsers(data));
+    })
+
+    return (
+        <div className='App'>
+            <Profiles users={users}>
+        </div>
+    )
+}
+```
+
+[🔝](#toc)
+
+### Dependencies
 
 [🔝](#toc)
 
