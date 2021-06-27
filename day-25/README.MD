@@ -87,7 +87,7 @@ The event object that we get back has methods on it we can use.
 
 - Let's look at an example of creating a button which counts how many times it's been clicked
 
-```jsx
+```js
 import {useState} from 'react;
 
 function App() {
@@ -105,7 +105,7 @@ export default App()
 - The way to do it is to use `onClick` attribute name just like we use `on` attribute in html, but since it's JSX, we have to get used to using `onClick`
 - Now we need to give this attribute a function that executes when the button is clicked. Since we just want to add 1 everytime it's clicked, we should define a function that does that.
 
-```jsx
+```js
 import {useState} from 'react;
 
 function App() {
