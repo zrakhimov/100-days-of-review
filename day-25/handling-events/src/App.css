@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.counter-button {
+  border: none;
+  margin: 40px;
+  padding: 35px 15px;
+  font-size: 2em;
+  background-color: darkgray;
+  color: white;
+}
+.counter-button:hover {
+  background-color: darkorange;
+}
