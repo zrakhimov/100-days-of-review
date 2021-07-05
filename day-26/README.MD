@@ -8,9 +8,7 @@ Today we'll use what we've learned so far in an example which demonstrates a Loa
 
 - [Common Pattern of Designing React Apps](#common-pattern-of-designing-react-apps)
 - [Youtube](#youtube)
-- [ ](#)
-- [ ](#)
-- [](#)
+
 
 ### Common Pattern of Designing React Apps
 
@@ -25,4 +23,4 @@ Today we'll use what we've learned so far in an example which demonstrates a Loa
 
 Here's the link to youtube video:
 
-- [Link](#linkhere)
+- [Link](https://youtu.be/ucmlQx8l1Hc)
