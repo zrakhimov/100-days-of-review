@@ -27,3 +27,4 @@ Repository contains review of forgotten stuff
 [Day 23 - React [Create-React-App]](day-23/README.MD)  
 [Day 24 - React [Hooks]](day-24/README.MD)  
 [Day 25 - React [Handing Events]](day-25/README.MD)
+[Day 26 - React [Handing Events]](day-26/README.MD)
