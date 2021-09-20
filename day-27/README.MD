@@ -29,7 +29,10 @@
 - C# is pronounced as **`C Sharp`**
 - The first version of C# was developed by **Microsoft** between 1999 and 2002 and was officially released to the public in **2002** as a part of the .NET platform
 - C# is a **modern object-oriented, general-purpose programming language**, created and developed by Microsoft together with the .NET platform. There is highly diverse software developed with C# and on the .NET platform: office applications, web applications (Blazor), websites, desktop applications, mobile applications (MAUI), games (UNITY) and many others.
-- <img src="maui.png" alt="drawing" width="300"/>
+<div style="display:flex">
+  <img src="maui.png" alt="drawing" width="300"/>
+  <img src="blazor.png" alt="drawing" width="300" height="200"/>
+</div>
 
 ### .NET Framework
 
