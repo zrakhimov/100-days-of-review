@@ -5,10 +5,10 @@
 ## ToC
 
 - [Introduction](#introduction)
-- [Why C# ?](#why-c-#)
-- [About C# and .NET](#about-c-and-net)
-- [.NET Framework](#.NET-Framework)
-- [Demo](#Demo)
+- [Why C# ?](#why-c)
+- [About C# and .NET](#about-c)
+- [.NET Framework](#net-framework)
+- [Demo](#demo)
 
 ### Introduction
 
