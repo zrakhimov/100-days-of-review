@@ -71,3 +71,6 @@ class Program
 ###
 
 [🔝](#toc)
+
+:warning: Difference between .NET and .NET Framework
+https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server
