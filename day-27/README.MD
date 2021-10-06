@@ -10,7 +10,7 @@
 - [.NET Framework](#net-framework)
 - [Demo](#demo)
 
-### Introduction
+## Introduction
 
 - Welcome to C# —a powerful computer-programming language that’s used to build substantial computer applications.
 
