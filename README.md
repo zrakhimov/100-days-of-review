@@ -31,4 +31,4 @@ Repository contains review of forgotten stuff
 [Day 25 - React [Handing Events]](List/day-25/README.MD)  
 [Day 26 - React [Loading Spinner Example in React]](List/day-26/README.MD)  
 [Day 27 - C# [Hello World]](List/day-27/README.MD)  
-[Day 28 - C# [Data Types]](https://github.com/zrakhimov/100-days-of-review/tree/master/day-28)  
+[Day 28 - C# [Data Types]](https://github.com/zrakhimov/100-days-of-review/tree/master/List/day-28)  
