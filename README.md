@@ -29,4 +29,4 @@ Repository contains review of forgotten stuff
 [Day 25 - React [Handing Events]](day-25/README.MD)  
 [Day 26 - React [Loading Spinner Example in React]](day-26/README.MD)  
 [Day 27 - C# [Hello World]](day-27/README.MD)  
-[Day 28 - C# [Data Types]](day-28/README.MD)  
+[Day 28 - C# [Data Types]](day-28/readme.MD)  
