@@ -20,3 +20,10 @@ In this lesson, we'll cover C# **primitive data types** and how to work with the
 [🔝](#toc)
 
 ### Characteristics
+
+Data Types are characterized by:
+
+- **Name** - for example **int**
+- **Size** - for example **4 bytes**
+- **Default value** - for example **0**
+
