@@ -151,8 +151,54 @@ Integer types represent integer numbers and are **sbyte, byte, short, ushort, in
 
 [🔝](#toc)  
 
+### Examples
+
+```C#
+// Declare some variables 
+byte centuries = 20; 
+ushort years = 2000; 
+uint days = 730480; 
+ulong hours = 17531520; /
+// Print the result on the console
+Console.WriteLine(centuries + " centuries are " + years + " years, or " + days + " days, or " + hours + " hours.");
+// Console output: 
+// 20 centuries are 2000 years, or 730480 days, or 17531520 
+// hours.
+ulong maxIntValue = UInt64.MaxValue; Console.WriteLine(maxIntValue); 
+// 18446744073709551615
+```
+
 ---
 
 ## Real Floating Point
 
 Real types in C# are the real numbers we know from mathematics. They are represented by a **floating-point** according to the standard `IEEE 754` and are **float** and **double**.
+
+### `float`
+
+* 32 bit (single precision real number)
+* Default value: `0.0f or 0.0F`. The character 'f' when put at the end explicitly indicates that the number is of type `float` (because by default all real numbers are considered **double**)
+* Accuracy/Precision up to **seven** **decimal** places (the others are lost).
+For example: **0.123456789** => becomes **0.1234568**
+* Range: `±1.5 × 10^-45 to ±3.4 × 10^38`
+
+## Special Values of Float
+
+* The real data types have also several special values that are not real numbers but are mathematical abstractions:
+    - **Negative infinity** **-∞ (Single.NegativeInfinity)**. It is obtained when for instance we are dividing -1.0f by 0.0f.
+    - **Positive infinity** **+∞ (Single.PositiveInfinity)**. It is obtained when for instance we are dividing 1.0f by 0.0f.
+    - **Uncertainty (Single.NaN)** – means that an invalid operation is performed on real numbers. It is obtained when for example we divide 0.0f by 0.0f, as well as when calculating square root of a negative number.
+
+[🔝](#toc) 
+---
+### `double`
+
+* 64 bit (double precision real number)
+* Default value: `0.0d or 0.0D` (the suffix `'d'` is not mandatory because by default all real numbers in C# are of type `double`)
+* Accuracy/Precision up to **fourteen or fifteen** decimal places.
+* Range: `±5.0 × 10^-324 to ±1.7 × 10^308`
+
+[🔝](#toc) 
+
+### Special Values of Double
+
