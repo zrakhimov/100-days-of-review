@@ -7,7 +7,7 @@
 - [Intro](#intro)
 - [Data Types](#data-types)
     - [Types](#types)
-    - [Chart](#chart)
+- [Integers](#integers)
 
 ## Intro
 
@@ -45,7 +45,48 @@ Basic data types in C# are distributed into the following **types**:
 These data types are called **primitive (built-in types)**, because they are embedded in C# language at the lowest level. The table below represents the above mentioned data types, their range and their default values:
 
 
-### Chart
+## Integers
 
-![chart](chart.png)
+Integer types represent integer numbers and are **sbyte, byte, short, ushort, int, uint, long and ulong**. Let’s examine them one by one.
 
+---
+### `sbyte`
+
+* 8 bit signed (+/-)
+* Means 2 to the power of 8 = 256 values
+* `SByte.MinValue = -128 (-2^7)`
+* `SByte.MaxValue = 127 (2^7 - 1) `
+* Default value: `0`
+
+### `byte`
+
+* 8 bit **unsigned** ( + )
+* 256 possible values (`2^8`)
+* `Byte.MinValue = 0`
+* `Byte.MaxValue = 255 (2^8 - 1)`
+* Default value: `0`
+
+---
+
+### `short`
+
+* 16 bit signed (+/-)
+* 65536 possible values (`2^16`)
+* `Int16.MinValue = -32768 (-2^15)`
+* `Int16.MaxValue = 32767 (2^15 -1)`
+
+### `ushort`
+
+* 16 bit unsigned (+)
+* 65536 possible values
+* `UInt16.MinValue = 0`
+* `UInt16.MaxValue = 65535 (2^16 -1)`
+
+---
+
+### `int`
+
+* Most popular choice
+* 32 bit signed (`+/-`)
+* 4,294,967,296 possible values (2^32)
+* 
