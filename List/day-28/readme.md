@@ -363,13 +363,37 @@ Console.WriteLine("The value of container2 is: " + container2);
 // The value of container2 is: Five.
 ```
 
-## Nullable Type
+## Nullable Types
 
 
+* Nullable types are specific **wrappers** around the value types (as `int`, `double` and `bool`) that allow storing data with a **null** value
+* This provides opportunity for types that generally do not allow lack of value (i.e. value null) to be used as reference types and to accept both normal values and the special one null.
 
+Wrapping a given type as nullable can be done in two ways:
+```c#
 
+Nullable<int> i1 = null; 
+int? i2 = i1;
 
+/* Both are equivalent. The easiest way to perform this operation is to add a question mark (?) after the type, for example int?, the more difficult is to use the Nullable<…> syntax. */
+```
 
+* Nullable types are **reference types** i.e. they are reference to an object in the dynamic memory, which contains their actual value. They may or may not have a value and can be used as normal primitive data types, but with some specifics, which are illustrated in the following exam
+``` C#
+int i = 5; 
+int? ni = i; 
+Console.WriteLine(ni); // 5
+// i = ni; // this will fail to compile 
+Console.WriteLine(ni.HasValue); // True 
+i = ni.Value; 
+Console.WriteLine(i); // 5
+ni = null; 
+Console.WriteLine(ni.HasValue); // False 
+//i = ni.Value; // System.InvalidOperationException 
+i = ni.GetValueOrDefault(); 
+Console.WriteLine(i); // 0
+
+```
 
 
 
