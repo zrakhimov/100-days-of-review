@@ -25,6 +25,11 @@
     - [Special Values of Double](#special-values-of-double)
     - [Errors with Real Numbers](#errors-with-real-numbers)
     - [Decimal](#decimal)
+- [Boolean](#boolean)
+- [Character](#character-type)
+- [Strings](#strings)
+- [Object](#object-type)
+- [Nullable Types](#nullable-types)
 
 
 
@@ -300,6 +305,8 @@ Console.WriteLine("equalA1 = " + equalA1);
 // equalA1 = True
 ```
 
+[🔝](#toc) 
+
 
 ## Character Type
 
@@ -326,6 +333,8 @@ Console.WriteLine( "The code of '" + ch + "' is: " + (int)ch);
 // The code of 'A' is: 65
 ```
 
+[🔝](#toc) 
+
 ## Strings
 
 * Strings are sequences of characters. 
@@ -345,6 +354,8 @@ Console.WriteLine("Your full name is " + fullName + ".");
 // Your full name is John Smith.
 ```
 
+[🔝](#toc) 
+
 ## Object Type
 
 * Object type is a special type, which is the parent of all other types in the .NET Framework.
@@ -363,11 +374,15 @@ Console.WriteLine("The value of container2 is: " + container2);
 // The value of container2 is: Five.
 ```
 
+
+[🔝](#toc) 
+
 ## Nullable Types
 
 
 * Nullable types are specific **wrappers** around the value types (as `int`, `double` and `bool`) that allow storing data with a **null** value
 * This provides opportunity for types that generally do not allow lack of value (i.e. value null) to be used as reference types and to accept both normal values and the special one null.
+* Nullable types are used for storing information, which **d**
 
 Wrapping a given type as nullable can be done in two ways:
 ```c#
@@ -395,6 +410,8 @@ Console.WriteLine(i); // 0
 
 ```
 
+
+[🔝](#toc) 
 
 
 
