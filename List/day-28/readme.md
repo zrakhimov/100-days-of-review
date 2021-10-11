@@ -17,6 +17,12 @@
     - [uint](#uint)
     - [long](#long)
     - [ulong](#ulong)
+    - [Examples](#examples)
+- [Real Floating Point](#real-floating-point)
+    - [Float](#float)
+    - [Special Values of Float](#special-values-of-float)
+    - [Double](#double)
+    - [Special Values of Double](#special-values-of-double)
 
 
 ## Intro
@@ -182,12 +188,12 @@ Real types in C# are the real numbers we know from mathematics. They are represe
 For example: **0.123456789** => becomes **0.1234568**
 * Range: `±1.5 × 10^-45 to ±3.4 × 10^38`
 
-## Special Values of Float
+### Special Values of Float
 
 * The real data types have also several special values that are not real numbers but are mathematical abstractions:
-    - **Negative infinity** **-∞ (Single.NegativeInfinity)**. It is obtained when for instance we are dividing -1.0f by 0.0f.
-    - **Positive infinity** **+∞ (Single.PositiveInfinity)**. It is obtained when for instance we are dividing 1.0f by 0.0f.
-    - **Uncertainty (Single.NaN)** – means that an invalid operation is performed on real numbers. It is obtained when for example we divide 0.0f by 0.0f, as well as when calculating square root of a negative number.
+    - **Negative infinity** **-∞ (`Single.NegativeInfinity`)**. It is obtained when for instance we are dividing `-1.0f by 0.0f`.
+    - **Positive infinity** **+∞ (`Single.PositiveInfinity`)**. It is obtained when for instance we are dividing `1.0f` `by` `0.0f`.
+    - **Uncertainty (`Single.NaN`)** – means that an invalid operation is performed on real numbers. It is obtained when for example we divide `0.0f by 0.0f`, as well as when calculating square root of a negative number.
 
 [🔝](#toc) 
 ---
@@ -201,4 +207,24 @@ For example: **0.123456789** => becomes **0.1234568**
 [🔝](#toc) 
 
 ### Special Values of Double
+
+- `Double.PositiveInfinity` (+∞)
+- `Double.NegativeInfinity` (-∞)
+- `Double.NaN` (invalid number)
+
+
+[🔝](#toc) 
+
+### Real Numbers - Example
+
+```c#
+float floatPI = 3.14f; 
+Console.WriteLine(floatPI); // 3.14
+double doublePI = 3.14; 
+Console.WriteLine(doublePI); // 3.14
+double nan = Double.NaN; 
+Console.WriteLine(nan); // NaN 
+double infinity = Double.PositiveInfinity; 
+Console.WriteLine(infinity); // Infinity
+```
 
