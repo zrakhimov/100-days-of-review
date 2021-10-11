@@ -390,7 +390,8 @@ Wrapping a given type as nullable can be done in two ways:
 Nullable<int> i1 = null; 
 int? i2 = i1;
 
-/* Both are equivalent. The easiest way to perform this operation is to add a question mark (?) after the type, for example int?, the more difficult is to use the Nullable<…> syntax. */
+/* Both are equivalent. The easiest way to perform this operation is to add a question mark (?)
+ after the type, for example int?, the more difficult is to use the Nullable<…> syntax. */
 ```
 
 * Nullable types are **reference types** i.e. they are reference to an object in the dynamic memory, which contains their actual value. They may or may not have a value and can be used as normal primitive data types, but with some specifics, which are illustrated in the following exam
