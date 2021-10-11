@@ -228,3 +228,66 @@ double infinity = Double.PositiveInfinity;
 Console.WriteLine(infinity); // Infinity
 ```
 
+### Errors with Real Numbers
+
+In calculations with real floating-point data types it is possible to observe **strange behavior**, because during the representation of a given real number it often happens to **lose accuracy**
+
+* Examples of numbers that do not have an accurate representation in float and double types are for instance` 0.1, 1/3, 2/7` and other.
+
+
+```C#
+float f = 0.1f; 
+Console.WriteLine(f); // 0.1 (correct due to rounding) 
+double d = 0.1f; 
+Console.WriteLine(d); // 0.100000001490116 (incorrect)
+float ff = 1.0f / 3; 
+Console.WriteLine(ff); // 0.3333333 (correct due to rounding) 
+double dd = ff; 
+Console.WriteLine(dd); // 0.333333343267441 (incorrect)
+```
+
+### `decimal`
+
+The above example show that f**loating-point number arithmetic can produce mistakes**, and is therefore not appropriate for precise financial calculations. Fortunately, C# supports decimal precision arithmetic where numbers like 0.1 are presented in the memory without rounding.
+
+C# supports the so-called **decimal floating-point arithmetic**, where numbers are represented via the decimal numeral system rather than the binary one. Thus, the decimal floating point-arithmetic type in C# **does not lose accuracy** when storing and processing floating-point numbers.
+
+* Perfect for **financial** calculations
+* 128 bit
+* Precision: 28 to 29 decimal places
+* Range: `-7.9x10^28 ~ +7.9x10^28
+* Default Value: `0.0m or 0.0M`. The '`m`' character at the end indicates explicitly that the number is of type decimal (because by default all real numbers are of type `double`).
+
+⚠️ If you perform calculations with money use the decimal type instead of float or double. Otherwise, you may encounter unpleasant anomalies while calculating and errors as a result!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
