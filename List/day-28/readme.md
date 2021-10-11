@@ -23,6 +23,9 @@
     - [Special Values of Float](#special-values-of-float)
     - [Double](#double)
     - [Special Values of Double](#special-values-of-double)
+    - [Errors with Real Numbers](#errors-with-real-numbers)
+    - [Decimal](#decimal)
+
 
 
 ## Intro
@@ -246,6 +249,8 @@ double dd = ff;
 Console.WriteLine(dd); // 0.333333343267441 (incorrect)
 ```
 
+[🔝](#toc) 
+
 ### `decimal`
 
 The above example show that f**loating-point number arithmetic can produce mistakes**, and is therefore not appropriate for precise financial calculations. Fortunately, C# supports decimal precision arithmetic where numbers like 0.1 are presented in the memory without rounding.
@@ -261,21 +266,104 @@ C# supports the so-called **decimal floating-point arithmetic**, where numbers a
 ⚠️ If you perform calculations with money use the decimal type instead of float or double. Otherwise, you may encounter unpleasant anomalies while calculating and errors as a result!
 
 
+[🔝](#toc) 
 
 
 
+## Boolean
+
+* Boolean type is declared with the keyword `bool`
+* It has two possible values: `true` and `false`
+* It is used most often to store the calculation result of **logical expressions**
+
+```C#
+int a = 1; 
+int b = 2; 
+// Which one is greater? 
+bool greaterAB = (a > b); 
+// Is 'a' equal to 1? 
+bool equalA1 = (a == 1); 
+// Print the results on the console 
+if (greaterAB) 
+{ 
+    Console.WriteLine("A > B"); 
+} else 
+{ 
+    Console.WriteLine("A <= B"); 
+}
+
+Console.WriteLine("greaterAB = " + greaterAB); 
+Console.WriteLine("equalA1 = " + equalA1);
+// Console output: 
+// A <= B 
+// greaterAB = False 
+// equalA1 = True
+```
 
 
+## Character Type
 
+* Character type is a **single character**. It is declared in C# with the keyword `char`
+* 16 bit - (Unicode = UTF-16)
+* Smallest value: `0` (`'\u0000'`)
+* Largest value: `65535` (`'\uffff'`)
+* Default Value: '\u0000'
 
+```C#
 
+char ch = 'a';
+Console.WriteLine( "The code of '" + ch + "' is: " + (int)ch);
 
+ch = 'b'
+Console.WriteLine( "The code of '" + ch + "' is: " + (int)ch); 
 
+ch = 'A';
+Console.WriteLine( "The code of '" + ch + "' is: " + (int)ch); 
 
+// Console output: 
+// The code of 'a' is: 97 
+// The code of 'b' is: 98 
+// The code of 'A' is: 65
+```
 
+## Strings
 
+* Strings are sequences of characters. 
+* In C# they are declared by the keyword `string`.
+* Default Value = `null`
 
+```c#
+string firstName = "John"; 
+string lastName = "Smith"; 
+string fullName = firstName + " " + lastName;
 
+Console.WriteLine("Hello, " + firstName + "!"); 
+Console.WriteLine("Your full name is " + fullName + ".");
+
+// Console output: 
+// Hello, John! 
+// Your full name is John Smith.
+```
+
+## Object Type
+
+* Object type is a special type, which is the parent of all other types in the .NET Framework.
+* Declared with the keyword `object`, it can take values from **any other type**
+* Default Value: `null`
+
+```C#
+// Declare some variables 
+object container1 = 5; 
+object container2 = "Five";
+// Print the results on the console 
+Console.WriteLine("The value of container1 is: " + container1); 
+Console.WriteLine("The value of container2 is: " + container2);
+// Console output: 
+// The value of container1 is: 5 
+// The value of container2 is: Five.
+```
+
+## Nullable Type
 
 
 
