@@ -117,10 +117,39 @@ age = 25;
 * Each data type in C# has a **default value** which is used when no initial value is provided when declared.
 
 ![default Value Table](defaultValue.png)
+
+```c#
+byte centuries = 20;
+ushort years = 2000;
+decimal decimalPI = 3.141592653589793238m;
+bool isEmpty = true;
+char ch = 'a';
+string firstName = "John";
+
+// use already initialized variable and reassign it
+char secondChar = ch;
+```
   
 [🔝](#toc)  
 
-### 
+## Value and Reference Types
+
+* Data types in C# are two types: **value** and **reference**
+
+### Value Types
+* Value Types are stored in execution stack and directly contain their value. They are numeric, character and boolean types
+    * `sbyte, byte, short, ushort, int, long, ulong, float, double, decimal, char, bool`
+    * The memory allocated for them is released when the program exits their range. i.e: when block of code `{}` exits.
+    * Variables declared in `Main()` is stored in the stack until the program completes execution of this method.
+
+### Reference Types
+
+* Reference Types keep a **reference (address) ** in the program execution stack, and that reference points to the **dynamic memory (heap), where their value is stored.
+    * This reference is a **pointer** indicating to the actual location of the value in the heap. 
+    * The reference has a type and can only point to objects of the same type
+    * All reference types can hold a `null` value.
+
+
 
 
 
