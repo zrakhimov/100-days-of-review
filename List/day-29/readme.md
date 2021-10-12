@@ -164,7 +164,7 @@ byte[] bytes = { 1, 2, 3 };
 
 ```
 
-![before](before.png height="200")
+![before](before.png = 200x)
 
 
 [🔝](#toc)    
