@@ -6,7 +6,7 @@
 * [Variables](#variables)
 * [Characteristics of Variables](#characteristics)
 * [Naming Variables](#naming-variables)
-* [ ](#)
+* [Declaring Variables](#declaring-variables)
 * [ ](#)
 * [](#)
 * [](#)
@@ -61,7 +61,36 @@ Variables are characterized by:
   
 [🔝](#toc)  
 
-### 
+### Recommendations
+
+* If the compiler allows a certain name as valid, doesn't mean it's appropriate.
+
+- Names should be descriptive and explain what the variable is used for.
+- Only Latin characters should be used
+- C# recommends to **start with a small letter** and continue with words that start with capital letter. 
+    * `firstName` => is better than `first_name` or `firstname`. 
+- Variable names should be **neither too long or too short** - they just need to clarify the purpose of the variable within its context
+
+### Examples
+
+Good:
+
+- `firstName`
+- `age`
+- `startIndex`
+- `lastNegativeNumberIndex`
+
+Bad:
+
+- `_first`
+- `last_name` (contains _)
+- `AGE` (all caps)
+- `Start_Index` (contains _ and starts with Capital)
+- `lastNegaiveNumber_Index` (contains _)
+- `a38` (not descriptive)
+- `fullName23`, `fullName24` (if it doesn't add clarity, don't include numbers)
+
+## Declaring Variables
 
 
   
