@@ -116,7 +116,7 @@ age = 25;
 * Initializatin means specifying an initial value. When setting value to variables at the time of their eclaration we actually initialize them.
 * Each data type in C# has a **default value** which is used when no initial value is provided when declared.
 
-![default Value Table](defaultValue.png)
+<img src="defaultValue.png" width="500" />
 
 ```c#
 byte centuries = 20;
@@ -164,7 +164,7 @@ byte[] bytes = { 1, 2, 3 };
 
 ```
 
-![before](before.png = 200x)
+<img src="before.png" width="400"/>
 
 
 [🔝](#toc)    
