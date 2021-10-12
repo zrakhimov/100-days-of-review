@@ -33,6 +33,15 @@ Variables are characterized by:
 - **value** (stored information), for exampe **25**
 
 
+* Variable is a named area of memory, which stores a value from a particular data type.
+    * Variables can be stored directly in the operational mmemory of the program (stack) or in the dynamic memory (heap) in which larger objects are stored ( such as character strings and arrays)
+
+* **Primitive data types**:
+    * numbers, char, bool
+    * store their value in the program stack
+* **Reference data types**:
+    * strings, objects, arrays
+    * store an address where the value is stored (heap / dynamic memory)
 
 
 
