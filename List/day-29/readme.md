@@ -4,12 +4,13 @@
 
 ## ToC
 * [Variables](#variables)
-* [Characteristics of Variables](#characteristics)
-* [Naming Variables](#naming-variables)
-* [Declaring Variables](#declaring-variables)
-* [ ](#)
-* [](#)
-* [](#)
+    * [Characteristics of Variables](#characteristics)
+    * [Naming Variables](#naming-variables)
+    * [Declaring Variables](#declaring-variables)
+    * [Initializing Variables](#initializing-variables)
+* [Value and Reference Types](#value-and-reference-types)
+* [Literals](#Literals)
+
 
 ## Variables
 
@@ -46,7 +47,7 @@ Variables are characterized by:
 
 [🔝](#toc)  
   
-## Naming Variables
+### Naming Variables
 
 * The name of the variable can be any of our choice but must follow certain rules defined in the C# language specification:
     * Variable name can contain letters **a-z, A-Z**, the digits **0-9**, as well as the character **`_`**
@@ -90,9 +91,47 @@ Bad:
 - `a38` (not descriptive)
 - `fullName23`, `fullName24` (if it doesn't add clarity, don't include numbers)
 
-## Declaring Variables
+### Declaring Variables
+
+When you declare a variable, you perform the following steps
+
+1. specify its **type** -> `int`
+2. specify its **name** -> `age`
+3. optionally specify **initial value** -> `25`
+
+```c#
+// <data type> <identifier> [= <initialization>];
+string name;
+int age;
+
+name = "john doe";
+age = 25;
+
+```
+  
+[🔝](#toc)  
+
+### Initializing Variables
+
+* Initializatin means specifying an initial value. When setting value to variables at the time of their eclaration we actually initialize them.
+* Each data type in C# has a **default value** which is used when no initial value is provided when declared.
+
+![default Value Table](defaultValue.png)
+  
+[🔝](#toc)  
+
+### 
 
 
+
+[🔝](#toc)    
+  
+  
+### 
+
+
+
+  
   
 [🔝](#toc)  
 
