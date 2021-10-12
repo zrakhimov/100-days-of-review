@@ -9,6 +9,9 @@
     * [Declaring Variables](#declaring-variables)
     * [Initializing Variables](#initializing-variables)
 * [Value and Reference Types](#value-and-reference-types)
+    * [Value Types](#value-types)
+    * [Reference Types](#reference-types)
+    * [Example](#example)
 * [Literals](#Literals)
 
 
@@ -166,6 +169,18 @@ byte[] bytes = { 1, 2, 3 };
 
 <img src="before.png" width="400"/>
 
+* Following is what happens when values are changed:
+
+```C#
+i = 0; 
+ch = 'B';
+result = false; 
+obj = null; 
+str = "Bye"; 
+bytes[1] = 0;
+```
+
+<img src="after.png" width="400" />
 
 [🔝](#toc)    
   
