@@ -149,8 +149,22 @@ char secondChar = ch;
     * The reference has a type and can only point to objects of the same type
     * All reference types can hold a `null` value.
 
+### Example
 
+* Consider teh execution of the following programming code:
 
+```C#
+
+int i = 42; 
+char ch = 'A';
+bool result = true; 
+object obj = 42; 
+string str = "Hello"; 
+byte[] bytes = { 1, 2, 3 };
+
+```
+
+![before](before.png height="200")
 
 
 [🔝](#toc)    
