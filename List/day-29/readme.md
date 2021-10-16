@@ -13,6 +13,11 @@
     * [Reference Types](#reference-types)
     * [Example](#example)
 * [Literals](#Literals)
+    * [Boolean Literals](#boolean-literals)
+    * [Integer Literals](#integer-literals)
+    * [Real Literals](#real-literals)
+    * [Character Literals](#character-literals)
+    * [String Literals](#string-literals)
 
 
 ## Variables
@@ -182,32 +187,83 @@ bytes[1] = 0;
 
 <img src="after.png" width="400" />
 
-[🔝](#toc)    
-  
-  
-### 
-
-
-
-  
-  
-[🔝](#toc)  
-
-###
-
-
-  
-[🔝](#toc)  
-
-### 
-
 
 
 [🔝](#toc)    
   
   
-### 
+## Literals
 
+* Primitive types, which we already met, are special data types built into the C# language. Their values specified in the source code of the program are called **literals**.
+
+```c#
+bool result = true; 
+char capitalC = 'C'; 
+byte b = 100; 
+short s = 20000; 
+int i = 300000;
+```
+
+* In C# language, there are several types of literals:
+    - Boolean
+    - Integer
+    - Real
+    - Character
+    - String
+    - Object literal `null`
+  
+[🔝](#toc)  
+
+### Boolean Literals
+
+* Boolean Literals are:
+    * `true`
+    * `false`
+* When we assign a value to a variable of type bool we can use only one of these two values or a Boolean expression (which is calculated to `true` or `false`).
+
+```c#
+bool result = true;
+```
+  
+[🔝](#toc)  
+
+### Integer Literals
+* Integer literals are **sequences of digits**, a sign (+, -), **suffixes** and **prefixes**
+* Using **prefixes** we can present integers in the program source in decimal or hexadecimal format.
+    * '0x' and '0X' as prefix indicates hexadecimal values, for example 0xA8F1;
+    ```c#
+    int numberInDec = 16; 
+    int numberInHex = 0x10;
+    ```
+* Using **suffixes**:
+    * `'l'` and `'L'` as suffix indicates `long` type data, for example **357L**.
+    * `'u'` and `'U'` as suffix indicates `uint` or `ulong` data type, for example **112u**.
+    ```c#
+    long longNumber = 357L;
+    uint unsignedInt = 112u;
+    // Error: 234L is not an int;
+    int longInt = 234L
+    ```
+  
+* By default (if no suffix is used) the integer literals are of type `int`.
+
+[🔝](#toc) 
+
+### Real Literals
+
+* Real literals are a **sequence of digits**, a sign (+, -), suffixes and the decimal point character.
+* We use them for values of type **float**, **double** and **decimal**.
+* Real literals can be represented in exponential format.
+
+  
+[🔝](#toc) 
+
+### Character Literals
+
+  
+[🔝](#toc) 
+
+### String Literals
 
   
 [🔝](#toc)  
