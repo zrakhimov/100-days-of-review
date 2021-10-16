@@ -60,7 +60,7 @@ Variables are characterized by:
 * The name of the variable can be any of our choice but must follow certain rules defined in the C# language specification:
     * Variable name can contain letters **a-z, A-Z**, the digits **0-9**, as well as the character **`_`**
     * Variable names **cannot** start with **digit**
-    * Variable names **cannot** be a C# **keyword**. (`base, char, default, int, object, this, null...)
+    * Variable names **cannot** be a C# **keyword**. (`base, char, default, int, object, this, null...`)
 ⚠️ If we want to name a variable like keyword, we can add a prefix to the name `@`. For example, `@char` and `@null` are valid variable names while **char** and **null** are invalid
 
 * Examples:
