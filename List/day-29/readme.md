@@ -254,18 +254,83 @@ bool result = true;
 * Real literals are a **sequence of digits**, a sign (+, -), suffixes and the decimal point character.
 * We use them for values of type **float**, **double** and **decimal**.
 * Real literals can be represented in exponential format.
+    - `'f'` and `'F'` as suffixes mean data of type **float**;
+    - `'d'` and `'D'` as suffixes mean data of type **double**;
+    - `'m'` and `'m' `as suffixes mean data of type **decimal**;
+    - `'e'` is an **exponent**, for example, "`e-5`" means the integer part multiplied by 10^-5.
 
-  
+```c#
+// The following is the correct way of assigning a value: 
+float realNumber = 12.5f;
+
+// This is the same value in exponential format: 
+realNumber = 1.25e+1f;
+
+// Error, because 12.5 is double 
+float realNumber = 12.5;
+```
+* By default (if there is no suffix), the real numbers are of type `double`.
+
+
 [🔝](#toc) 
 
 ### Character Literals
 
-  
+Character literals are **single characters enclosed in apostrophes (single quotes)**. We use them to set the values of type `char`. The value of a character literal can be:
+- a character, for example `'A'`;
+- a character code, for example `'\u0065'`;
+- an escaping sequence;
+    * They are a sequence of special characters, which describe a character that cannot be written directly in the source code.
+        - `\'` – single quote
+        - `\"` – double quotes
+        - `\\` – backslash
+        - `\n` – new line
+        - `\t` – offset (tab)
+        - `\uXXXX` – char specified by its Unicode number, for example `\u03A7`.
+
+```C#
+// An ordinary character 
+char character = 'a'; 
+Console.WriteLine(character);
+// Unicode character code in a hexadecimal format 
+character = '\u003A'; Console.WriteLine(character);
+// Assigning the single quotiation character (escaped as \') 
+character = '\''; Console.WriteLine(character);
+// Assigning the backslash character (escaped as \\) 
+character = '\\'; Console.WriteLine(character);
+// Console output: 
+// a 
+// : 
+// ' 
+// \
+```
+
 [🔝](#toc) 
 
 ### String Literals
 
+* String literals are used for data of type `string`. They are a sequence of characters enclosed in **double quotation** marks.
+* All the escaping rules for the `char` type discussed above are also valid for `string` literals.
+
+* Strings can be preceded by the `@` character that specifies a quoted string (**verbatim string**). In quoted strings the rules for escaping are not valid, i.e. the character `\` means `\` and is not an escaping character.
   
+```C#
+string quotation = "\"Hello, Jude\", he said.";
+Console.WriteLine(quotation);
+
+string path = "C:\\Windows\\Notepad.exe";
+Console.WriteLine(path);
+
+string verbatim = @"The \ is not escaped as \\.I am at a new line.";
+Console.WriteLine(verbatim);
+
+// Console output: 
+// "Hello, Jude", he said. 
+// C:\Windows\Notepad.exe 
+// The \ is not escaped as \\. 
+// I am at a new line.
+
+```
 [🔝](#toc)  
 
   
