@@ -1,4 +1,4 @@
-# :100: Days Of Review
+# :29: Days Of Review
 
 Repository contains review of forgotten stuff
 
