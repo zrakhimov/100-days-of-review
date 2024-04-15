@@ -1,6 +1,6 @@
 # :29: Days Of Review
 
-Repository contains review of forgotten stuff
+Repository contains detailed descriptions for each topic 
 
 ## Table of Contents
 
